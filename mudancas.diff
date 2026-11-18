@@ -1,0 +1,2754 @@
+diff -ruN -x .git -x build -x doc -x .DS_Store repo/.gitignore repo-corrigido/.gitignore
+--- repo/.gitignore	2026-11-18 11:24:47
++++ repo-corrigido/.gitignore	2026-11-18 11:38:41
+@@ -1,4 +1,10 @@
+ doc/html/
+ doc/latex/
+ *.exe
+-*.o
+\ No newline at end of file
++*.o
++
++# Saída de compilação e cobertura: gerada pelo make, nunca versionada
++build/
++*.gcno
++*.gcda
++*.gcov
+diff -ruN -x .git -x build -x doc -x .DS_Store repo/Doxyfile repo-corrigido/Doxyfile
+--- repo/Doxyfile	2026-11-18 11:24:47
++++ repo-corrigido/Doxyfile	2026-11-18 11:38:47
+@@ -42,7 +42,7 @@
+ # title of most generated pages and in a few other places.
+ # The default value is: My Project.
+ 
+-PROJECT_NAME           = "My Project"
++PROJECT_NAME           = "RPG Fight Club - PDS2 Grupo 14"
+ 
+ # The PROJECT_NUMBER tag can be used to enter a project or revision number. This
+ # could be handy for archiving the generated documentation or if some version
+@@ -54,7 +54,7 @@
+ # for a project that appears at the top of each page and should give viewers a
+ # quick idea about the purpose of the project. Keep the description short.
+ 
+-PROJECT_BRIEF          =
++PROJECT_BRIEF          = "RPG textual por turnos em C++17"
+ 
+ # With the PROJECT_LOGO tag one can specify a logo or an icon that is included
+ # in the documentation. The maximum height of the logo should not exceed 55
+@@ -74,7 +74,7 @@
+ # entered, it will be relative to the location where Doxygen was started. If
+ # left blank the current directory will be used.
+ 
+-OUTPUT_DIRECTORY       =
++OUTPUT_DIRECTORY       = doc
+ 
+ # If the CREATE_SUBDIRS tag is set to YES then Doxygen will create up to 4096
+ # sub-directories (in 2 levels) under the output directory of each output format
+@@ -119,7 +119,7 @@
+ # Swedish, Turkish, Ukrainian and Vietnamese.
+ # The default value is: English.
+ 
+-OUTPUT_LANGUAGE        = English
++OUTPUT_LANGUAGE        = Brazilian
+ 
+ # If the BRIEF_MEMBER_DESC tag is set to YES, Doxygen will include brief member
+ # descriptions after the members that are listed in the file and class
+@@ -554,7 +554,7 @@
+ # be included in the documentation.
+ # The default value is: NO.
+ 
+-EXTRACT_PRIVATE        = NO
++EXTRACT_PRIVATE        = YES
+ 
+ # If the EXTRACT_PRIV_VIRTUAL tag is set to YES, documented private virtual
+ # methods of a class will be included in the documentation.
+@@ -572,7 +572,7 @@
+ # included in the documentation.
+ # The default value is: NO.
+ 
+-EXTRACT_STATIC         = NO
++EXTRACT_STATIC         = YES
+ 
+ # If the EXTRACT_LOCAL_CLASSES tag is set to YES, classes (and structs) defined
+ # locally in source files will be included in the documentation. If set to NO,
+@@ -911,7 +911,7 @@
+ # messages are off.
+ # The default value is: NO.
+ 
+-QUIET                  = NO
++QUIET                  = YES
+ 
+ # The WARNINGS tag can be used to turn on/off the warning messages that are
+ # generated to standard error (stderr) by Doxygen. If WARNINGS is set to YES
+@@ -1026,7 +1026,7 @@
+ # spaces. See also FILE_PATTERNS and EXTENSION_MAPPING
+ # Note: If this tag is empty the current directory is searched.
+ 
+-INPUT                  =
++INPUT                  = README.md include src
+ 
+ # This tag can be used to specify the character encoding of the source files
+ # that Doxygen parses. Internally Doxygen uses the UTF-8 encoding. Doxygen uses
+@@ -1066,62 +1066,13 @@
+ # provided as Doxygen C comment), *.py, *.pyw, *.f90, *.f95, *.f03, *.f08,
+ # *.f18, *.f, *.for, *.vhd, *.vhdl, *.ucf, *.qsf and *.ice.
+ 
+-FILE_PATTERNS          = *.c \
+-                         *.cc \
+-                         *.cxx \
+-                         *.cxxm \
+-                         *.cpp \
+-                         *.cppm \
+-                         *.ccm \
+-                         *.c++ \
+-                         *.c++m \
+-                         *.java \
+-                         *.ii \
+-                         *.ixx \
+-                         *.ipp \
+-                         *.i++ \
+-                         *.inl \
+-                         *.idl \
+-                         *.ddl \
+-                         *.odl \
+-                         *.h \
+-                         *.hh \
+-                         *.hxx \
+-                         *.hpp \
+-                         *.h++ \
+-                         *.l \
+-                         *.cs \
+-                         *.d \
+-                         *.php \
+-                         *.php4 \
+-                         *.php5 \
+-                         *.phtml \
+-                         *.inc \
+-                         *.m \
+-                         *.markdown \
+-                         *.md \
+-                         *.mm \
+-                         *.dox \
+-                         *.py \
+-                         *.pyw \
+-                         *.f90 \
+-                         *.f95 \
+-                         *.f03 \
+-                         *.f08 \
+-                         *.f18 \
+-                         *.f \
+-                         *.for \
+-                         *.vhd \
+-                         *.vhdl \
+-                         *.ucf \
+-                         *.qsf \
+-                         *.ice
++FILE_PATTERNS          = *.hpp *.cpp *.md
+ 
+ # The RECURSIVE tag can be used to specify whether or not subdirectories should
+ # be searched for input files as well.
+ # The default value is: NO.
+ 
+-RECURSIVE              = NO
++RECURSIVE              = YES
+ 
+ # The EXCLUDE tag can be used to specify files and/or directories that should be
+ # excluded from the INPUT source files. This way you can easily exclude a
+@@ -1130,7 +1081,7 @@
+ # Note that relative paths are relative to the directory from which Doxygen is
+ # run.
+ 
+-EXCLUDE                =
++EXCLUDE                = include/doctest.h
+ 
+ # The EXCLUDE_SYMLINKS tag can be used to select whether or not files or
+ # directories that are symbolic links (a Unix file system feature) are excluded
+@@ -1241,7 +1192,7 @@
+ # (index.html). This can be useful if you have a project on for instance GitHub
+ # and want to reuse the introduction page also for the Doxygen output.
+ 
+-USE_MDFILE_AS_MAINPAGE =
++USE_MDFILE_AS_MAINPAGE = README.md
+ 
+ # If the IMPLICIT_DIR_DOCS tag is set to YES, any README.md file found in sub-
+ # directories of the project's root, is used as the documentation for that sub-
+@@ -1357,7 +1308,6 @@
+ # generated with the -Duse_libclang=ON option for CMake.
+ # The default value is: NO.
+ 
+-CLANG_ASSISTED_PARSING = NO
+ 
+ # If the CLANG_ASSISTED_PARSING tag is set to YES and the CLANG_ADD_INC_PATHS
+ # tag is set to YES then Doxygen will add the directory of each input to the
+@@ -1365,7 +1315,6 @@
+ # The default value is: YES.
+ # This tag requires that the tag CLANG_ASSISTED_PARSING is set to YES.
+ 
+-CLANG_ADD_INC_PATHS    = YES
+ 
+ # If clang assisted parsing is enabled you can provide the compiler with command
+ # line options that you would normally use when invoking the compiler. Note that
+@@ -1373,7 +1322,6 @@
+ # specified with INPUT and INCLUDE_PATH.
+ # This tag requires that the tag CLANG_ASSISTED_PARSING is set to YES.
+ 
+-CLANG_OPTIONS          =
+ 
+ # If clang assisted parsing is enabled you can provide the clang parser with the
+ # path to the directory containing a file called compile_commands.json. This
+@@ -1386,7 +1334,6 @@
+ # Note: The availability of this option depends on whether or not Doxygen was
+ # generated with the -Duse_libclang=ON option for CMake.
+ 
+-CLANG_DATABASE_PATH    =
+ 
+ #---------------------------------------------------------------------------
+ # Configuration options related to the alphabetical class index
+@@ -2111,7 +2058,7 @@
+ # If the GENERATE_LATEX tag is set to YES, Doxygen will generate LaTeX output.
+ # The default value is: YES.
+ 
+-GENERATE_LATEX         = YES
++GENERATE_LATEX         = NO
+ 
+ # The LATEX_OUTPUT tag is used to specify where the LaTeX docs will be put. If a
+ # relative path is entered the value of OUTPUT_DIRECTORY will be put in front of
+diff -ruN -x .git -x build -x doc -x .DS_Store repo/Makefile repo-corrigido/Makefile
+--- repo/Makefile	2026-11-18 11:24:47
++++ repo-corrigido/Makefile	2026-11-18 11:38:41
+@@ -70,6 +70,7 @@
+ 	@echo "  make run           -> Compila e inicia a gameplay pela main"
+ 	@echo "  make test          -> Executa a suíte de testes com cobertura"
+ 	@echo "  make coverage-html -> Gera relatório visual em HTML"
++	@echo "  make docs          -> Gera a documentação Doxygen em doc/html"
+ 	@echo "  make clean         -> Remove a pasta de builds"
+ 
+ # ==========================================
+@@ -134,10 +135,18 @@
+ 	@echo "--------------------------------------------------------"
+ 
+ # ==========================================
++# DOCUMENTAÇÃO (DOXYGEN)
++# ==========================================
++
++docs:
++	doxygen Doxyfile
++	@echo "Documentação gerada em: doc/html/index.html"
++
++# ==========================================
+ # LIMPEZA
+ # ==========================================
+ 
+ clean:
+ 	@$(RM)
+ 
+-.PHONY: all jogo run test clean coverage-html
+\ No newline at end of file
++.PHONY: all jogo run test clean coverage-html docs
+\ No newline at end of file
+diff -ruN -x .git -x build -x doc -x .DS_Store repo/include/Aventureiro.hpp repo-corrigido/include/Aventureiro.hpp
+--- repo/include/Aventureiro.hpp	2026-11-18 11:24:47
++++ repo-corrigido/include/Aventureiro.hpp	2026-11-18 11:37:38
+@@ -100,19 +100,54 @@
+     // GETTERS E SETTERS DE ESTADO
+     // ==========================================
+ 
+-    /** @brief Retorna o ID da cena que serve como ponto de ressurreição ativo. */
++    /**
++     * @brief Retorna o ID da cena que serve como ponto de ressurreição ativo.
++     * @return ID da última cena de checkpoint visitada.
++     */
+     int getIDCheckpoint() const;
+ 
+     /** @brief Altera o ID da cena de salvamento ativo onde o jogador reaparecerá se morrer. */
+     void setIDCheckpoint(int id);
+ 
+ 
+-    int getMP() const;                  ///< Retorna os pontos de Mana atuais.
+-    int getMPMax() const;               ///< Retorna o limite máximo de pontos de Mana.
+-    int getEnergia() const;             ///< Retorna os pontos de Energia atuais.
+-    int getEnergiaMax() const;          ///< Retorna o limite máximo de pontos de Energia.
+-    int getDefesa() const override;     ///< Retorna defesa com buffs de equipamentos.
+-    int getForcaTotal() const override; ///< Retorna força com buffs de equipamentos.
++    /**
++
++
++     * @brief Retorna os pontos de Mana atuais.
++
++
++     * @return MP atual (0 a getMPMax()).
++
++
++     */
++
++
++    int getMP() const;
++    /**
++     * @brief Retorna o limite máximo de pontos de Mana.
++     * @return MP máximo.
++     */
++    int getMPMax() const;
++    /**
++     * @brief Retorna os pontos de Energia atuais.
++     * @return Energia atual (0 a getEnergiaMax()).
++     */
++    int getEnergia() const;
++    /**
++     * @brief Retorna o limite máximo de pontos de Energia.
++     * @return Energia máxima.
++     */
++    int getEnergiaMax() const;
++    /**
++     * @brief Retorna a defesa somada ao bônus de armadura.
++     * @return Defesa total usada na mitigação de dano.
++     */
++    int getDefesa() const override;
++    /**
++     * @brief Retorna a força somada ao bônus de arma.
++     * @return Força total usada no cálculo de dano.
++     */
++    int getForcaTotal() const override;
+ private:
+     int _energia;               ///< Pontos de fadiga física atuais.
+     int _energiaMax;            ///< Capacidade máxima de armazenamento de fadiga.
+diff -ruN -x .git -x build -x doc -x .DS_Store repo/include/Cena.hpp repo-corrigido/include/Cena.hpp
+--- repo/include/Cena.hpp	2026-11-18 11:24:47
++++ repo-corrigido/include/Cena.hpp	2026-11-18 11:36:07
+@@ -3,24 +3,13 @@
+ 
+ #include <string>
+ #include <vector>
++#include "Escolha.hpp"
+ 
+ /**
+  * @file Cena.hpp
+  * @brief Definição da estrutura Escolha e da classe Cena para o fluxo narrativo.
+  */
+ 
+-/** * @struct Escolha 
+- * @brief Define uma ramificação (opção) direcionada a partir de uma cena da história.
+- * * Cada escolha atua como uma aresta em um grafo narrativo, conectando a cena atual
+- * a um novo nó (destino), além de carregar metadados que podem modificar o estado do jogo.
+- */
+-struct Escolha {
+-    std::string texto;       ///< Texto descritivo exibido no menu de opções para o jogador.
+-    int destinoID;           ///< ID identificador da próxima cena para onde o jogador será direcionado.
+-    bool geraCombate;        ///< Flag indicando se a seleção desta opção engatilha um combate imediato.
+-    std::string tipoInimigo; ///< String identificadora do monstro a ser gerado caso @c geraCombate seja true.
+-    int itemGanhoID;         ///< ID do item concedido ao jogador (0 se nenhum bônus for aplicado, >0 para itens válidos).
+-};
+ 
+ /**
+  * @class Cena
+diff -ruN -x .git -x build -x doc -x .DS_Store repo/include/Combate.hpp repo-corrigido/include/Combate.hpp
+--- repo/include/Combate.hpp	2026-11-18 11:24:47
++++ repo-corrigido/include/Combate.hpp	2026-11-18 11:36:07
+@@ -3,6 +3,7 @@
+ 
+ #include "Aventureiro.hpp"
+ #include "Inimigo.hpp"
++#include "CombateInvalidoException.hpp"
+ #include <stdexcept>
+ 
+ /**
+@@ -10,23 +11,6 @@
+  * @brief Gerenciador do ciclo de vida de um confronto no jogo.
+  */
+ 
+-// ============================================================================
+-// EXCEÇÃO CUSTOMIZADA DO DOMÍNIO DE COMBATE
+-// ============================================================================
+-
+-/**
+- * @class CombateInvalidoException
+- * @brief Exceção lançada quando o estado dos combatentes impede o início do combate.
+- *
+- * Exemplos de situações inválidas:
+- * - Tentar iniciar um combate com um combatente já morto.
+- * - Combatente nulo passado por referência inválida.
+- */
+-class CombateInvalidoException : public std::logic_error {
+-public:
+-    explicit CombateInvalidoException(const std::string& mensagem)
+-        : std::logic_error("[Combate] " + mensagem) {}
+-};
+ 
+ // ============================================================================
+ // CLASSE COMBATE
+diff -ruN -x .git -x build -x doc -x .DS_Store repo/include/CombateInvalidoException.hpp repo-corrigido/include/CombateInvalidoException.hpp
+--- repo/include/CombateInvalidoException.hpp	1969-12-31 21:00:00
++++ repo-corrigido/include/CombateInvalidoException.hpp	2026-11-18 11:38:27
+@@ -0,0 +1,30 @@
++#ifndef COMBATE_INVALIDO_EXCEPTION_HPP
++#define COMBATE_INVALIDO_EXCEPTION_HPP
++
++#include <stdexcept>
++#include <string>
++
++/**
++ * @file CombateInvalidoException.hpp
++ * @brief Exceção lançada quando um combate não pode começar.
++ */
++
++/**
++ * @class CombateInvalidoException
++ * @brief Exceção lançada quando o estado dos combatentes impede o início do combate.
++ *
++ * Exemplos de situações inválidas:
++ * - Tentar iniciar um combate com um combatente já morto.
++ * - Combatente nulo passado por referência inválida.
++ */
++class CombateInvalidoException : public std::logic_error {
++public:
++    /**
++     * @brief Cria a exceção com a mensagem informada.
++     * @param mensagem Descrição do problema.
++     */
++    explicit CombateInvalidoException(const std::string& mensagem)
++        : std::logic_error("[Combate] " + mensagem) {}
++};
++
++#endif // COMBATE_INVALIDO_EXCEPTION_HPP
+diff -ruN -x .git -x build -x doc -x .DS_Store repo/include/DesafianteDoBar.hpp repo-corrigido/include/DesafianteDoBar.hpp
+--- repo/include/DesafianteDoBar.hpp	1969-12-31 21:00:00
++++ repo-corrigido/include/DesafianteDoBar.hpp	2026-11-18 11:37:38
+@@ -0,0 +1,46 @@
++#ifndef DESAFIANTE_DO_BAR_HPP
++#define DESAFIANTE_DO_BAR_HPP
++
++#include "Inimigo.hpp"
++#include <string>
++
++/**
++ * @file DesafianteDoBar.hpp
++ * @brief Declaração do inimigo DesafianteDoBar.
++ */
++
++/**
++ * @class DesafianteDoBar
++ * @brief Cidadão comum que frequenta os fundos do bar em busca de uma válvula de escape.
++ *
++ * Inimigo introdutório do Clube de Luta. Usa apenas dano físico bruto (socos e chutes),
++ * tem baixa defesa física e nenhuma resistência mágica. Serve para o jogador aprender
++ * a gerenciar HP e testar ataques básicos.
++ *
++ * @invariant _nivel >= 1
++ * @invariant _hp >= 0 && _hp <= _hpMax
++ */
++class DesafianteDoBar : public Inimigo {
++public:
++    /**
++     * @brief Constrói um Desafiante do Bar para um determinado nível.
++     * @param nome Nome do inimigo (usa "Desafiante do Bar" se vazio).
++     * @param nivel Nível de escalonamento dos atributos (deve ser >= 1).
++     * @throws std::invalid_argument Se nivel < 1.
++     */
++    explicit DesafianteDoBar(std::string nome, int nivel);
++
++    /**
++     * @brief Executa o turno do Desafiante: sempre ataque físico direto.
++     * @param alvo Personagem que receberá o dano.
++     * @pre alvo referencia um Personagem válido.
++     */
++    void executarTurno(Personagem& alvo) override;
++    /**
++     * @brief Monta o status do inimigo para exibir no combate.
++     * @return Texto com nome, nível e HP, pronto para imprimir.
++     */
++    std::string getDeclaracaoStatus() const override;
++};
++
++#endif // DESAFIANTE_DO_BAR_HPP
+diff -ruN -x .git -x build -x doc -x .DS_Store repo/include/EfeitoPorTempo.hpp repo-corrigido/include/EfeitoPorTempo.hpp
+--- repo/include/EfeitoPorTempo.hpp	1969-12-31 21:00:00
++++ repo-corrigido/include/EfeitoPorTempo.hpp	2026-11-18 11:36:07
+@@ -0,0 +1,25 @@
++#ifndef EFEITO_POR_TEMPO_HPP
++#define EFEITO_POR_TEMPO_HPP
++
++#include <string>
++#include "Habilidade.hpp"
++
++/**
++ * @file EfeitoPorTempo.hpp
++ * @brief Estrutura de um efeito contínuo (DoT, HoT, Buff, Debuff).
++ */
++
++/**
++ * @brief Estrutura que define as propriedades de um efeito de dano contínuo (DoT).
++ * * Mantém os dados necessários para que efeitos como veneno, queimadura ou 
++ * sangramento persistam na memória do alvo por múltiplos turnos.
++ */
++struct EfeitoPorTempo {
++    TipoHabilidade tipo;       /**< DOT, HOT, SUPORTE (Buff) ou DEBUFF */
++    int valorPorTurno;         /**< Dano, Cura ou o valor do modificador de atributo */
++    int turnosRestantes;       /**< Contador de rodadas ativo */
++    std::string nomeEfeito;    /**< Ex: "Veneno", "Regeneração", "Grito de Guerra" */
++    std::string atributoAfetado; /**< [NOVO] "hp", "defesa" ou "forca" (Útil para Buffs/Debuffs) */
++};
++
++#endif // EFEITO_POR_TEMPO_HPP
+diff -ruN -x .git -x build -x doc -x .DS_Store repo/include/EntradaEncerradaException.hpp repo-corrigido/include/EntradaEncerradaException.hpp
+--- repo/include/EntradaEncerradaException.hpp	1969-12-31 21:00:00
++++ repo-corrigido/include/EntradaEncerradaException.hpp	2026-11-18 11:36:07
+@@ -0,0 +1,30 @@
++#ifndef ENTRADA_ENCERRADA_EXCEPTION_HPP
++#define ENTRADA_ENCERRADA_EXCEPTION_HPP
++
++#include <stdexcept>
++#include <string>
++
++/**
++ * @file EntradaEncerradaException.hpp
++ * @brief Exceção para entrada do usuário encerrada (EOF).
++ */
++
++/**
++ * @class EntradaEncerradaException
++ * @brief Exceção lançada quando a entrada do usuário termina (EOF, Ctrl+D ou arquivo redirecionado acabou).
++ *
++ * Sem ela, InterfaceJogo::solicitarEscolha ficava em loop infinito pedindo uma
++ * opção que nunca chegaria. Combate não engole esta exceção: ela sobe até a main,
++ * que encerra o jogo de forma limpa.
++ */
++class EntradaEncerradaException : public std::runtime_error {
++public:
++    /**
++     * @brief Cria a exceção com a mensagem informada.
++     * @param mensagem Descrição do motivo do encerramento.
++     */
++    explicit EntradaEncerradaException(const std::string& mensagem)
++        : std::runtime_error("[Entrada] " + mensagem) {}
++};
++
++#endif // ENTRADA_ENCERRADA_EXCEPTION_HPP
+diff -ruN -x .git -x build -x doc -x .DS_Store repo/include/Escolha.hpp repo-corrigido/include/Escolha.hpp
+--- repo/include/Escolha.hpp	1969-12-31 21:00:00
++++ repo-corrigido/include/Escolha.hpp	2026-11-18 11:36:07
+@@ -0,0 +1,24 @@
++#ifndef ESCOLHA_HPP
++#define ESCOLHA_HPP
++
++#include <string>
++
++/**
++ * @file Escolha.hpp
++ * @brief Estrutura de uma opção (aresta) do grafo narrativo.
++ */
++
++/** * @struct Escolha 
++ * @brief Define uma ramificação (opção) direcionada a partir de uma cena da história.
++ * * Cada escolha atua como uma aresta em um grafo narrativo, conectando a cena atual
++ * a um novo nó (destino), além de carregar metadados que podem modificar o estado do jogo.
++ */
++struct Escolha {
++    std::string texto;       ///< Texto descritivo exibido no menu de opções para o jogador.
++    int destinoID;           ///< ID identificador da próxima cena para onde o jogador será direcionado.
++    bool geraCombate;        ///< Flag indicando se a seleção desta opção engatilha um combate imediato.
++    std::string tipoInimigo; ///< String identificadora do monstro a ser gerado caso @c geraCombate seja true.
++    int itemGanhoID;         ///< ID do item concedido ao jogador (0 se nenhum bônus for aplicado, >0 para itens válidos).
++};
++
++#endif // ESCOLHA_HPP
+diff -ruN -x .git -x build -x doc -x .DS_Store repo/include/GuardaPatrimonial.hpp repo-corrigido/include/GuardaPatrimonial.hpp
+--- repo/include/GuardaPatrimonial.hpp	1969-12-31 21:00:00
++++ repo-corrigido/include/GuardaPatrimonial.hpp	2026-11-18 11:37:38
+@@ -0,0 +1,55 @@
++#ifndef GUARDA_PATRIMONIAL_HPP
++#define GUARDA_PATRIMONIAL_HPP
++
++#include "Inimigo.hpp"
++#include <string>
++
++/**
++ * @file GuardaPatrimonial.hpp
++ * @brief Declaração do inimigo GuardaPatrimonial.
++ */
++
++/**
++ * @class GuardaPatrimonial
++ * @brief Vigilante que protege prédios corporativos durante a noite.
++ *
++ * Combina resistência com kit de campo:
++ * - Ataque físico com cassetete (FISICO).
++ * - Atordoamento a cada 3 turnos (DEBUFF severo de força por 1 turno).
++ * - Gás Lacrimogêneo a cada 4 turnos (DEBUFF de defesa no alvo por 2 turnos).
++ * - Bandagem de Campo a cada 5 turnos (HOT — cura contínua em si mesmo por 2 turnos).
++ *
++ * @invariant _nivel >= 1
++ * @invariant _contadorTurnos >= 0
++ */
++class GuardaPatrimonial : public Inimigo {
++public:
++    /**
++     * @brief Constrói um Guarda Patrimonial para um determinado nível.
++     * @param nome Nome do inimigo (usa "Guarda Patrimonial" se vazio).
++     * @param nivel Nível de escalonamento dos atributos (deve ser >= 1).
++     * @throws std::invalid_argument Se nivel < 1.
++     */
++    explicit GuardaPatrimonial(std::string nome, int nivel);
++
++    /**
++     * @brief Executa o turno com rotação de 4 habilidades distintas baseada no contador.
++     *
++     * Rotação:
++     * - Turno padrão: Cassetete (FISICO).
++     * - A cada 3 turnos: Atordoamento (DEBUFF de força severo, 1 turno).
++     * - A cada 4 turnos: Gás Lacrimogêneo (DEBUFF de defesa, 2 turnos).
++     * - A cada 5 turnos: Bandagem de Campo (HOT em si mesmo, 2 turnos).
++     *
++     * @param alvo Personagem que receberá os efeitos do turno.
++     * @pre alvo referencia um Personagem válido.
++     */
++    void executarTurno(Personagem& alvo) override;
++    /**
++     * @brief Monta o status do inimigo para exibir no combate.
++     * @return Texto com nome, nível e HP, pronto para imprimir.
++     */
++    std::string getDeclaracaoStatus() const override;
++};
++
++#endif // GUARDA_PATRIMONIAL_HPP
+diff -ruN -x .git -x build -x doc -x .DS_Store repo/include/Habilidade.hpp repo-corrigido/include/Habilidade.hpp
+--- repo/include/Habilidade.hpp	2026-11-18 11:24:47
++++ repo-corrigido/include/Habilidade.hpp	2026-11-18 11:38:27
+@@ -3,29 +3,14 @@
+ 
+ #include <string>
+ #include <stdexcept>
++#include "HabilidadeInvalidaException.hpp"
+ 
+ /**
+  * @file Habilidade.hpp
+  * @brief Definição da classe Habilidade, seu enumerador de tipos e exceções próprias.
+  */
+ 
+-// ============================================================================
+-// EXCEÇÕES CUSTOMIZADAS DO DOMÍNIO DE HABILIDADE
+-// ============================================================================
+ 
+-/**
+- * @class HabilidadeInvalidaException
+- * @brief Exceção lançada quando os parâmetros de construção de uma Habilidade são inválidos.
+- *
+- * Herda de std::invalid_argument para ser compatível com o tratamento genérico
+- * de exceções de argumento inválido da STL.
+- */
+-class HabilidadeInvalidaException : public std::invalid_argument {
+-public:
+-    explicit HabilidadeInvalidaException(const std::string& mensagem)
+-        : std::invalid_argument("[Habilidade] " + mensagem) {}
+-};
+-
+ // ============================================================================
+ // ENUMERADORES
+ // ============================================================================
+@@ -51,19 +36,6 @@
+ 
+ /**
+  * @class Habilidade
+-<<<<<<< HEAD
+- * @brief Objeto que contém os metadados e parâmetros de uma ação especial no jogo.
+- * * A classe Habilidade encapsula todas as informações necessárias para que o sistema de combate
+- * calcule custos de recursos (Energia/Mana) e gerencie a persistência de efeitos contínuos 
+- * (como envenenamentos ou buffs por turno).
+- * * @param nome Nome identificador da habilidade (ex: "Bola de Fogo").
+-     * @param tipo Categoria mecânica da ação (@see TipoHabilidade).
+-     * @param custoE Quantidade de pontos de Energia consumidos pelo uso.
+-     * @param custoM Quantidade de pontos de Mana (MP) consumidos pelo uso.
+-     * @param valorBase Intensidade numérica base (pode representar dano, cura ou potência de efeito).
+-     * @param duracao Quantidade de turnos que o efeito persiste no alvo. Por padrão é 0 (efeito instantâneo).
+-     * @param atributoAfetado Em caso de Buffs ou Debuffs.
+-=======
+  * @brief Objeto imutável que encapsula os metadados e parâmetros de uma ação especial.
+  *
+  * A classe Habilidade é um value object: uma vez construída com parâmetros válidos,
+@@ -71,7 +43,6 @@
+  * respeitando o princípio de encapsulamento.
+  *
+  * @note Lança HabilidadeInvalidaException se os parâmetros violarem as pré-condições.
+->>>>>>> 4c10a33 (Adicão de correcoes em Habilidade.cpp e Habilidade.hpp)
+  */
+ class Habilidade {
+ public:
+@@ -103,28 +74,52 @@
+     // GETTERS (única forma de acesso externo — membros são privados)
+     // ============================================================================
+ 
+-    /** @brief Retorna o nome da habilidade. */
++    /**
++     * @brief Retorna o nome da habilidade.
++     * @return Nome exibido no menu de combate.
++     */
+     std::string getNome() const;
+ 
+-    /** @brief Retorna o tipo/categoria da habilidade. */
++    /**
++     * @brief Retorna o tipo/categoria da habilidade.
++     * @return Categoria mecânica (FISICO, DOT, HOT, ...).
++     */
+     TipoHabilidade getTipo() const;
+ 
+-    /** @brief Retorna o custo de Energia da habilidade. */
++    /**
++     * @brief Retorna o custo de Energia da habilidade.
++     * @return Energia gasta ao usar (>= 0).
++     */
+     int getCustoEnergia() const;
+ 
+-    /** @brief Retorna o custo de Pontos de Magia (MP). */
++    /**
++     * @brief Retorna o custo de Pontos de Magia (MP).
++     * @return MP gasto ao usar (>= 0).
++     */
+     int getCustoMP() const;
+ 
+-    /** @brief Retorna o valor numérico base da habilidade. */
++    /**
++     * @brief Retorna o valor numérico base da habilidade.
++     * @return Dano, cura ou modificador base (>= 0).
++     */
+     int getValorBase() const;
+ 
+-    /** @brief Retorna o atributo afetado pelo buff ou debuff. */
++    /**
++     * @brief Retorna o atributo afetado pelo buff ou debuff.
++     * @return "forca", "defesa" ou vazio quando não se aplica.
++     */
+     std::string getAtributoAlvo() const;
+ 
+-    /** @brief Retorna a duração do efeito em turnos (0 = instantâneo). */
++    /**
++     * @brief Retorna a duração do efeito em turnos (0 = instantâneo).
++     * @return Número de turnos do efeito; 0 para habilidade instantânea.
++     */
+     int getDuracao() const;
+ 
+-    /** @brief Alias para getDuracao() mantido por compatibilidade. */
++    /**
++     * @brief Alias para getDuracao() mantido por compatibilidade.
++     * @return O mesmo valor de getDuracao().
++     */
+     int getDuracaoEfeito() const;
+ 
+     /**
+diff -ruN -x .git -x build -x doc -x .DS_Store repo/include/HabilidadeInvalidaException.hpp repo-corrigido/include/HabilidadeInvalidaException.hpp
+--- repo/include/HabilidadeInvalidaException.hpp	1969-12-31 21:00:00
++++ repo-corrigido/include/HabilidadeInvalidaException.hpp	2026-11-18 11:38:27
+@@ -0,0 +1,29 @@
++#ifndef HABILIDADE_INVALIDA_EXCEPTION_HPP
++#define HABILIDADE_INVALIDA_EXCEPTION_HPP
++
++#include <stdexcept>
++#include <string>
++
++/**
++ * @file HabilidadeInvalidaException.hpp
++ * @brief Exceção lançada quando uma Habilidade é construída com parâmetros inválidos.
++ */
++
++/**
++ * @class HabilidadeInvalidaException
++ * @brief Exceção lançada quando os parâmetros de construção de uma Habilidade são inválidos.
++ *
++ * Herda de std::invalid_argument para ser compatível com o tratamento genérico
++ * de exceções de argumento inválido da STL.
++ */
++class HabilidadeInvalidaException : public std::invalid_argument {
++public:
++    /**
++     * @brief Cria a exceção com a mensagem informada.
++     * @param mensagem Descrição do problema.
++     */
++    explicit HabilidadeInvalidaException(const std::string& mensagem)
++        : std::invalid_argument("[Habilidade] " + mensagem) {}
++};
++
++#endif // HABILIDADE_INVALIDA_EXCEPTION_HPP
+diff -ruN -x .git -x build -x doc -x .DS_Store repo/include/Inimigo.hpp repo-corrigido/include/Inimigo.hpp
+--- repo/include/Inimigo.hpp	2026-11-18 11:24:47
++++ repo-corrigido/include/Inimigo.hpp	2026-11-18 11:35:46
+@@ -3,44 +3,56 @@
+ 
+ #include "Personagem.hpp"
+ #include "Habilidade.hpp"
++#include <string>
+ #include <vector>
+ 
+ /**
++ * @file Inimigo.hpp
++ * @brief Declaração da classe base abstrata Inimigo.
++ */
++
++/**
+  * @class Inimigo
+  * @brief Classe base para todas as entidades hostis do jogo.
++ *
++ * Acrescenta a Personagem o contador de turnos (usado pela IA de cada inimigo)
++ * e a recompensa de XP entregue ao jogador na vitória.
+  */
+ class Inimigo : public Personagem {
+ public:
+     /** @brief Destrutor virtual para garantir a destruição correta das subclasses. */
+     virtual ~Inimigo() = default;
+ 
+-    /** * @brief Executa o turno do inimigo. 
+-     * Pode ser sobrescrita pelas subclasses se cada tipo agir de forma única.
++    /**
++     * @brief Retorna a recompensa de XP concedida ao derrotar o inimigo.
++     * @return Quantidade de XP (sempre >= 0).
+      */
+-    //virtual void executarTurno(Personagem& alvo) = 0 const;
+-
+-    /** @brief Retorna a recompensa de XP ao morrer. */
+     int getXPRecompensa() const;
+ 
+-    // Retorna apenas Nome, Nível e HP
+-    //virtual std::string getDeclaracaoStatus() = 0;
+-
+ protected:
+-   /**
+-     *//**
++    /**
+      * @brief Construtor da classe Inimigo.
+      * @param nome Nome do inimigo.
+      * @param hp Pontos de vida.
+      * @param defesa Pontos de defesa.
+-     * @param forca Pontos de forca.
++     * @param forca Pontos de força.
+      * @param nivel Nível do inimigo.
+      * @param xp Experiência concedida ao derrotá-lo.
+      */
+     Inimigo(std::string nome, int hp, int defesa, int forca, int nivel, int xp);
+ 
+-    int _contadorTurnos;    ///< Contador de rodadas utilizado para gerenciar o padrão do monstro.   
++    /**
++     * @brief Valida que o nível de um inimigo é pelo menos 1.
++     *
++     * Compartilhado por todas as subclasses (antes era copiado em cada arquivo).
++     * @param nivel Valor a validar.
++     * @param contexto Nome da classe, usado na mensagem de erro.
++     * @throws std::invalid_argument Se nivel < 1.
++     */
++    static void validarNivel(int nivel, const std::string& contexto);
++
++    int _contadorTurnos;   ///< Contador de rodadas utilizado para gerenciar o padrão do monstro.
+     int _xpRecompensa;     ///< Experiência concedida ao jogador.
+ };
+ 
+-
+-#endif
+\ No newline at end of file
++#endif // INIMIGO_HPP
+diff -ruN -x .git -x build -x doc -x .DS_Store repo/include/InimigoBoss.hpp repo-corrigido/include/InimigoBoss.hpp
+--- repo/include/InimigoBoss.hpp	2026-11-18 11:24:47
++++ repo-corrigido/include/InimigoBoss.hpp	2026-11-18 11:37:38
+@@ -53,6 +53,7 @@
+ 
+     /**
+      * @brief Retorna a string formatada com o status detalhado do Boss.
++     * @return Texto com nome, fase atual e HP, pronto para imprimir.
+      */
+     std::string getDeclaracaoStatus() const override;
+ 
+diff -ruN -x .git -x build -x doc -x .DS_Store repo/include/InimigoComum.hpp repo-corrigido/include/InimigoComum.hpp
+--- repo/include/InimigoComum.hpp	2026-11-18 11:24:47
++++ repo-corrigido/include/InimigoComum.hpp	2026-11-18 11:35:30
+@@ -1,96 +1,15 @@
+ #ifndef INIMIGO_COMUM_HPP
+ #define INIMIGO_COMUM_HPP
+ 
+-#include "Inimigo.hpp"
+-#include <string>
+-#include <stdexcept>
+-
+ /**
+- * @class DesafianteDoBar
+- * @brief Cidadão comum que frequenta os fundos do bar em busca de uma válvula de escape.
++ * @file InimigoComum.hpp
++ * @brief Atalho que inclui todos os inimigos desta categoria.
+  *
+- * Inimigo introdutório do Clube de Luta. Usa apenas dano físico bruto (socos e chutes),
+- * tem baixa defesa física e nenhuma resistência mágica. Serve para o jogador aprender
+- * a gerenciar HP e testar ataques básicos.
+- *
+- * @invariant _nivel >= 1
+- * @invariant _hp >= 0 && _hp <= _hpMax
++ * Não declara nenhuma classe: cada inimigo vive no seu próprio arquivo.
+  */
+-class DesafianteDoBar : public Inimigo {
+-public:
+-    /**
+-     * @brief Constrói um Desafiante do Bar para um determinado nível.
+-     * @param nome Nome do inimigo (usa "Desafiante do Bar" se vazio).
+-     * @param nivel Nível de escalonamento dos atributos (deve ser >= 1).
+-     * @throws std::invalid_argument Se nivel < 1.
+-     */
+-    explicit DesafianteDoBar(std::string nome, int nivel);
+ 
+-    /**
+-     * @brief Executa o turno do Desafiante: sempre ataque físico direto.
+-     * @param alvo Personagem que receberá o dano.
+-     * @pre alvo referencia um Personagem válido.
+-     */
+-    void executarTurno(Personagem& alvo) override;
+-    std::string getDeclaracaoStatus() const override;
+-};
+-
+-/**
+- * @class TrabalhadorNoturno
+- * @brief Oponente rápido e frágil, movido a pura exaustão.
+- *
+- * Possui pouquíssimo HP, mas tem alta chance de acerto crítico (dano dobrado).
+- * Exige que o jogador o elimine rapidamente antes de levar rajadas de críticos.
+- *
+- * @invariant _nivel >= 1
+- */
+-class TrabalhadorNoturno : public Inimigo {
+-public:
+-    /**
+-     * @brief Constrói um Trabalhador Noturno para um determinado nível.
+-     * @param nome Nome do inimigo (usa "Trabalhador Noturno Estressado" se vazio).
+-     * @param nivel Nível de escalonamento dos atributos (deve ser >= 1).
+-     * @throws std::invalid_argument Se nivel < 1.
+-     */
+-    explicit TrabalhadorNoturno(std::string nome, int nivel);
+-
+-    /**
+-     * @brief Executa o turno: 40% de chance de crítico (dano x2), senão ataque normal.
+-     * @param alvo Personagem que receberá o dano.
+-     * @pre alvo referencia um Personagem válido.
+-     */
+-    void executarTurno(Personagem& alvo) override;
+-    std::string getDeclaracaoStatus() const override;
+-};
+-
+-/**
+- * @class SegurancaDeBalada
+- * @brief Brutamontes que tenta bloquear o acesso a áreas restritas.
+- *
+- * Possui mais HP que os outros comuns e foca em resistência física.
+- * A cada 3 turnos assume postura defensiva (escudo), absorvendo metade do dano.
+- * Serve como teste de resistência física do jogador.
+- *
+- * @invariant _nivel >= 1
+- * @invariant _contadorTurnos >= 0
+- */
+-class SegurancaDeBalada : public Inimigo {
+-public:
+-    /**
+-     * @brief Constrói um Segurança de Balada para um determinado nível.
+-     * @param nome Nome do inimigo (usa "Segurança de Balada" se vazio).
+-     * @param nivel Nível de escalonamento dos atributos (deve ser >= 1).
+-     * @throws std::invalid_argument Se nivel < 1.
+-     */
+-    explicit SegurancaDeBalada(std::string nome, int nivel);
+-
+-    /**
+-     * @brief Executa o turno: ataque físico padrão; a cada 3 turnos ativa escudo defensivo.
+-     * @param alvo Personagem que receberá o dano.
+-     * @pre alvo referencia um Personagem válido.
+-     */
+-    void executarTurno(Personagem& alvo) override;
+-    std::string getDeclaracaoStatus() const override;
+-};
++#include "DesafianteDoBar.hpp"
++#include "TrabalhadorNoturno.hpp"
++#include "SegurancaDeBalada.hpp"
+ 
+-#endif // INIMIGO_COMUM_HPP
+\ No newline at end of file
++#endif // INIMIGO_COMUM_HPP
+diff -ruN -x .git -x build -x doc -x .DS_Store repo/include/InimigoIncomum.hpp repo-corrigido/include/InimigoIncomum.hpp
+--- repo/include/InimigoIncomum.hpp	2026-11-18 11:24:47
++++ repo-corrigido/include/InimigoIncomum.hpp	2026-11-18 11:35:30
+@@ -1,124 +1,15 @@
+ #ifndef INIMIGO_INCOMUM_HPP
+ #define INIMIGO_INCOMUM_HPP
+ 
+-#include "Inimigo.hpp"
+-#include <string>
+-#include <stdexcept>
+-
+ /**
+- * @class RecrutaDoutrinado
+- * @brief Membro intermediário do Projeto Mayhem que já passou pela iniciação.
++ * @file InimigoIncomum.hpp
++ * @brief Atalho que inclui todos os inimigos desta categoria.
+  *
+- * Comportamento misto de agressor físico e lutador psicológico:
+- * - Ataque físico padrão (FISICO).
+- * - Sangramento a cada 2 turnos (DOT).
+- * - Buff de força em si mesmo a cada 4 turnos (SUPORTE) — a doutrinação intensifica a raiva.
+- * - Debuff de defesa no jogador a cada 5 turnos (DEBUFF) — desequilibra para o próximo golpe.
+- *
+- * @invariant _nivel >= 1
+- * @invariant _contadorTurnos >= 0
++ * Não declara nenhuma classe: cada inimigo vive no seu próprio arquivo.
+  */
+-class RecrutaDoutrinado : public Inimigo {
+-public:
+-    /**
+-     * @brief Constrói um Recruta Doutrinado para um determinado nível.
+-     * @param nome Nome do inimigo (usa "Recruta Doutrinado" se vazio).
+-     * @param nivel Nível de escalonamento dos atributos (deve ser >= 1).
+-     * @throws std::invalid_argument Se nivel < 1.
+-     */
+-    explicit RecrutaDoutrinado(std::string nome, int nivel);
+ 
+-    /**
+-     * @brief Executa o turno com rotação de 4 habilidades distintas baseada no contador.
+-     *
+-     * Rotação:
+-     * - Turno padrão: Soco Treinado (FISICO).
+-     * - A cada 2 turnos: Sangramento (DOT, 3 turnos).
+-     * - A cada 4 turnos: Grito de Doutrina (SUPORTE — buff de força em si, 2 turnos).
+-     * - A cada 5 turnos: Intimidação (DEBUFF — reduz defesa do alvo, 2 turnos).
+-     *
+-     * @param alvo Personagem que receberá os efeitos do turno.
+-     * @pre alvo referencia um Personagem válido.
+-     */
+-    void executarTurno(Personagem& alvo) override;
+-    std::string getDeclaracaoStatus() const override;
+-};
+-
+-/**
+- * @class GuardaPatrimonial
+- * @brief Vigilante que protege prédios corporativos durante a noite.
+- *
+- * Combina resistência com kit de campo:
+- * - Ataque físico com cassetete (FISICO).
+- * - Atordoamento a cada 3 turnos (DEBUFF severo de força por 1 turno).
+- * - Gás Lacrimogêneo a cada 4 turnos (DEBUFF de defesa no alvo por 2 turnos).
+- * - Bandagem de Campo a cada 5 turnos (HOT — cura contínua em si mesmo por 2 turnos).
+- *
+- * @invariant _nivel >= 1
+- * @invariant _contadorTurnos >= 0
+- */
+-class GuardaPatrimonial : public Inimigo {
+-public:
+-    /**
+-     * @brief Constrói um Guarda Patrimonial para um determinado nível.
+-     * @param nome Nome do inimigo (usa "Guarda Patrimonial" se vazio).
+-     * @param nivel Nível de escalonamento dos atributos (deve ser >= 1).
+-     * @throws std::invalid_argument Se nivel < 1.
+-     */
+-    explicit GuardaPatrimonial(std::string nome, int nivel);
+-
+-    /**
+-     * @brief Executa o turno com rotação de 4 habilidades distintas baseada no contador.
+-     *
+-     * Rotação:
+-     * - Turno padrão: Cassetete (FISICO).
+-     * - A cada 3 turnos: Atordoamento (DEBUFF de força severo, 1 turno).
+-     * - A cada 4 turnos: Gás Lacrimogêneo (DEBUFF de defesa, 2 turnos).
+-     * - A cada 5 turnos: Bandagem de Campo (HOT em si mesmo, 2 turnos).
+-     *
+-     * @param alvo Personagem que receberá os efeitos do turno.
+-     * @pre alvo referencia um Personagem válido.
+-     */
+-    void executarTurno(Personagem& alvo) override;
+-    std::string getDeclaracaoStatus() const override;
+-};
+-
+-/**
+- * @class SabotadorRival
+- * @brief Agente que usa táticas de guerrilha urbana com explosivos e químicos.
+- *
+- * O mais perigoso dos incomuns — baixo HP mas arsenal devastador:
+- * - Coquetel Molotov todo turno (ESPECIAL).
+- * - Queimadura Química todo turno (DOT, 3 turnos).
+- * - Gás Paralisante a cada 3 turnos (DEBUFF de força no alvo, 2 turnos).
+- * - Explosão Total a cada 5 turnos (ULTRA — perfura o escudo do jogador completamente).
+- *
+- * @invariant _nivel >= 1
+- * @invariant _contadorTurnos >= 0
+- */
+-class SabotadorRival : public Inimigo {
+-public:
+-    /**
+-     * @brief Constrói um Sabotador Rival para um determinado nível.
+-     * @param nome Nome do inimigo (usa "Sabotador Rival" se vazio).
+-     * @param nivel Nível de escalonamento dos atributos (deve ser >= 1).
+-     * @throws std::invalid_argument Se nivel < 1.
+-     */
+-    explicit SabotadorRival(std::string nome, int nivel);
+-
+-    /**
+-     * @brief Executa o turno com arsenal químico-explosivo completo.
+-     *
+-     * Rotação:
+-     * - Todo turno: Coquetel Molotov (ESPECIAL) + Queimadura Química (DOT, 3 turnos).
+-     * - A cada 3 turnos: Gás Paralisante adicional (DEBUFF de força, 2 turnos).
+-     * - A cada 5 turnos: Explosão Total (ULTRA) substitui o Molotov — perfura o escudo.
+-     *
+-     * @param alvo Personagem que receberá os efeitos do turno.
+-     * @pre alvo referencia um Personagem válido.
+-     */
+-    void executarTurno(Personagem& alvo) override;
+-    std::string getDeclaracaoStatus() const override;
+-};
++#include "RecrutaDoutrinado.hpp"
++#include "GuardaPatrimonial.hpp"
++#include "SabotadorRival.hpp"
+ 
+-#endif // INIMIGO_INCOMUM_HPP
+\ No newline at end of file
++#endif // INIMIGO_INCOMUM_HPP
+diff -ruN -x .git -x build -x doc -x .DS_Store repo/include/ModificadorAtributo.hpp repo-corrigido/include/ModificadorAtributo.hpp
+--- repo/include/ModificadorAtributo.hpp	1969-12-31 21:00:00
++++ repo-corrigido/include/ModificadorAtributo.hpp	2026-11-18 11:36:07
+@@ -0,0 +1,22 @@
++#ifndef MODIFICADOR_ATRIBUTO_HPP
++#define MODIFICADOR_ATRIBUTO_HPP
++
++#include <string>
++
++/**
++ * @file ModificadorAtributo.hpp
++ * @brief Estrutura de um modificador de atributo (Buff/Debuff) ativo.
++ */
++
++/**
++ * @struct ModificadorAtributo
++ * @brief Estrutura que define um efeito de Buff ou Debuff ativo em um Personagem.
++ */
++struct ModificadorAtributo {
++    std::string nomeEfeito;   ///< Nome da habilidade que originou o modificador.
++    std::string atributo;     ///< O atributo alvo da alteração ("forca" ou "defesa").
++    int valor;                ///< Valor do modificador (positivo para Buff, negativo para Debuff).
++    int turnosRestantes;      ///< Contador de turnos até o efeito expirar.
++};
++
++#endif // MODIFICADOR_ATRIBUTO_HPP
+diff -ruN -x .git -x build -x doc -x .DS_Store repo/include/Personagem.hpp repo-corrigido/include/Personagem.hpp
+--- repo/include/Personagem.hpp	2026-11-18 11:24:47
++++ repo-corrigido/include/Personagem.hpp	2026-11-18 11:38:27
+@@ -4,35 +4,15 @@
+ #include <string>
+ #include <vector>
+ #include "Habilidade.hpp"
++#include "EfeitoPorTempo.hpp"
++#include "ModificadorAtributo.hpp"
+ 
+ /**
+  * @file Personagem.hpp
+  * @brief Definição da classe base abstrata Personagem.
+  */
+ 
+-/**
+- * @brief Estrutura que define as propriedades de um efeito de dano contínuo (DoT).
+- * * Mantém os dados necessários para que efeitos como veneno, queimadura ou 
+- * sangramento persistam na memória do alvo por múltiplos turnos.
+- */
+-struct EfeitoPorTempo {
+-    TipoHabilidade tipo;       /**< DOT, HOT, SUPORTE (Buff) ou DEBUFF */
+-    int valorPorTurno;         /**< Dano, Cura ou o valor do modificador de atributo */
+-    int turnosRestantes;       /**< Contador de rodadas ativo */
+-    std::string nomeEfeito;    /**< Ex: "Veneno", "Regeneração", "Grito de Guerra" */
+-    std::string atributoAfetado; /**< [NOVO] "hp", "defesa" ou "forca" (Útil para Buffs/Debuffs) */
+-};
+ 
+-/**
+- * @struct ModificadorAtributo
+- * @brief Estrutura que define um efeito de Buff ou Debuff ativo em um Personagem.
+- */
+-struct ModificadorAtributo {
+-    std::string nomeEfeito;   ///< Nome da habilidade que originou o modificador.
+-    std::string atributo;     ///< O atributo alvo da alteração ("forca" ou "defesa").
+-    int valor;                ///< Valor do modificador (positivo para Buff, negativo para Debuff).
+-    int turnosRestantes;      ///< Contador de turnos até o efeito expirar.
+-};
+ 
+ /**
+  * @class Personagem
+@@ -51,6 +31,7 @@
+      * * @param nome Nome de exibição da entidade.  
+      * @param hp Pontos de vida máximos e atuais iniciais.
+      * @param defesa Pontos de defesa base para mitigação de danos.
++     * @param forca Força base usada no cálculo do dano causado.
+      * @param nivel Nível inicial de desafio ou progressão.
+      * * @pre Os valores de @p hp, @p defesa e @p nivel devem ser maiores que zero.
+      */
+@@ -164,15 +145,42 @@
+      */
+     virtual int getDefesa() const;
+ 
+-    /** @brief Retorna o poder de ataque total consolidado do herói (@c _forcaBase + @c _bonusArma). */
++    /**
++     * @brief Retorna o poder de ataque total consolidado (@c _forcaBase + modificadores).
++     * @return Força usada no cálculo de dano causado.
++     */
+     virtual int getForcaTotal() const;
+ 
+-    int getHP() const;             ///< Retorna a quantidade de pontos de vida (HP) atuais.
+-    int getHPMax() const;          ///< Retorna o limite máximo de pontos de vida da entidade.
+-    bool estaVivo() const;         ///< Verifica a integridade da entidade. Retorna @c true se @c _hp > 0.
+-    std::string getNome() const;   ///< Retorna o nome identificador do personagem.
+-    int getNivel() const;          ///< Retorna o nível de poder atual da entidade.
++    /**
+ 
++     * @brief Retorna os pontos de vida atuais.
++
++     * @return HP atual (0 a getHPMax()).
++
++     */
++
++    int getHP() const;
++    /**
++     * @brief Retorna o limite máximo de pontos de vida.
++     * @return HP máximo.
++     */
++    int getHPMax() const;
++    /**
++     * @brief Verifica se o personagem ainda está vivo.
++     * @return @c true se o HP for maior que 0.
++     */
++    bool estaVivo() const;
++    /**
++     * @brief Retorna o nome do personagem.
++     * @return Nome exibido no jogo.
++     */
++    std::string getNome() const;
++    /**
++     * @brief Retorna o nível atual.
++     * @return Nível (>= 1).
++     */
++    int getNivel() const;
++
+ protected:
+     std::string _nome;    ///< Nome da entidade.
+     int _hp;              ///< Pontos de vida (HP) atuais da entidade.
+@@ -186,7 +194,7 @@
+      * @brief Vetor que armazena todos os efeitos de dano contínuo ativos no personagem.
+      */
+     std::vector<EfeitoPorTempo> _efeitosAtivos;
+-    std::vector<ModificadorAtributo> _modificadoresAtivos;
++    std::vector<ModificadorAtributo> _modificadoresAtivos; ///< Buffs e Debuffs ativos no personagem.
+ 
+ private: 
+     std::vector<Habilidade> _habilidades; ///< Repositório privado e blindado contendo as técnicas da entidade.
+diff -ruN -x .git -x build -x doc -x .DS_Store repo/include/RecrutaDoutrinado.hpp repo-corrigido/include/RecrutaDoutrinado.hpp
+--- repo/include/RecrutaDoutrinado.hpp	1969-12-31 21:00:00
++++ repo-corrigido/include/RecrutaDoutrinado.hpp	2026-11-18 11:37:38
+@@ -0,0 +1,55 @@
++#ifndef RECRUTA_DOUTRINADO_HPP
++#define RECRUTA_DOUTRINADO_HPP
++
++#include "Inimigo.hpp"
++#include <string>
++
++/**
++ * @file RecrutaDoutrinado.hpp
++ * @brief Declaração do inimigo RecrutaDoutrinado.
++ */
++
++/**
++ * @class RecrutaDoutrinado
++ * @brief Membro intermediário do Projeto Mayhem que já passou pela iniciação.
++ *
++ * Comportamento misto de agressor físico e lutador psicológico:
++ * - Ataque físico padrão (FISICO).
++ * - Sangramento a cada 2 turnos (DOT).
++ * - Buff de força em si mesmo a cada 4 turnos (SUPORTE) — a doutrinação intensifica a raiva.
++ * - Debuff de defesa no jogador a cada 5 turnos (DEBUFF) — desequilibra para o próximo golpe.
++ *
++ * @invariant _nivel >= 1
++ * @invariant _contadorTurnos >= 0
++ */
++class RecrutaDoutrinado : public Inimigo {
++public:
++    /**
++     * @brief Constrói um Recruta Doutrinado para um determinado nível.
++     * @param nome Nome do inimigo (usa "Recruta Doutrinado" se vazio).
++     * @param nivel Nível de escalonamento dos atributos (deve ser >= 1).
++     * @throws std::invalid_argument Se nivel < 1.
++     */
++    explicit RecrutaDoutrinado(std::string nome, int nivel);
++
++    /**
++     * @brief Executa o turno com rotação de 4 habilidades distintas baseada no contador.
++     *
++     * Rotação:
++     * - Turno padrão: Soco Treinado (FISICO).
++     * - A cada 2 turnos: Sangramento (DOT, 3 turnos).
++     * - A cada 4 turnos: Grito de Doutrina (SUPORTE — buff de força em si, 2 turnos).
++     * - A cada 5 turnos: Intimidação (DEBUFF — reduz defesa do alvo, 2 turnos).
++     *
++     * @param alvo Personagem que receberá os efeitos do turno.
++     * @pre alvo referencia um Personagem válido.
++     */
++    void executarTurno(Personagem& alvo) override;
++    /**
++     * @brief Monta o status do inimigo para exibir no combate.
++     * @return Texto com nome, nível e HP, pronto para imprimir.
++     */
++    std::string getDeclaracaoStatus() const override;
++};
++
++#endif // RECRUTA_DOUTRINADO_HPP
+diff -ruN -x .git -x build -x doc -x .DS_Store repo/include/SabotadorRival.hpp repo-corrigido/include/SabotadorRival.hpp
+--- repo/include/SabotadorRival.hpp	1969-12-31 21:00:00
++++ repo-corrigido/include/SabotadorRival.hpp	2026-11-18 11:37:38
+@@ -0,0 +1,54 @@
++#ifndef SABOTADOR_RIVAL_HPP
++#define SABOTADOR_RIVAL_HPP
++
++#include "Inimigo.hpp"
++#include <string>
++
++/**
++ * @file SabotadorRival.hpp
++ * @brief Declaração do inimigo SabotadorRival.
++ */
++
++/**
++ * @class SabotadorRival
++ * @brief Agente que usa táticas de guerrilha urbana com explosivos e químicos.
++ *
++ * O mais perigoso dos incomuns — baixo HP mas arsenal devastador:
++ * - Coquetel Molotov todo turno (ESPECIAL).
++ * - Queimadura Química todo turno (DOT, 3 turnos).
++ * - Gás Paralisante a cada 3 turnos (DEBUFF de força no alvo, 2 turnos).
++ * - Explosão Total a cada 5 turnos (ULTRA — perfura o escudo do jogador completamente).
++ *
++ * @invariant _nivel >= 1
++ * @invariant _contadorTurnos >= 0
++ */
++class SabotadorRival : public Inimigo {
++public:
++    /**
++     * @brief Constrói um Sabotador Rival para um determinado nível.
++     * @param nome Nome do inimigo (usa "Sabotador Rival" se vazio).
++     * @param nivel Nível de escalonamento dos atributos (deve ser >= 1).
++     * @throws std::invalid_argument Se nivel < 1.
++     */
++    explicit SabotadorRival(std::string nome, int nivel);
++
++    /**
++     * @brief Executa o turno com arsenal químico-explosivo completo.
++     *
++     * Rotação:
++     * - Todo turno: Coquetel Molotov (ESPECIAL) + Queimadura Química (DOT, 3 turnos).
++     * - A cada 3 turnos: Gás Paralisante adicional (DEBUFF de força, 2 turnos).
++     * - A cada 5 turnos: Explosão Total (ULTRA) substitui o Molotov — perfura o escudo.
++     *
++     * @param alvo Personagem que receberá os efeitos do turno.
++     * @pre alvo referencia um Personagem válido.
++     */
++    void executarTurno(Personagem& alvo) override;
++    /**
++     * @brief Monta o status do inimigo para exibir no combate.
++     * @return Texto com nome, nível e HP, pronto para imprimir.
++     */
++    std::string getDeclaracaoStatus() const override;
++};
++
++#endif // SABOTADOR_RIVAL_HPP
+diff -ruN -x .git -x build -x doc -x .DS_Store repo/include/SegurancaDeBalada.hpp repo-corrigido/include/SegurancaDeBalada.hpp
+--- repo/include/SegurancaDeBalada.hpp	1969-12-31 21:00:00
++++ repo-corrigido/include/SegurancaDeBalada.hpp	2026-11-18 11:37:38
+@@ -0,0 +1,46 @@
++#ifndef SEGURANCA_DE_BALADA_HPP
++#define SEGURANCA_DE_BALADA_HPP
++
++#include "Inimigo.hpp"
++#include <string>
++
++/**
++ * @file SegurancaDeBalada.hpp
++ * @brief Declaração do inimigo SegurancaDeBalada.
++ */
++
++/**
++ * @class SegurancaDeBalada
++ * @brief Brutamontes que tenta bloquear o acesso a áreas restritas.
++ *
++ * Possui mais HP que os outros comuns e foca em resistência física.
++ * A cada 3 turnos assume postura defensiva (escudo), absorvendo metade do dano.
++ * Serve como teste de resistência física do jogador.
++ *
++ * @invariant _nivel >= 1
++ * @invariant _contadorTurnos >= 0
++ */
++class SegurancaDeBalada : public Inimigo {
++public:
++    /**
++     * @brief Constrói um Segurança de Balada para um determinado nível.
++     * @param nome Nome do inimigo (usa "Segurança de Balada" se vazio).
++     * @param nivel Nível de escalonamento dos atributos (deve ser >= 1).
++     * @throws std::invalid_argument Se nivel < 1.
++     */
++    explicit SegurancaDeBalada(std::string nome, int nivel);
++
++    /**
++     * @brief Executa o turno: ataque físico padrão; a cada 3 turnos ativa escudo defensivo.
++     * @param alvo Personagem que receberá o dano.
++     * @pre alvo referencia um Personagem válido.
++     */
++    void executarTurno(Personagem& alvo) override;
++    /**
++     * @brief Monta o status do inimigo para exibir no combate.
++     * @return Texto com nome, nível e HP, pronto para imprimir.
++     */
++    std::string getDeclaracaoStatus() const override;
++};
++
++#endif // SEGURANCA_DE_BALADA_HPP
+diff -ruN -x .git -x build -x doc -x .DS_Store repo/include/TrabalhadorNoturno.hpp repo-corrigido/include/TrabalhadorNoturno.hpp
+--- repo/include/TrabalhadorNoturno.hpp	1969-12-31 21:00:00
++++ repo-corrigido/include/TrabalhadorNoturno.hpp	2026-11-18 11:37:38
+@@ -0,0 +1,44 @@
++#ifndef TRABALHADOR_NOTURNO_HPP
++#define TRABALHADOR_NOTURNO_HPP
++
++#include "Inimigo.hpp"
++#include <string>
++
++/**
++ * @file TrabalhadorNoturno.hpp
++ * @brief Declaração do inimigo TrabalhadorNoturno.
++ */
++
++/**
++ * @class TrabalhadorNoturno
++ * @brief Oponente rápido e frágil, movido a pura exaustão.
++ *
++ * Possui pouquíssimo HP, mas tem alta chance de acerto crítico (dano dobrado).
++ * Exige que o jogador o elimine rapidamente antes de levar rajadas de críticos.
++ *
++ * @invariant _nivel >= 1
++ */
++class TrabalhadorNoturno : public Inimigo {
++public:
++    /**
++     * @brief Constrói um Trabalhador Noturno para um determinado nível.
++     * @param nome Nome do inimigo (usa "Trabalhador Noturno Estressado" se vazio).
++     * @param nivel Nível de escalonamento dos atributos (deve ser >= 1).
++     * @throws std::invalid_argument Se nivel < 1.
++     */
++    explicit TrabalhadorNoturno(std::string nome, int nivel);
++
++    /**
++     * @brief Executa o turno: 40% de chance de crítico (dano x2), senão ataque normal.
++     * @param alvo Personagem que receberá o dano.
++     * @pre alvo referencia um Personagem válido.
++     */
++    void executarTurno(Personagem& alvo) override;
++    /**
++     * @brief Monta o status do inimigo para exibir no combate.
++     * @return Texto com nome, nível e HP, pronto para imprimir.
++     */
++    std::string getDeclaracaoStatus() const override;
++};
++
++#endif // TRABALHADOR_NOTURNO_HPP
+diff -ruN -x .git -x build -x doc -x .DS_Store repo/src/Combate.cpp repo-corrigido/src/Combate.cpp
+--- repo/src/Combate.cpp	2026-11-18 11:24:47
++++ repo-corrigido/src/Combate.cpp	2026-11-18 11:36:21
+@@ -1,5 +1,6 @@
+ #include "Combate.hpp"
+ #include "InterfaceJogo.hpp"
++#include "EntradaEncerradaException.hpp"
+ #include <string>
+ #include <stdexcept>
+ 
+@@ -73,6 +74,9 @@
+ 
+     try {
+         _jogador.executarTurno(_inimigo);
++    }
++    catch (const EntradaEncerradaException&) {
++        throw; // Sem entrada não há como continuar: sobe até a main.
+     }
+     catch (const std::out_of_range& e) {
+         InterfaceJogo::exibirTexto(
+diff -ruN -x .git -x build -x doc -x .DS_Store repo/src/DesafianteDoBar.cpp repo-corrigido/src/DesafianteDoBar.cpp
+--- repo/src/DesafianteDoBar.cpp	1969-12-31 21:00:00
++++ repo-corrigido/src/DesafianteDoBar.cpp	2026-11-18 11:35:30
+@@ -0,0 +1,49 @@
++#include "DesafianteDoBar.hpp"
++#include "InterfaceJogo.hpp"
++#include <cstdlib>   // rand()
++#include <stdexcept>
++#include <string>
++
++DesafianteDoBar::DesafianteDoBar(std::string nome, int nivel)
++    : Inimigo(
++        nome.empty() ? "Desafiante do Bar" : nome,
++        /*hp*/     150,
++        /*defesa*/  15,
++        /*forca*/   15,
++        nivel,
++        /*xp*/      60)
++{
++    validarNivel(nivel, "DesafianteDoBar");
++
++    // Arsenal: apenas soco bruto — sem habilidades especiais
++    adicionarHabilidade(Habilidade(
++        "Soco Bêbado",
++        TipoHabilidade::FISICO,
++        /*custoE*/ 0, /*custoMP*/ 0,
++        /*valor*/  _forcaBase,
++        /*atributo*/ ""));
++}
++
++void DesafianteDoBar::executarTurno(Personagem& alvo) {
++    if (!alvo.estaVivo()) return;
++
++    processarEfeitosContinuos();
++    if (!estaVivo()) return;
++
++    _contadorTurnos++;
++
++    InterfaceJogo::exibirTexto("\n👊 [ATAQUE FÍSICO] " + _nome + " avança cambaleando com um Soco Bêbado!");
++    alvo.receberDano(_forcaBase, TipoHabilidade::FISICO);
++}
++
++std::string DesafianteDoBar::getDeclaracaoStatus() const {
++    std::string status = "🍺 [INIMIGO COMUM: Desafiante] 🍺\n";
++    status += "=======================================================\n";
++    status += " 👤 NOME : " + this->getNome() + " [Nível " + std::to_string(this->getNivel()) + "]\n";
++    status += "=======================================================\n";
++    status += " ❤️ HP    : " + std::to_string(_hp) + " / " + std::to_string(_hpMax) + "\n";
++    status += " ⚔️ FORÇA : " + std::to_string(_forcaBase) + " (Soco Bêbado)\n";
++    status += " 🛡️ DEFESA: " + std::to_string(_defesaBase) + "\n";
++    status += "=======================================================";
++    return status;
++}
+diff -ruN -x .git -x build -x doc -x .DS_Store repo/src/GuardaPatrimonial.cpp repo-corrigido/src/GuardaPatrimonial.cpp
+--- repo/src/GuardaPatrimonial.cpp	1969-12-31 21:00:00
++++ repo-corrigido/src/GuardaPatrimonial.cpp	2026-11-18 11:35:30
+@@ -0,0 +1,98 @@
++#include "GuardaPatrimonial.hpp"
++#include "InterfaceJogo.hpp"
++#include <stdexcept>
++#include <string>
++
++GuardaPatrimonial::GuardaPatrimonial(std::string nome, int nivel)
++    : Inimigo(
++        nome.empty() ? "Guarda Patrimonial" : nome,
++        /*hp*/     300,
++        /*defesa*/ 40,   // alta defesa física e mágica (equipamento completo)
++        /*forca*/  25,
++        nivel,
++        /*xp*/     400)
++{
++    validarNivel(nivel, "GuardaPatrimonial");
++
++    // Ataque físico com cassetete
++    adicionarHabilidade(Habilidade(
++        "Cassetete",
++        TipoHabilidade::FISICO,
++        0, 0, _forcaBase, ""));
++
++    // DEBUFF: atordoamento — força cai drasticamente por 1 turno
++    adicionarHabilidade(Habilidade(
++        "Atordoamento",
++        TipoHabilidade::DEBUFF,
++        0, 0, 12 * nivel, "forca", 1));
++
++    // DEBUFF: gás lacrimogêneo — reduz defesa do alvo por 2 turnos
++    adicionarHabilidade(Habilidade(
++        "Gás Lacrimogêneo",
++        TipoHabilidade::DEBUFF,
++        0, 0, 8 * nivel, "defesa", 2));
++
++    // HOT: bandagem de campo — cura contínua em si mesmo por 2 turnos
++    adicionarHabilidade(Habilidade(
++        "Bandagem de Campo",
++        TipoHabilidade::HOT,
++        0, 0, 6 * nivel, "", 2));
++}
++
++void GuardaPatrimonial::executarTurno(Personagem& alvo) {
++    if (!alvo.estaVivo()) return;
++
++    processarEfeitosContinuos();
++    if (!estaVivo()) return;
++
++    _contadorTurnos++;
++
++    // A cada 5 turnos: Bandagem de Campo — HOT em si mesmo (maior prioridade)
++    if (_contadorTurnos % 5 == 0) {
++        InterfaceJogo::exibirTexto(
++            _nome + " abre o kit de primeiros socorros rapidamente — "
++            "Bandagem de Campo! Recuperando HP por 2 turnos.");
++        aplicarHoT("Bandagem de Campo", 6 * _nivel, 2);
++        // Ainda ataca no mesmo turno
++        InterfaceJogo::exibirTexto(
++            _nome + " avança sem hesitar!");
++        alvo.receberDano(_forcaBase, TipoHabilidade::FISICO);
++        return;
++    }
++
++    // A cada 4 turnos: Gás Lacrimogêneo — debuff de defesa no alvo
++    if (_contadorTurnos % 4 == 0) {
++        InterfaceJogo::exibirTexto(
++            _nome + " dispara o spray de gás lacrimogêneo — "
++            "Sua defesa cai por 2 turnos!");
++        alvo.aplicarDebuff("Gás Lacrimogêneo", "defesa", 8 * _nivel, 2);
++        return;
++    }
++
++    // A cada 3 turnos: Atordoamento — debuff de força severo por 1 turno
++    if (_contadorTurnos % 3 == 0) {
++        InterfaceJogo::exibirTexto(
++            _nome + " acerta um golpe preciso no crânio — "
++            "Atordoamento! Sua força cai drasticamente por 1 turno!");
++        alvo.aplicarDebuff("Atordoamento", "forca", 12 * _nivel, 1);
++        return;
++    }
++
++    // Turno padrão: Cassetete
++    InterfaceJogo::exibirTexto(
++        _nome + " avança com o cassetete!");
++    alvo.receberDano(_forcaBase, TipoHabilidade::FISICO);
++}
++
++std::string GuardaPatrimonial::getDeclaracaoStatus() const {
++    std::string status = "🛡️ 🚨 [INIMIGO INCOMUM: Guarda] 🛡️\n";
++    status += "=======================================================\n";
++    status += " 👤 NOME : " + this->getNome() + " [Nível " + std::to_string(this->getNivel()) + "]\n";
++    status += " ⚕️ EXTRA : Kit de Primeiros Socorros & Controle de Área\n";
++    status += "=======================================================\n";
++    status += " ❤️ HP    : " + std::to_string(_hp) + " / " + std::to_string(_hpMax) + "\n";
++    status += " ⚔️ FORÇA : " + std::to_string(_forcaBase) + "\n";
++    status += " 🛡️ DEFESA: " + std::to_string(_defesaBase) + " (Blindagem Balística)\n";
++    status += "=======================================================";
++    return status;
++}
+diff -ruN -x .git -x build -x doc -x .DS_Store repo/src/Inimigo.cpp repo-corrigido/src/Inimigo.cpp
+--- repo/src/Inimigo.cpp	2026-11-18 11:24:47
++++ repo-corrigido/src/Inimigo.cpp	2026-11-18 11:35:46
+@@ -1,18 +1,25 @@
+ #include "Inimigo.hpp"
++#include <stdexcept>
++#include <string>
+ 
+ // ============================================================================
+ // CONSTRUTOR
+ // ============================================================================
+ 
+ Inimigo::Inimigo(std::string nome, int hp, int defesa, int forca, int nivel, int xp)
+-    : Personagem(nome, hp, defesa, forca, nivel) { _contadorTurnos = 0; _xpRecompensa = xp; }
++    : Personagem(nome, hp, defesa, forca, nivel), _contadorTurnos(0), _xpRecompensa(xp) {}
+ 
+ // ============================================================================
+-// MÉTODOS MEMBROS E GETTERS (Estilo Esqueleto/TDD Red Compacto)
++// MÉTODOS
+ // ============================================================================
+ 
+-
+-int Inimigo::getXPRecompensa() const { 
+-    return _xpRecompensa; 
++int Inimigo::getXPRecompensa() const {
++    return _xpRecompensa;
+ }
+ 
++void Inimigo::validarNivel(int nivel, const std::string& contexto) {
++    if (nivel < 1) {
++        throw std::invalid_argument(
++            contexto + ": nivel deve ser >= 1, recebido: " + std::to_string(nivel));
++    }
++}
+diff -ruN -x .git -x build -x doc -x .DS_Store repo/src/InimigoBoss.cpp repo-corrigido/src/InimigoBoss.cpp
+--- repo/src/InimigoBoss.cpp	2026-11-18 11:24:47
++++ repo-corrigido/src/InimigoBoss.cpp	2026-11-18 11:35:46
+@@ -4,25 +4,6 @@
+ #include <string>
+ 
+ // ============================================================================
+-// Utilitário interno: valida nivel e lança std::invalid_argument se inválido
+-// ============================================================================
+-namespace {
+-    /**
+-     * @brief Valida que o nível é pelo menos 1.
+-     * @param nivel Valor a validar.
+-     * @param contexto Nome da classe para compor a mensagem de erro.
+-     * @throws std::invalid_argument Se nivel < 1.
+-     */
+-    void validarNivel(int nivel, const std::string& contexto) {
+-        if (nivel < 1) {
+-            throw std::invalid_argument(
+-                contexto + ": nivel deve ser >= 1, recebido: "
+-                + std::to_string(nivel));
+-        }
+-    }
+-} // namespace anônimo
+-
+-// ============================================================================
+ // CONSTRUTOR
+ // ============================================================================
+ 
+diff -ruN -x .git -x build -x doc -x .DS_Store repo/src/InimigoComum.cpp repo-corrigido/src/InimigoComum.cpp
+--- repo/src/InimigoComum.cpp	2026-11-18 11:24:47
++++ repo-corrigido/src/InimigoComum.cpp	1969-12-31 21:00:00
+@@ -1,198 +0,0 @@
+-#include "InimigoComum.hpp"
+-#include "InterfaceJogo.hpp"
+-#include <cstdlib>   // rand()
+-#include <stdexcept>
+-#include <string>
+-
+-// ============================================================================
+-// Utilitário interno: valida nivel e lança std::invalid_argument se inválido
+-// ============================================================================
+-namespace {
+-    /**
+-     * @brief Valida que o nível é pelo menos 1.
+-     * @param nivel Valor a validar.
+-     * @param contexto Nome da classe para compor a mensagem de erro.
+-     * @throws std::invalid_argument Se nivel < 1.
+-     */
+-    void validarNivel(int nivel, const std::string& contexto) {
+-        if (nivel < 1) {
+-            throw std::invalid_argument(
+-                contexto + ": nivel deve ser >= 1, recebido: "
+-                + std::to_string(nivel));
+-        }
+-    }
+-} // namespace anônimo
+-
+-// ============================================================================
+-// DESAFIANTE DO BAR
+-// ============================================================================
+-
+-DesafianteDoBar::DesafianteDoBar(std::string nome, int nivel)
+-    : Inimigo(
+-        nome.empty() ? "Desafiante do Bar" : nome,
+-        /*hp*/     150,
+-        /*defesa*/  15,
+-        /*forca*/   15,
+-        nivel,
+-        /*xp*/      60)
+-{
+-    validarNivel(nivel, "DesafianteDoBar");
+-
+-    // Arsenal: apenas soco bruto — sem habilidades especiais
+-    adicionarHabilidade(Habilidade(
+-        "Soco Bêbado",
+-        TipoHabilidade::FISICO,
+-        /*custoE*/ 0, /*custoMP*/ 0,
+-        /*valor*/  _forcaBase,
+-        /*atributo*/ ""));
+-}
+-
+-// ============================================================================
+-// EXECUÇÃO DE TURNO — DESAFIANTE DO BAR
+-// ============================================================================
+-
+-void DesafianteDoBar::executarTurno(Personagem& alvo) {
+-    if (!alvo.estaVivo()) return;
+-
+-    processarEfeitosContinuos();
+-    if (!estaVivo()) return;
+-
+-    _contadorTurnos++;
+-
+-    InterfaceJogo::exibirTexto("\n👊 [ATAQUE FÍSICO] " + _nome + " avança cambaleando com um Soco Bêbado!");
+-    alvo.receberDano(_forcaBase, TipoHabilidade::FISICO);
+-}
+-// ============================================================================
+-// TRABALHADOR NOTURNO ESTRESSADO
+-// ============================================================================
+-
+-TrabalhadorNoturno::TrabalhadorNoturno(std::string nome, int nivel)
+-    : Inimigo(
+-        nome.empty() ? "Trabalhador Noturno Estressado" : nome,
+-        /*hp*/     150,   // frágil
+-        /*defesa*/  15,
+-        /*forca*/  20,   // alto, mas compensa com pouco HP
+-        nivel,
+-        /*xp*/     90)
+-{
+-    validarNivel(nivel, "TrabalhadorNoturno");
+-
+-    adicionarHabilidade(Habilidade(
+-        "Surto de Raiva",
+-        TipoHabilidade::FISICO,
+-        0, 0,
+-        _forcaBase,
+-        ""));
+-
+-    adicionarHabilidade(Habilidade(
+-        "Golpe Crítico (Adrenalina)",
+-        TipoHabilidade::FISICO,
+-        0, 0,
+-        _forcaBase * 2,   // dano dobrado no crítico
+-        ""));
+-}
+-
+-void TrabalhadorNoturno::executarTurno(Personagem& alvo) {
+-    if (!alvo.estaVivo()) return;
+-
+-    processarEfeitosContinuos();
+-    if (!estaVivo()) return;
+-
+-    _contadorTurnos++;
+-
+-    // 40% de chance de crítico
+-    const bool critico = (rand() % 100) < 40;
+-
+-    if (critico) {
+-        InterfaceJogo::exibirTexto("\n🚨 💥 [GOLPE CRÍTICO] " + _nome + " entra em colapso de raiva e ativa Surto de Raiva!");
+-        alvo.receberDano(_forcaBase * 2, TipoHabilidade::FISICO);
+-    } else {
+-        InterfaceJogo::exibirTexto("\n👊 [ATAQUE FÍSICO] " + _nome + " desfere um soco desesperado de exaustão!");
+-        alvo.receberDano(_forcaBase, TipoHabilidade::FISICO);
+-    }
+-}
+-
+-// ============================================================================
+-// SEGURANÇA DE BALADA
+-// ============================================================================
+-
+-SegurancaDeBalada::SegurancaDeBalada(std::string nome, int nivel)
+-    : Inimigo(
+-        nome.empty() ? "Segurança de Balada" : nome,
+-        /*hp*/     140,   // mais HP que os outros comuns
+-        /*defesa*/  25,   // resistente fisicamente
+-        /*forca*/   15,
+-        nivel,
+-        /*xp*/     200)
+-{
+-    validarNivel(nivel, "SegurancaDeBalada");
+-
+-    adicionarHabilidade(Habilidade(
+-        "Empurrão de Segurança",
+-        TipoHabilidade::FISICO,
+-        0, 0,
+-        _forcaBase,
+-        ""));
+-}
+-
+-void SegurancaDeBalada::executarTurno(Personagem& alvo) {
+-    if (!alvo.estaVivo()) return;
+-
+-    processarEfeitosContinuos();
+-    if (!estaVivo()) return;
+-
+-    _contadorTurnos++;
+-
+-    // A cada 3 turnos assume postura defensiva (ativa o escudo interno)
+-    if (_contadorTurnos % 3 == 0) {
+-        _escudoAtivo = true;
+-        InterfaceJogo::exibirTexto("\n🛡️  [POSTURA] " + _nome + " cruza os braços e finca a base!");
+-        InterfaceJogo::exibirTexto("    > Escudo Ativo: Impacto de ataques comuns mitigado pela metade até a próxima rodada.");
+-    }
+-
+-    InterfaceJogo::exibirTexto("\n💥 [ATAQUE] " + _nome + " projeta o corpo à frente com um Empurrão de Segurança!");
+-    alvo.receberDano(_forcaBase, TipoHabilidade::FISICO);
+-}
+-
+-
+-// ============================================================================
+-// MÉTODOS GETDECLARACAOSTATUS (MÉTODOS VIRTUAIS)
+-// ============================================================================
+-
+-std::string DesafianteDoBar::getDeclaracaoStatus() const {
+-    std::string status = "🍺 [INIMIGO COMUM: Desafiante] 🍺\n";
+-    status += "=======================================================\n";
+-    status += " 👤 NOME : " + this->getNome() + " [Nível " + std::to_string(this->getNivel()) + "]\n";
+-    status += "=======================================================\n";
+-    status += " ❤️ HP    : " + std::to_string(_hp) + " / " + std::to_string(_hpMax) + "\n";
+-    status += " ⚔️ FORÇA : " + std::to_string(_forcaBase) + " (Soco Bêbado)\n";
+-    status += " 🛡️ DEFESA: " + std::to_string(_defesaBase) + "\n";
+-    status += "=======================================================";
+-    return status;
+-}
+-
+-std::string TrabalhadorNoturno::getDeclaracaoStatus() const {
+-    std::string status = "🕒 😤 [INIMIGO COMUM: Trabalhador Noturno] 🕒\n";
+-    status += "=======================================================\n";
+-    status += " 👤 NOME : " + this->getNome() + " [Nível " + std::to_string(this->getNivel()) + "]\n";
+-    status += " 🚨 STATUS: Estressado (40% de chance de Crítico x2)\n";
+-    status += "=======================================================\n";
+-    status += " ❤️ HP    : " + std::to_string(_hp) + " / " + std::to_string(_hpMax) + "\n";
+-    status += " ⚔️ FORÇA : " + std::to_string(_forcaBase) + "\n";
+-    status += " 🛡️ DEFESA: " + std::to_string(_defesaBase) + "\n";
+-    status += "=======================================================";
+-    return status;
+-}
+-
+-std::string SegurancaDeBalada::getDeclaracaoStatus() const {
+-    std::string status = "🕴️ 🛑 [INIMIGO COMUM: Segurança] 🕴️\n";
+-    status += "=======================================================\n";
+-    status += " 👤 NOME : " + this->getNome() + " [Nível " + std::to_string(this->getNivel()) + "]\n";
+-    status += " 🛡️ ESCUDO: " + std::string(_escudoAtivo ? "ATIVADO (50% Mitigação)" : "Inativo") + "\n";
+-    status += "=======================================================\n";
+-    status += " ❤️ HP    : " + std::to_string(_hp) + " / " + std::to_string(_hpMax) + "\n";
+-    status += " ⚔️ FORÇA : " + std::to_string(_forcaBase) + "\n";
+-    status += " 🛡️ DEFESA: " + std::to_string(_defesaBase) + "\n";
+-    status += "=======================================================";
+-    return status;
+-}
+\ No newline at end of file
+diff -ruN -x .git -x build -x doc -x .DS_Store repo/src/InimigoIncomum.cpp repo-corrigido/src/InimigoIncomum.cpp
+--- repo/src/InimigoIncomum.cpp	2026-11-18 11:24:47
++++ repo-corrigido/src/InimigoIncomum.cpp	1969-12-31 21:00:00
+@@ -1,315 +0,0 @@
+-#include "InimigoIncomum.hpp"
+-#include "InterfaceJogo.hpp"
+-#include <stdexcept>
+-#include <string>
+-
+-// ============================================================================
+-// Utilitário interno: valida nivel e lança std::invalid_argument se inválido
+-// ============================================================================
+-namespace {
+-    /**
+-     * @brief Valida que o nível é pelo menos 1.
+-     * @param nivel Valor a validar.
+-     * @param contexto Nome da classe para compor a mensagem de erro.
+-     * @throws std::invalid_argument Se nivel < 1.
+-     */
+-    void validarNivel(int nivel, const std::string& contexto) {
+-        if (nivel < 1) {
+-            throw std::invalid_argument(
+-                contexto + ": nivel deve ser >= 1, recebido: "
+-                + std::to_string(nivel));
+-        }
+-    }
+-} // namespace anônimo
+-
+-// ============================================================================
+-// RECRUTA DOUTRINADO
+-// ============================================================================
+-
+-RecrutaDoutrinado::RecrutaDoutrinado(std::string nome, int nivel)
+-    : Inimigo(
+-        nome.empty() ? "Recruta Doutrinado" : nome,
+-        /*hp*/     300,
+-        /*defesa*/ 30,   // alta defesa física — força uso de ESPECIAL
+-        /*forca*/  35,
+-        nivel,
+-        /*xp*/     400)
+-{
+-    validarNivel(nivel, "RecrutaDoutrinado");
+-
+-    // Ataque físico padrão
+-    adicionarHabilidade(Habilidade(
+-        "Soco Treinado",
+-        TipoHabilidade::FISICO,
+-        0, 0, _forcaBase, ""));
+-
+-    // DOT: sangramento físico por 3 turnos
+-    adicionarHabilidade(Habilidade(
+-        "Sangramento",
+-        TipoHabilidade::DOT,
+-        0, 0, 4 * nivel, "", 3));
+-
+-    // SUPORTE: buff de força em si mesmo por 2 turnos (doutrinação amplifica a raiva)
+-    adicionarHabilidade(Habilidade(
+-        "Grito de Doutrina",
+-        TipoHabilidade::SUPORTE,
+-        0, 0, 5 * nivel, "forca", 2));
+-
+-    // DEBUFF: reduz defesa do alvo por 2 turnos (quebra a guarda para o próximo golpe)
+-    adicionarHabilidade(Habilidade(
+-        "Intimidação",
+-        TipoHabilidade::DEBUFF,
+-        0, 0, 6 * nivel, "defesa", 2));
+-}
+-
+-void RecrutaDoutrinado::executarTurno(Personagem& alvo) {
+-    if (!alvo.estaVivo()) return;
+-
+-    processarEfeitosContinuos();
+-    if (!estaVivo()) return;
+-
+-    _contadorTurnos++;
+-
+-    // A cada 5 turnos: Intimidação — debuff de defesa no alvo (maior prioridade)
+-    if (_contadorTurnos % 5 == 0) {
+-        InterfaceJogo::exibirTexto(
+-            _nome + " invade seu espaço e grita na sua cara — Intimidação! "
+-            "Sua defesa cai por 2 turnos!");
+-        alvo.aplicarDebuff("Intimidação", "defesa", 6 * _nivel, 2);
+-        return;
+-    }
+-
+-    // A cada 4 turnos: Grito de Doutrina — buff de força em si mesmo
+-    if (_contadorTurnos % 4 == 0) {
+-        InterfaceJogo::exibirTexto(
+-            _nome + " recita as regras do clube em voz alta — "
+-            "Grito de Doutrina! Sua força aumenta por 2 turnos!");
+-        aplicarBuff("Grito de Doutrina", "forca", 5 * _nivel, 2);
+-        // Ainda ataca no mesmo turno com a força potencializada
+-        InterfaceJogo::exibirTexto(
+-            _nome + " avança com vigor redobrado!");
+-        alvo.receberDano(_forcaBase, TipoHabilidade::FISICO);
+-        return;
+-    }
+-
+-    // A cada 2 turnos: Sangramento — DoT físico por 3 turnos
+-    if (_contadorTurnos % 2 == 0) {
+-        InterfaceJogo::exibirTexto(
+-            _nome + " rasga um corte profundo — Sangramento aplicado!");
+-        alvo.aplicarDoT("Sangramento", 4 * _nivel, 3);
+-        return;
+-    }
+-
+-    // Turno padrão: Soco Treinado
+-    InterfaceJogo::exibirTexto(
+-        _nome + " avança sem recuar, ignorando a própria dor!");
+-    alvo.receberDano(_forcaBase, TipoHabilidade::FISICO);
+-}
+-
+-// ============================================================================
+-// GUARDA PATRIMONIAL
+-// ============================================================================
+-
+-GuardaPatrimonial::GuardaPatrimonial(std::string nome, int nivel)
+-    : Inimigo(
+-        nome.empty() ? "Guarda Patrimonial" : nome,
+-        /*hp*/     300,
+-        /*defesa*/ 40,   // alta defesa física e mágica (equipamento completo)
+-        /*forca*/  25,
+-        nivel,
+-        /*xp*/     400)
+-{
+-    validarNivel(nivel, "GuardaPatrimonial");
+-
+-    // Ataque físico com cassetete
+-    adicionarHabilidade(Habilidade(
+-        "Cassetete",
+-        TipoHabilidade::FISICO,
+-        0, 0, _forcaBase, ""));
+-
+-    // DEBUFF: atordoamento — força cai drasticamente por 1 turno
+-    adicionarHabilidade(Habilidade(
+-        "Atordoamento",
+-        TipoHabilidade::DEBUFF,
+-        0, 0, 12 * nivel, "forca", 1));
+-
+-    // DEBUFF: gás lacrimogêneo — reduz defesa do alvo por 2 turnos
+-    adicionarHabilidade(Habilidade(
+-        "Gás Lacrimogêneo",
+-        TipoHabilidade::DEBUFF,
+-        0, 0, 8 * nivel, "defesa", 2));
+-
+-    // HOT: bandagem de campo — cura contínua em si mesmo por 2 turnos
+-    adicionarHabilidade(Habilidade(
+-        "Bandagem de Campo",
+-        TipoHabilidade::HOT,
+-        0, 0, 6 * nivel, "", 2));
+-}
+-
+-void GuardaPatrimonial::executarTurno(Personagem& alvo) {
+-    if (!alvo.estaVivo()) return;
+-
+-    processarEfeitosContinuos();
+-    if (!estaVivo()) return;
+-
+-    _contadorTurnos++;
+-
+-    // A cada 5 turnos: Bandagem de Campo — HOT em si mesmo (maior prioridade)
+-    if (_contadorTurnos % 5 == 0) {
+-        InterfaceJogo::exibirTexto(
+-            _nome + " abre o kit de primeiros socorros rapidamente — "
+-            "Bandagem de Campo! Recuperando HP por 2 turnos.");
+-        aplicarHoT("Bandagem de Campo", 6 * _nivel, 2);
+-        // Ainda ataca no mesmo turno
+-        InterfaceJogo::exibirTexto(
+-            _nome + " avança sem hesitar!");
+-        alvo.receberDano(_forcaBase, TipoHabilidade::FISICO);
+-        return;
+-    }
+-
+-    // A cada 4 turnos: Gás Lacrimogêneo — debuff de defesa no alvo
+-    if (_contadorTurnos % 4 == 0) {
+-        InterfaceJogo::exibirTexto(
+-            _nome + " dispara o spray de gás lacrimogêneo — "
+-            "Sua defesa cai por 2 turnos!");
+-        alvo.aplicarDebuff("Gás Lacrimogêneo", "defesa", 8 * _nivel, 2);
+-        return;
+-    }
+-
+-    // A cada 3 turnos: Atordoamento — debuff de força severo por 1 turno
+-    if (_contadorTurnos % 3 == 0) {
+-        InterfaceJogo::exibirTexto(
+-            _nome + " acerta um golpe preciso no crânio — "
+-            "Atordoamento! Sua força cai drasticamente por 1 turno!");
+-        alvo.aplicarDebuff("Atordoamento", "forca", 12 * _nivel, 1);
+-        return;
+-    }
+-
+-    // Turno padrão: Cassetete
+-    InterfaceJogo::exibirTexto(
+-        _nome + " avança com o cassetete!");
+-    alvo.receberDano(_forcaBase, TipoHabilidade::FISICO);
+-}
+-
+-// ============================================================================
+-// SABOTADOR RIVAL — o mais perigoso dos incomuns
+-// ============================================================================
+-
+-SabotadorRival::SabotadorRival(std::string nome, int nivel)
+-    : Inimigo(
+-        nome.empty() ? "Sabotador Rival" : nome,
+-        /*hp*/     300,   // frágil — eliminar rapidamente
+-        /*defesa*/  20,
+-        /*forca*/  45,   // dano altíssimo
+-        nivel,
+-        /*xp*/     400)
+-{
+-    validarNivel(nivel, "SabotadorRival");
+-
+-    // ESPECIAL: explosivo direto — dano mágico padrão
+-    adicionarHabilidade(Habilidade(
+-        "Coquetel Molotov",
+-        TipoHabilidade::ESPECIAL,
+-        0, 0, _forcaBase, ""));
+-
+-    // DOT: queimadura química por 3 turnos
+-    adicionarHabilidade(Habilidade(
+-        "Queimadura Química",
+-        TipoHabilidade::DOT,
+-        0, 0, 5 * nivel, "", 3));
+-
+-    // DEBUFF: gás paralisante — reduz força do alvo por 2 turnos
+-    adicionarHabilidade(Habilidade(
+-        "Gás Paralisante",
+-        TipoHabilidade::DEBUFF,
+-        0, 0, 10 * nivel, "forca", 2));
+-
+-    // ULTRA: explosão total — perfura escudo completamente, dano máximo
+-    adicionarHabilidade(Habilidade(
+-        "Explosão Total",
+-        TipoHabilidade::ULTRA,
+-        0, 0, _forcaBase * 2, ""));
+-}
+-
+-void SabotadorRival::executarTurno(Personagem& alvo) {
+-    if (!alvo.estaVivo()) return;
+-
+-    processarEfeitosContinuos();
+-    if (!estaVivo()) return;
+-
+-    _contadorTurnos++;
+-
+-    // A cada 5 turnos: EXPLOSÃO TOTAL (ULTRA) — substitui o Molotov, perfura escudo
+-    if (_contadorTurnos % 5 == 0) {
+-        InterfaceJogo::exibirTexto(
+-            "\n[PERIGO] " + _nome + " detona tudo que tem — EXPLOSÃO TOTAL! "
+-            "Nenhum escudo vai te proteger disso!");
+-        alvo.receberDano(_forcaBase * 2, TipoHabilidade::ULTRA);
+-
+-        // Queimadura se aplica normalmente após a explosão
+-        InterfaceJogo::exibirTexto(
+-            _nome + " deixa o ambiente em chamas — Queimadura Química aplicada!");
+-        alvo.aplicarDoT("Queimadura Química", 5 * _nivel, 3);
+-        return;
+-    }
+-
+-    // A cada 3 turnos: Gás Paralisante adicional — debuff de força por 2 turnos
+-    if (_contadorTurnos % 3 == 0) {
+-        InterfaceJogo::exibirTexto(
+-            _nome + " arremessa uma granada de gás — "
+-            "Gás Paralisante! Sua força cai por 2 turnos!");
+-        alvo.aplicarDebuff("Gás Paralisante", "forca", 10 * _nivel, 2);
+-    }
+-
+-    // Turno padrão (sempre acontece se não for turno múltiplo de 5): Molotov + Queimadura
+-    InterfaceJogo::exibirTexto(
+-        _nome + " arremessa um explosivo improvisado!");
+-    alvo.receberDano(_forcaBase, TipoHabilidade::ESPECIAL);
+-
+-    InterfaceJogo::exibirTexto(
+-        _nome + " derrama ácido — Queimadura Química aplicada!");
+-    alvo.aplicarDoT("Queimadura Química", 5 * _nivel, 3);
+-}
+-
+-// ============================================================================
+-// MÉTODOS GETDECLARACAOSTATUS (MÉTODOS VIRTUAIS)
+-// ============================================================================
+-
+-std::string RecrutaDoutrinado::getDeclaracaoStatus() const {
+-    std::string status = "📢 [INIMIGO INCOMUM: Recruta] 📢\n";
+-    status += "=======================================================\n";
+-    status += " 👤 NOME : " + this->getNome() + " [Nível " + std::to_string(this->getNivel()) + "]\n";
+-    status += " ⚔️ ESTILO: Pressão Física Crítica (Buffs/Debuffs de Turno)\n";
+-    status += "=======================================================\n";
+-    status += " ❤️ HP    : " + std::to_string(_hp) + " / " + std::to_string(_hpMax) + "\n";
+-    status += " ⚔️ FORÇA : " + std::to_string(_forcaBase) + "\n";
+-    status += " 🛡️ DEFESA: " + std::to_string(_defesaBase) + " (Alta Resistência)\n";
+-    status += "=======================================================";
+-    return status;
+-}
+-
+-std::string GuardaPatrimonial::getDeclaracaoStatus() const {
+-    std::string status = "🛡️ 🚨 [INIMIGO INCOMUM: Guarda] 🛡️\n";
+-    status += "=======================================================\n";
+-    status += " 👤 NOME : " + this->getNome() + " [Nível " + std::to_string(this->getNivel()) + "]\n";
+-    status += " ⚕️ EXTRA : Kit de Primeiros Socorros & Controle de Área\n";
+-    status += "=======================================================\n";
+-    status += " ❤️ HP    : " + std::to_string(_hp) + " / " + std::to_string(_hpMax) + "\n";
+-    status += " ⚔️ FORÇA : " + std::to_string(_forcaBase) + "\n";
+-    status += " 🛡️ DEFESA: " + std::to_string(_defesaBase) + " (Blindagem Balística)\n";
+-    status += "=======================================================";
+-    return status;
+-}
+-
+-std::string SabotadorRival::getDeclaracaoStatus() const {
+-    std::string status = "💣 🔥 [INIMIGO INCOMUM: Sabotador] 🔥 💣\n";
+-    status += "=======================================================\n";
+-    status += " 👤 NOME : " + this->getNome() + " [Nível " + std::to_string(this->getNivel()) + "]\n";
+-    status += " 🚨 ALERTA: Alto Dano Elemental (Foco em Queimaduras e ULTRA)\n";
+-    status += "=======================================================\n";
+-    status += " ❤️ HP    : " + std::to_string(_hp) + " / " + std::to_string(_hpMax) + " (Frágil)\n";
+-    status += " ⚔️ FORÇA : " + std::to_string(_forcaBase) + " (Dano Explosivo Puro)\n";
+-    status += " 🛡️ DEFESA: " + std::to_string(_defesaBase) + "\n";
+-    status += "=======================================================";
+-    return status;
+-}
+\ No newline at end of file
+diff -ruN -x .git -x build -x doc -x .DS_Store repo/src/InterfaceJogo.cpp repo-corrigido/src/InterfaceJogo.cpp
+--- repo/src/InterfaceJogo.cpp	2026-11-18 11:24:47
++++ repo-corrigido/src/InterfaceJogo.cpp	2026-11-18 11:36:21
+@@ -1,6 +1,7 @@
+ #include "InterfaceJogo.hpp"
+ #include <iostream>
+ #include <limits>
++#include "EntradaEncerradaException.hpp"
+ using namespace std;
+ 
+ void InterfaceJogo::exibirTexto (std::string texto){
+@@ -40,6 +41,10 @@
+             }
+             std::cout << "\n[AVISO] Opcao invalida! Digite um numero entre 1 e " << tamanho << ".\n" << std::endl;
+         } else {
++            // Entrada acabou (EOF / Ctrl+D): repetir aqui seria loop infinito.
++            if (std::cin.eof()) {
++                throw EntradaEncerradaException("a entrada terminou antes de uma escolha valida.");
++            }
+             // 3. TRATAMENTO DE ERRO: Caso o usuário digite letras/caracteres inválidos
+             std::cout << "\n[ERRO] Entrada invalida! Por favor, digite apenas numeros.\n" << std::endl;
+             
+diff -ruN -x .git -x build -x doc -x .DS_Store repo/src/RecrutaDoutrinado.cpp repo-corrigido/src/RecrutaDoutrinado.cpp
+--- repo/src/RecrutaDoutrinado.cpp	1969-12-31 21:00:00
++++ repo-corrigido/src/RecrutaDoutrinado.cpp	2026-11-18 11:35:30
+@@ -0,0 +1,97 @@
++#include "RecrutaDoutrinado.hpp"
++#include "InterfaceJogo.hpp"
++#include <stdexcept>
++#include <string>
++
++RecrutaDoutrinado::RecrutaDoutrinado(std::string nome, int nivel)
++    : Inimigo(
++        nome.empty() ? "Recruta Doutrinado" : nome,
++        /*hp*/     300,
++        /*defesa*/ 30,   // alta defesa física — força uso de ESPECIAL
++        /*forca*/  35,
++        nivel,
++        /*xp*/     400)
++{
++    validarNivel(nivel, "RecrutaDoutrinado");
++
++    // Ataque físico padrão
++    adicionarHabilidade(Habilidade(
++        "Soco Treinado",
++        TipoHabilidade::FISICO,
++        0, 0, _forcaBase, ""));
++
++    // DOT: sangramento físico por 3 turnos
++    adicionarHabilidade(Habilidade(
++        "Sangramento",
++        TipoHabilidade::DOT,
++        0, 0, 4 * nivel, "", 3));
++
++    // SUPORTE: buff de força em si mesmo por 2 turnos (doutrinação amplifica a raiva)
++    adicionarHabilidade(Habilidade(
++        "Grito de Doutrina",
++        TipoHabilidade::SUPORTE,
++        0, 0, 5 * nivel, "forca", 2));
++
++    // DEBUFF: reduz defesa do alvo por 2 turnos (quebra a guarda para o próximo golpe)
++    adicionarHabilidade(Habilidade(
++        "Intimidação",
++        TipoHabilidade::DEBUFF,
++        0, 0, 6 * nivel, "defesa", 2));
++}
++
++void RecrutaDoutrinado::executarTurno(Personagem& alvo) {
++    if (!alvo.estaVivo()) return;
++
++    processarEfeitosContinuos();
++    if (!estaVivo()) return;
++
++    _contadorTurnos++;
++
++    // A cada 5 turnos: Intimidação — debuff de defesa no alvo (maior prioridade)
++    if (_contadorTurnos % 5 == 0) {
++        InterfaceJogo::exibirTexto(
++            _nome + " invade seu espaço e grita na sua cara — Intimidação! "
++            "Sua defesa cai por 2 turnos!");
++        alvo.aplicarDebuff("Intimidação", "defesa", 6 * _nivel, 2);
++        return;
++    }
++
++    // A cada 4 turnos: Grito de Doutrina — buff de força em si mesmo
++    if (_contadorTurnos % 4 == 0) {
++        InterfaceJogo::exibirTexto(
++            _nome + " recita as regras do clube em voz alta — "
++            "Grito de Doutrina! Sua força aumenta por 2 turnos!");
++        aplicarBuff("Grito de Doutrina", "forca", 5 * _nivel, 2);
++        // Ainda ataca no mesmo turno com a força potencializada
++        InterfaceJogo::exibirTexto(
++            _nome + " avança com vigor redobrado!");
++        alvo.receberDano(_forcaBase, TipoHabilidade::FISICO);
++        return;
++    }
++
++    // A cada 2 turnos: Sangramento — DoT físico por 3 turnos
++    if (_contadorTurnos % 2 == 0) {
++        InterfaceJogo::exibirTexto(
++            _nome + " rasga um corte profundo — Sangramento aplicado!");
++        alvo.aplicarDoT("Sangramento", 4 * _nivel, 3);
++        return;
++    }
++
++    // Turno padrão: Soco Treinado
++    InterfaceJogo::exibirTexto(
++        _nome + " avança sem recuar, ignorando a própria dor!");
++    alvo.receberDano(_forcaBase, TipoHabilidade::FISICO);
++}
++
++std::string RecrutaDoutrinado::getDeclaracaoStatus() const {
++    std::string status = "📢 [INIMIGO INCOMUM: Recruta] 📢\n";
++    status += "=======================================================\n";
++    status += " 👤 NOME : " + this->getNome() + " [Nível " + std::to_string(this->getNivel()) + "]\n";
++    status += " ⚔️ ESTILO: Pressão Física Crítica (Buffs/Debuffs de Turno)\n";
++    status += "=======================================================\n";
++    status += " ❤️ HP    : " + std::to_string(_hp) + " / " + std::to_string(_hpMax) + "\n";
++    status += " ⚔️ FORÇA : " + std::to_string(_forcaBase) + "\n";
++    status += " 🛡️ DEFESA: " + std::to_string(_defesaBase) + " (Alta Resistência)\n";
++    status += "=======================================================";
++    return status;
++}
+diff -ruN -x .git -x build -x doc -x .DS_Store repo/src/SabotadorRival.cpp repo-corrigido/src/SabotadorRival.cpp
+--- repo/src/SabotadorRival.cpp	1969-12-31 21:00:00
++++ repo-corrigido/src/SabotadorRival.cpp	2026-11-18 11:35:30
+@@ -0,0 +1,93 @@
++#include "SabotadorRival.hpp"
++#include "InterfaceJogo.hpp"
++#include <stdexcept>
++#include <string>
++
++SabotadorRival::SabotadorRival(std::string nome, int nivel)
++    : Inimigo(
++        nome.empty() ? "Sabotador Rival" : nome,
++        /*hp*/     300,   // frágil — eliminar rapidamente
++        /*defesa*/  20,
++        /*forca*/  45,   // dano altíssimo
++        nivel,
++        /*xp*/     400)
++{
++    validarNivel(nivel, "SabotadorRival");
++
++    // ESPECIAL: explosivo direto — dano mágico padrão
++    adicionarHabilidade(Habilidade(
++        "Coquetel Molotov",
++        TipoHabilidade::ESPECIAL,
++        0, 0, _forcaBase, ""));
++
++    // DOT: queimadura química por 3 turnos
++    adicionarHabilidade(Habilidade(
++        "Queimadura Química",
++        TipoHabilidade::DOT,
++        0, 0, 5 * nivel, "", 3));
++
++    // DEBUFF: gás paralisante — reduz força do alvo por 2 turnos
++    adicionarHabilidade(Habilidade(
++        "Gás Paralisante",
++        TipoHabilidade::DEBUFF,
++        0, 0, 10 * nivel, "forca", 2));
++
++    // ULTRA: explosão total — perfura escudo completamente, dano máximo
++    adicionarHabilidade(Habilidade(
++        "Explosão Total",
++        TipoHabilidade::ULTRA,
++        0, 0, _forcaBase * 2, ""));
++}
++
++void SabotadorRival::executarTurno(Personagem& alvo) {
++    if (!alvo.estaVivo()) return;
++
++    processarEfeitosContinuos();
++    if (!estaVivo()) return;
++
++    _contadorTurnos++;
++
++    // A cada 5 turnos: EXPLOSÃO TOTAL (ULTRA) — substitui o Molotov, perfura escudo
++    if (_contadorTurnos % 5 == 0) {
++        InterfaceJogo::exibirTexto(
++            "\n[PERIGO] " + _nome + " detona tudo que tem — EXPLOSÃO TOTAL! "
++            "Nenhum escudo vai te proteger disso!");
++        alvo.receberDano(_forcaBase * 2, TipoHabilidade::ULTRA);
++
++        // Queimadura se aplica normalmente após a explosão
++        InterfaceJogo::exibirTexto(
++            _nome + " deixa o ambiente em chamas — Queimadura Química aplicada!");
++        alvo.aplicarDoT("Queimadura Química", 5 * _nivel, 3);
++        return;
++    }
++
++    // A cada 3 turnos: Gás Paralisante adicional — debuff de força por 2 turnos
++    if (_contadorTurnos % 3 == 0) {
++        InterfaceJogo::exibirTexto(
++            _nome + " arremessa uma granada de gás — "
++            "Gás Paralisante! Sua força cai por 2 turnos!");
++        alvo.aplicarDebuff("Gás Paralisante", "forca", 10 * _nivel, 2);
++    }
++
++    // Turno padrão (sempre acontece se não for turno múltiplo de 5): Molotov + Queimadura
++    InterfaceJogo::exibirTexto(
++        _nome + " arremessa um explosivo improvisado!");
++    alvo.receberDano(_forcaBase, TipoHabilidade::ESPECIAL);
++
++    InterfaceJogo::exibirTexto(
++        _nome + " derrama ácido — Queimadura Química aplicada!");
++    alvo.aplicarDoT("Queimadura Química", 5 * _nivel, 3);
++}
++
++std::string SabotadorRival::getDeclaracaoStatus() const {
++    std::string status = "💣 🔥 [INIMIGO INCOMUM: Sabotador] 🔥 💣\n";
++    status += "=======================================================\n";
++    status += " 👤 NOME : " + this->getNome() + " [Nível " + std::to_string(this->getNivel()) + "]\n";
++    status += " 🚨 ALERTA: Alto Dano Elemental (Foco em Queimaduras e ULTRA)\n";
++    status += "=======================================================\n";
++    status += " ❤️ HP    : " + std::to_string(_hp) + " / " + std::to_string(_hpMax) + " (Frágil)\n";
++    status += " ⚔️ FORÇA : " + std::to_string(_forcaBase) + " (Dano Explosivo Puro)\n";
++    status += " 🛡️ DEFESA: " + std::to_string(_defesaBase) + "\n";
++    status += "=======================================================";
++    return status;
++}
+diff -ruN -x .git -x build -x doc -x .DS_Store repo/src/SegurancaDeBalada.cpp repo-corrigido/src/SegurancaDeBalada.cpp
+--- repo/src/SegurancaDeBalada.cpp	1969-12-31 21:00:00
++++ repo-corrigido/src/SegurancaDeBalada.cpp	2026-11-18 11:35:30
+@@ -0,0 +1,56 @@
++#include "SegurancaDeBalada.hpp"
++#include "InterfaceJogo.hpp"
++#include <cstdlib>   // rand()
++#include <stdexcept>
++#include <string>
++
++SegurancaDeBalada::SegurancaDeBalada(std::string nome, int nivel)
++    : Inimigo(
++        nome.empty() ? "Segurança de Balada" : nome,
++        /*hp*/     140,   // mais HP que os outros comuns
++        /*defesa*/  25,   // resistente fisicamente
++        /*forca*/   15,
++        nivel,
++        /*xp*/     200)
++{
++    validarNivel(nivel, "SegurancaDeBalada");
++
++    adicionarHabilidade(Habilidade(
++        "Empurrão de Segurança",
++        TipoHabilidade::FISICO,
++        0, 0,
++        _forcaBase,
++        ""));
++}
++
++void SegurancaDeBalada::executarTurno(Personagem& alvo) {
++    if (!alvo.estaVivo()) return;
++
++    processarEfeitosContinuos();
++    if (!estaVivo()) return;
++
++    _contadorTurnos++;
++
++    // A cada 3 turnos assume postura defensiva (ativa o escudo interno)
++    if (_contadorTurnos % 3 == 0) {
++        _escudoAtivo = true;
++        InterfaceJogo::exibirTexto("\n🛡️  [POSTURA] " + _nome + " cruza os braços e finca a base!");
++        InterfaceJogo::exibirTexto("    > Escudo Ativo: Impacto de ataques comuns mitigado pela metade até a próxima rodada.");
++    }
++
++    InterfaceJogo::exibirTexto("\n💥 [ATAQUE] " + _nome + " projeta o corpo à frente com um Empurrão de Segurança!");
++    alvo.receberDano(_forcaBase, TipoHabilidade::FISICO);
++}
++
++std::string SegurancaDeBalada::getDeclaracaoStatus() const {
++    std::string status = "🕴️ 🛑 [INIMIGO COMUM: Segurança] 🕴️\n";
++    status += "=======================================================\n";
++    status += " 👤 NOME : " + this->getNome() + " [Nível " + std::to_string(this->getNivel()) + "]\n";
++    status += " 🛡️ ESCUDO: " + std::string(_escudoAtivo ? "ATIVADO (50% Mitigação)" : "Inativo") + "\n";
++    status += "=======================================================\n";
++    status += " ❤️ HP    : " + std::to_string(_hp) + " / " + std::to_string(_hpMax) + "\n";
++    status += " ⚔️ FORÇA : " + std::to_string(_forcaBase) + "\n";
++    status += " 🛡️ DEFESA: " + std::to_string(_defesaBase) + "\n";
++    status += "=======================================================";
++    return status;
++}
+diff -ruN -x .git -x build -x doc -x .DS_Store repo/src/TrabalhadorNoturno.cpp repo-corrigido/src/TrabalhadorNoturno.cpp
+--- repo/src/TrabalhadorNoturno.cpp	1969-12-31 21:00:00
++++ repo-corrigido/src/TrabalhadorNoturno.cpp	2026-11-18 11:35:30
+@@ -0,0 +1,64 @@
++#include "TrabalhadorNoturno.hpp"
++#include "InterfaceJogo.hpp"
++#include <cstdlib>   // rand()
++#include <stdexcept>
++#include <string>
++
++TrabalhadorNoturno::TrabalhadorNoturno(std::string nome, int nivel)
++    : Inimigo(
++        nome.empty() ? "Trabalhador Noturno Estressado" : nome,
++        /*hp*/     150,   // frágil
++        /*defesa*/  15,
++        /*forca*/  20,   // alto, mas compensa com pouco HP
++        nivel,
++        /*xp*/     90)
++{
++    validarNivel(nivel, "TrabalhadorNoturno");
++
++    adicionarHabilidade(Habilidade(
++        "Surto de Raiva",
++        TipoHabilidade::FISICO,
++        0, 0,
++        _forcaBase,
++        ""));
++
++    adicionarHabilidade(Habilidade(
++        "Golpe Crítico (Adrenalina)",
++        TipoHabilidade::FISICO,
++        0, 0,
++        _forcaBase * 2,   // dano dobrado no crítico
++        ""));
++}
++
++void TrabalhadorNoturno::executarTurno(Personagem& alvo) {
++    if (!alvo.estaVivo()) return;
++
++    processarEfeitosContinuos();
++    if (!estaVivo()) return;
++
++    _contadorTurnos++;
++
++    // 40% de chance de crítico
++    const bool critico = (rand() % 100) < 40;
++
++    if (critico) {
++        InterfaceJogo::exibirTexto("\n🚨 💥 [GOLPE CRÍTICO] " + _nome + " entra em colapso de raiva e ativa Surto de Raiva!");
++        alvo.receberDano(_forcaBase * 2, TipoHabilidade::FISICO);
++    } else {
++        InterfaceJogo::exibirTexto("\n👊 [ATAQUE FÍSICO] " + _nome + " desfere um soco desesperado de exaustão!");
++        alvo.receberDano(_forcaBase, TipoHabilidade::FISICO);
++    }
++}
++
++std::string TrabalhadorNoturno::getDeclaracaoStatus() const {
++    std::string status = "🕒 😤 [INIMIGO COMUM: Trabalhador Noturno] 🕒\n";
++    status += "=======================================================\n";
++    status += " 👤 NOME : " + this->getNome() + " [Nível " + std::to_string(this->getNivel()) + "]\n";
++    status += " 🚨 STATUS: Estressado (40% de chance de Crítico x2)\n";
++    status += "=======================================================\n";
++    status += " ❤️ HP    : " + std::to_string(_hp) + " / " + std::to_string(_hpMax) + "\n";
++    status += " ⚔️ FORÇA : " + std::to_string(_forcaBase) + "\n";
++    status += " 🛡️ DEFESA: " + std::to_string(_defesaBase) + "\n";
++    status += "=======================================================";
++    return status;
++}
+diff -ruN -x .git -x build -x doc -x .DS_Store repo/src/main.cpp repo-corrigido/src/main.cpp
+--- repo/src/main.cpp	2026-11-18 11:24:47
++++ repo-corrigido/src/main.cpp	2026-11-18 11:36:21
+@@ -2,6 +2,7 @@
+ #include "Aventureiro.hpp"
+ #include "MotorJogo.hpp"
+ #include "InterfaceJogo.hpp"
++#include "EntradaEncerradaException.hpp"
+ 
+ int main() {
+     try {
+@@ -23,6 +24,11 @@
+ 
+         
+     } 
++    catch (const EntradaEncerradaException&) {
++        // Usuário fechou a entrada (Ctrl+D): encerra sem tratar como erro.
++        std::cout << "\nEntrada encerrada. Até a próxima!" << std::endl;
++        return 0;
++    }
+     catch (const std::exception& e) {
+         // Captura qualquer erro inesperado ou lógica quebrada durante a gameplay
+         std::cerr << "\n[ERRO CRÍTICO NA MAIN]: " << e.what() << std::endl;
+diff -ruN -x .git -x build -x doc -x .DS_Store repo/tests/EntradaSimulada.hpp repo-corrigido/tests/EntradaSimulada.hpp
+--- repo/tests/EntradaSimulada.hpp	1969-12-31 21:00:00
++++ repo-corrigido/tests/EntradaSimulada.hpp	2026-11-18 11:36:43
+@@ -0,0 +1,63 @@
++#ifndef ENTRADA_SIMULADA_HPP
++#define ENTRADA_SIMULADA_HPP
++
++#include <iostream>
++#include <sstream>
++#include <string>
++
++/**
++ * @file EntradaSimulada.hpp
++ * @brief Ajudante de teste que substitui o teclado (std::cin) por um texto fixo.
++ */
++
++/**
++ * @class EntradaSimulada
++ * @brief Troca o buffer de std::cin por um texto enquanto o objeto existir (RAII).
++ *
++ * Sem isso, testes que chamam InterfaceJogo::solicitarEscolha ou Combate::iniciar
++ * ficam esperando alguém digitar, e o `make test` nunca termina.
++ *
++ * Uso:
++ * @code
++ * EntradaSimulada entrada("2\n");
++ * int escolha = InterfaceJogo::solicitarEscolha({"A", "B"}); // devolve 2
++ * @endcode
++ */
++class EntradaSimulada {
++public:
++    /**
++     * @brief Passa a ler std::cin a partir do texto informado.
++     * @param texto Tudo o que o "usuário" vai digitar, com '\n' entre as linhas.
++     */
++    explicit EntradaSimulada(const std::string& texto)
++        : _buffer(texto), _original(std::cin.rdbuf(_buffer.rdbuf())) {
++        std::cin.clear();
++    }
++
++    /** @brief Devolve o teclado original e limpa as flags de erro do std::cin. */
++    ~EntradaSimulada() {
++        std::cin.rdbuf(_original);
++        std::cin.clear();
++    }
++
++    EntradaSimulada(const EntradaSimulada&) = delete;
++    EntradaSimulada& operator=(const EntradaSimulada&) = delete;
++
++    /**
++     * @brief Gera várias linhas iguais (útil para combates longos).
++     * @param linha Conteúdo de cada linha, sem o '\n'.
++     * @param vezes Quantidade de repetições.
++     * @return Texto com a linha repetida, uma por linha.
++     */
++    static std::string repetir(const std::string& linha, int vezes) {
++        std::string texto;
++        for (int i = 0; i < vezes; i++) texto += linha + "\n";
++        return texto;
++    }
++
++private:
++    std::istringstream _buffer;   ///< Texto que faz o papel do teclado.
++    std::streambuf* _original;    ///< Buffer original de std::cin, restaurado no destrutor.
++};
++
++#endif // ENTRADA_SIMULADA_HPP
+diff -ruN -x .git -x build -x doc -x .DS_Store repo/tests/test_Combate.cpp repo-corrigido/tests/test_Combate.cpp
+--- repo/tests/test_Combate.cpp	2026-11-18 11:24:47
++++ repo-corrigido/tests/test_Combate.cpp	2026-11-18 11:36:43
+@@ -10,6 +10,8 @@
+ #include "InimigoComum.hpp"
+ #include "InimigoIncomum.hpp"
+ #include "InimigoBoss.hpp"
++#include "EntradaEncerradaException.hpp"
++#include "EntradaSimulada.hpp"
+ #include <memory>
+ #include <stdexcept>
+ 
+@@ -42,6 +44,7 @@
+ TEST_SUITE("Combate - Resultados de Luta") {
+ 
+     TEST_CASE("Cenário de Vitória: Jogador muito forte vence imediatamente") {
++        EntradaSimulada entrada(EntradaSimulada::repetir("1", 500)); // sempre "Ataque Básico"
+         Aventureiro a("Herói Forte", 500, 50, 9999);
+         std::unique_ptr<Inimigo> inimigo = std::make_unique<DesafianteDoBar>("Bêbado do Bar", 1);
+         Combate c(a, *inimigo);
+@@ -54,6 +57,7 @@
+     }
+ 
+     TEST_CASE("Cenário de Derrota: Jogador fraco contra Boss") {
++        EntradaSimulada entrada(EntradaSimulada::repetir("1", 500)); // sempre "Ataque Básico"
+         Aventureiro a("Herói Frágil", 10, 1, 1);
+         // Usando um Boss ou inimigo de alto impacto para garantir a derrota rápida
+         std::unique_ptr<Inimigo> tyler = std::make_unique<TylerDurden>("Tyler", 5);
+@@ -72,6 +76,7 @@
+ TEST_SUITE("Combate - Resiliência a Falhas (Try-Catch Blocks)") {
+ 
+     TEST_CASE("Garantia de não-interrupção no loop quando combatente morre no meio") {
++        EntradaSimulada entrada(EntradaSimulada::repetir("1", 500)); // sempre "Ataque Básico"
+         Aventureiro a("Aventureiro Veloz", 500, 10, 9999);
+         std::unique_ptr<Inimigo> inimigo = std::make_unique<SegurancaDeBalada>("Guarda", 1);
+         Combate c(a, *inimigo);
+@@ -80,5 +85,13 @@
+         // O teste valida se o 'break' impede que o inimigo morto tente contra-atacar.
+         bool resultado = c.iniciar();
+         CHECK(resultado == true);
++    }
++
++    TEST_CASE("Entrada encerrada no meio do combate não é engolida pelo Combate") {
++        EntradaSimulada entrada("");
++        Aventureiro a("Herói", 100, 10, 10);
++        std::unique_ptr<Inimigo> inimigo = std::make_unique<DesafianteDoBar>("Bêbado do Bar", 1);
++        Combate c(a, *inimigo);
++        CHECK_THROWS_AS(c.iniciar(), EntradaEncerradaException);
+     }
+-}
+\ No newline at end of file
++}
+diff -ruN -x .git -x build -x doc -x .DS_Store repo/tests/test_InterfaceJogo.cpp repo-corrigido/tests/test_InterfaceJogo.cpp
+--- repo/tests/test_InterfaceJogo.cpp	2026-11-18 11:24:47
++++ repo-corrigido/tests/test_InterfaceJogo.cpp	2026-11-18 11:36:43
+@@ -9,6 +9,8 @@
+ #include "doctest.h"
+ #include "InterfaceJogo.hpp"
+ #include "Aventureiro.hpp"
++#include "EntradaEncerradaException.hpp"
++#include "EntradaSimulada.hpp"
+ 
+ // =========================================================
+ // SUITE: InterfaceJogo - Métodos Estáticos
+@@ -37,15 +39,37 @@
+         CHECK_NOTHROW(InterfaceJogo::renderizarDivisor());
+     }
+ 
+-    TEST_CASE("solicitarEscolha - Limite Inferior Stub") {
++    TEST_CASE("solicitarEscolha devolve a opção digitada") {
++        EntradaSimulada entrada("2\n");
+         std::vector<std::string> opcoes = {"Atacar", "Defender", "Fugir"};
+-        int resultado = InterfaceJogo::solicitarEscolha(opcoes);
+-        CHECK(resultado >= 1);
++        CHECK(InterfaceJogo::solicitarEscolha(opcoes) == 2);
+     }
+ 
+-    TEST_CASE("solicitarEscolha - Limite Superior Stub") {
++    TEST_CASE("solicitarEscolha ignora número fora do intervalo e pede de novo") {
++        EntradaSimulada entrada("0\n4\n-1\n3\n");
+         std::vector<std::string> opcoes = {"Atacar", "Defender", "Fugir"};
+-        int resultado = InterfaceJogo::solicitarEscolha(opcoes);
+-        CHECK(resultado <= static_cast<int>(opcoes.size()));
++        CHECK(InterfaceJogo::solicitarEscolha(opcoes) == 3);
++    }
++
++    TEST_CASE("solicitarEscolha ignora texto não numérico e pede de novo") {
++        EntradaSimulada entrada("abc\nxyz\n1\n");
++        std::vector<std::string> opcoes = {"Atacar", "Defender", "Fugir"};
++        CHECK(InterfaceJogo::solicitarEscolha(opcoes) == 1);
++    }
++
++    TEST_CASE("solicitarEscolha lança exceção quando a entrada acaba (EOF)") {
++        EntradaSimulada entrada("");
++        std::vector<std::string> opcoes = {"Atacar", "Defender", "Fugir"};
++        CHECK_THROWS_AS(InterfaceJogo::solicitarEscolha(opcoes), EntradaEncerradaException);
++    }
++
++    TEST_CASE("solicitarEscolha sem opções devolve 0 sem ler a entrada") {
++        EntradaSimulada entrada("");
++        CHECK(InterfaceJogo::solicitarEscolha({}) == 0);
++    }
++
++    TEST_CASE("pausar não trava quando a entrada acaba") {
++        EntradaSimulada entrada("");
++        CHECK_NOTHROW(InterfaceJogo::pausar());
+     }
+-}
+\ No newline at end of file
++}

@@ -1,0 +1,203 @@
+<title>Correções PDS2 Grupo 14</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: one reading column; file lists read like a git diff summary (A/M/D chips + path + reason). */
+:root {
+  --bg: #f6f7f5;
+  --surface: #ffffff;
+  --fg: #1b2420;
+  --muted: #5c6b64;
+  --line: #dde3df;
+  --accent: #1f4e3d;          /* verde da tabela de critérios da disciplina */
+  --accent-soft: #e3eee8;
+  --add: #1d7a46; --add-bg: #e2f3e8;
+  --mod: #8a5a00; --mod-bg: #fbf0d9;
+  --del: #b42d2d; --del-bg: #fae3e3;
+  --code-bg: #eef1ef;
+  --sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #121815; --surface: #1a221e; --fg: #e3ebe6; --muted: #9aaaa2; --line: #2c3833;
+    --accent: #7fc8a6; --accent-soft: #1f3129;
+    --add: #6fd39a; --add-bg: #173323; --mod: #e9b95a; --mod-bg: #3a2d12; --del: #f08a8a; --del-bg: #3d1c1c;
+    --code-bg: #222c27; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #121815; --surface: #1a221e; --fg: #e3ebe6; --muted: #9aaaa2; --line: #2c3833;
+  --accent: #7fc8a6; --accent-soft: #1f3129;
+  --add: #6fd39a; --add-bg: #173323; --mod: #e9b95a; --mod-bg: #3a2d12; --del: #f08a8a; --del-bg: #3d1c1c;
+  --code-bg: #222c27; color-scheme: dark;
+}
+body { background: var(--bg); color: var(--fg); font-family: var(--sans); font-size: 16px; line-height: 1.6; }
+.wrap { max-width: 860px; margin: 0 auto; padding-block: 40px 72px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: flex; flex-direction: column; gap: 44px; }
+h1, h2, h3 { text-wrap: balance; line-height: 1.25; margin: 0; }
+h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.01em; }
+h2 { font-size: 1.35rem; font-weight: 600; color: var(--accent); }
+h3 { font-size: 1.05rem; font-weight: 600; }
+p { margin: 0; max-width: 68ch; }
+section { display: flex; flex-direction: column; gap: 16px; }
+.eyebrow { font-family: var(--mono); font-size: 0.78rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+.meta { font-family: var(--mono); font-size: 0.85rem; color: var(--muted); display: flex; flex-wrap: wrap; gap: 4px 18px; }
+code, .path { font-family: var(--mono); font-size: 0.88em; }
+code { background: var(--code-bg); padding: 1px 5px; border-radius: 4px; overflow-wrap: anywhere; }
+a { color: var(--accent); }
+
+.table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; font-size: 0.93rem; }
+th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); font-weight: 600; }
+tr:last-child td { border-bottom: 0; }
+td.num { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.bad { color: var(--del); font-weight: 600; }
+.good { color: var(--add); font-weight: 600; }
+
+.fix { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 18px 20px; display: flex; flex-direction: column; gap: 12px; }
+.fix-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 6px 16px; }
+.pts { font-family: var(--mono); font-size: 0.8rem; color: var(--accent); background: var(--accent-soft); padding: 2px 8px; border-radius: 99px; white-space: nowrap; }
+.files { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.files li { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 10px; align-items: start; }
+.files .path { overflow-wrap: anywhere; }
+.files .why { display: block; font-family: var(--sans); font-size: 0.9rem; color: var(--muted); }
+.chip { font-family: var(--mono); font-size: 0.72rem; font-weight: 600; width: 1.6em; text-align: center; border-radius: 4px; padding: 1px 0; margin-top: 2px; }
+.chip.A { color: var(--add); background: var(--add-bg); }
+.chip.M { color: var(--mod); background: var(--mod-bg); }
+.chip.D { color: var(--del); background: var(--del-bg); }
+
+pre { margin: 0; background: var(--code-bg); border-radius: 6px; padding: 12px 14px; overflow-x: auto; font-family: var(--mono); font-size: 0.85rem; line-height: 1.5; }
+ol.advice, ul.plain { margin: 0; padding-left: 1.3em; display: flex; flex-direction: column; gap: 10px; max-width: 72ch; }
+ol.advice li::marker { color: var(--accent); font-weight: 600; }
+.note { border-left: 3px solid var(--mod); padding: 4px 0 4px 14px; color: var(--fg); max-width: 72ch; }
+</style>
+
+<div class="wrap">
+
+<header style="display:flex;flex-direction:column;gap:12px">
+  <span class="eyebrow">Auditoria · PDS2 · Projeto Final</span>
+  <h1>Correções no RPG Fight Club do Grupo 14</h1>
+  <p>Este documento mostra o que foi corrigido numa cópia do repositório, por que cada arquivo mudou e o que ainda fica com o grupo. O original não foi alterado: as mudanças estão numa pasta separada e num arquivo <code>mudancas.diff</code>, para o grupo revisar e aplicar o que quiser.</p>
+  <div class="meta">
+    <span>repo: WillianJunior/PDS2-2026-PF-grupo14</span>
+    <span>commit auditado: 1f2eb64</span>
+    <span>18/11/2026</span>
+  </div>
+</header>
+
+<section>
+  <h2>Antes e depois</h2>
+  <p>Medido com <code>make test</code> no macOS (clang) e num Linux com g++ 13 (container Docker), que é o ambiente mais parecido com o do corretor.</p>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>Medição</th><th>Antes</th><th>Depois</th></tr></thead>
+    <tbody>
+      <tr><td><code>make test</code> termina sozinho</td><td class="bad">Não. Trava esperando o teclado; sem teclado, loop infinito</td><td class="good">Sim, nos dois ambientes</td></tr>
+      <tr><td>Testes passando</td><td class="num">78 de 83 (5 travam)</td><td class="num good">88 de 88</td></tr>
+      <tr><td>Cobertura de linhas (gcovr)</td><td class="num">75% <span style="color:var(--muted)">(só sem os 5 travados)</span></td><td class="num good">83% Linux · 85% macOS</td></tr>
+      <tr><td>Warnings de compilação (<code>-Wall -Wextra</code>)</td><td class="num">0</td><td class="num">0</td></tr>
+      <tr><td>Arquivos com mais de uma classe</td><td class="bad">6</td><td class="good">0</td></tr>
+      <tr><td>Documentação Doxygen gerada</td><td class="bad">Vazia (o Doxyfile não lia <code>include/</code> nem <code>src/</code>)</td><td class="good">37 páginas de classe, 0 avisos</td></tr>
+      <tr><td>Jogo do início ao fim (entrada automática)</td><td>Funciona</td><td>Funciona</td></tr>
+      <tr><td>Ctrl+D durante o jogo</td><td class="bad">Loop infinito</td><td class="good">Sai com “Entrada encerrada.”</td></tr>
+      <tr><td>Nota estimada pelos critérios</td><td class="num">~20 de 26</td><td class="num good">~25 de 26</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<section>
+  <h2>O que foi corrigido, arquivo por arquivo</h2>
+  <p>Em ordem de quantos pontos cada problema podia custar. <span class="chip A" style="display:inline-block">A</span> arquivo novo, <span class="chip M" style="display:inline-block">M</span> modificado, <span class="chip D" style="display:inline-block">D</span> removido.</p>
+
+  <div class="fix">
+    <div class="fix-head"><h3>1. <code>make test</code> travava</h3><span class="pts">Funcionamento + Testes · até −5</span></div>
+    <p>Cinco testes chamavam <code>InterfaceJogo::solicitarEscolha</code> ou <code>Combate::iniciar</code>, que leem <code>std::cin</code>. Com terminal, o <code>make test</code> parava esperando alguém digitar. Sem terminal (EOF), <code>solicitarEscolha</code> fazia <code>cin.clear()</code> e tentava de novo para sempre, a 80% de CPU. O enunciado diz que a correção usa a saída do <code>make test</code>.</p>
+    <ul class="files">
+      <li><span class="chip A">A</span><span class="path">tests/EntradaSimulada.hpp<span class="why">Ajudante de teste (RAII): troca o buffer do <code>std::cin</code> por um texto fixo enquanto o objeto existe e devolve o teclado no destrutor.</span></span></li>
+      <li><span class="chip M">M</span><span class="path">tests/test_Combate.cpp<span class="why">Os 3 testes de combate agora recebem 500 linhas “1” (ataque básico). Novo teste: EOF no meio do combate sobe como exceção em vez de ser engolido.</span></span></li>
+      <li><span class="chip M">M</span><span class="path">tests/test_InterfaceJogo.cpp<span class="why">Os 2 testes “Stub” viraram testes de verdade: opção válida, número fora do intervalo, texto não numérico, EOF, lista vazia e <code>pausar()</code> sem entrada.</span></span></li>
+      <li><span class="chip A">A</span><span class="path">include/EntradaEncerradaException.hpp<span class="why">Exceção própria para “a entrada acabou”.</span></span></li>
+      <li><span class="chip M">M</span><span class="path">src/InterfaceJogo.cpp<span class="why">Se <code>std::cin.eof()</code>, lança <code>EntradaEncerradaException</code> em vez de repetir para sempre.</span></span></li>
+      <li><span class="chip M">M</span><span class="path">src/Combate.cpp<span class="why">O <code>catch (std::exception&amp;)</code> do turno engolia tudo. Agora <code>EntradaEncerradaException</code> é relançada antes dele.</span></span></li>
+      <li><span class="chip M">M</span><span class="path">src/main.cpp<span class="why">Trata <code>EntradaEncerradaException</code> à parte: mostra “Entrada encerrada. Até a próxima!” e sai com código 0.</span></span></li>
+    </ul>
+  </div>
+
+  <div class="fix">
+    <div class="fix-head"><h3>2. Arquivos com várias classes</h3><span class="pts">Boas práticas OO · −2</span></div>
+    <p>O critério diz “deve ter somente uma” classe por arquivo. <code>InimigoComum.hpp</code> e <code>InimigoIncomum.hpp</code> tinham 3 classes cada; outros headers misturavam a classe com exceções e structs. A separação foi feita por script, sem mudar nenhuma linha de lógica.</p>
+    <ul class="files">
+      <li><span class="chip A">A</span><span class="path">include/ e src/ DesafianteDoBar, TrabalhadorNoturno, SegurancaDeBalada (.hpp + .cpp)<span class="why">Um par de arquivos por inimigo comum.</span></span></li>
+      <li><span class="chip A">A</span><span class="path">include/ e src/ RecrutaDoutrinado, GuardaPatrimonial, SabotadorRival (.hpp + .cpp)<span class="why">Um par de arquivos por inimigo incomum.</span></span></li>
+      <li><span class="chip M">M</span><span class="path">include/InimigoComum.hpp · include/InimigoIncomum.hpp<span class="why">Viraram atalhos que só fazem <code>#include</code> dos 3 inimigos. Não declaram classe, então <code>MotorJogo</code> e os testes continuam funcionando sem mudança.</span></span></li>
+      <li><span class="chip D">D</span><span class="path">src/InimigoComum.cpp · src/InimigoIncomum.cpp<span class="why">O conteúdo foi para os 6 .cpp novos.</span></span></li>
+      <li><span class="chip A">A</span><span class="path">include/CombateInvalidoException.hpp · include/HabilidadeInvalidaException.hpp<span class="why">Saíram de <code>Combate.hpp</code> e <code>Habilidade.hpp</code>.</span></span></li>
+      <li><span class="chip A">A</span><span class="path">include/Escolha.hpp · include/EfeitoPorTempo.hpp · include/ModificadorAtributo.hpp<span class="why">Structs que estavam em <code>Cena.hpp</code> e <code>Personagem.hpp</code>.</span></span></li>
+      <li><span class="chip M">M</span><span class="path">include/Combate.hpp · include/Habilidade.hpp · include/Cena.hpp · include/Personagem.hpp<span class="why">Passam a incluir os headers novos em vez de declarar os tipos.</span></span></li>
+      <li><span class="chip M">M</span><span class="path">include/Inimigo.hpp · src/Inimigo.cpp · src/InimigoBoss.cpp<span class="why">A função <code>validarNivel</code> estava copiada em 3 arquivos (num namespace anônimo). Virou um método <code>protected static</code> de <code>Inimigo</code>, usado pelos 7 inimigos. Também saíram dois métodos comentados e um bloco Doxygen quebrado (<code>/** *//**</code>).</span></span></li>
+    </ul>
+  </div>
+
+  <div class="fix">
+    <div class="fix-head"><h3>3. Doxygen não documentava nada</h3><span class="pts">Documentação · −1 a −2</span></div>
+    <p>O <code>Doxyfile</code> estava no padrão de fábrica: <code>INPUT</code> vazio e <code>RECURSIVE = NO</code>. Como não há código na raiz, o Doxygen não lia nenhum header. Além disso, quase nenhum método tinha <code>@return</code>, e havia uma sobra de conflito de merge dentro de um comentário.</p>
+    <ul class="files">
+      <li><span class="chip M">M</span><span class="path">Doxyfile<span class="why">Agora lê <code>README.md include src</code> (recursivo), ignora o <code>doctest.h</code>, usa o README como página inicial, sai em português em <code>doc/html</code> e não gera LaTeX.</span></span></li>
+      <li><span class="chip M">M</span><span class="path">include/Habilidade.hpp<span class="why">Tinha <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</code> / <code>=======</code> / <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt; 4c10a33</code> no comentário da classe. Ficou a versão mais nova. Os getters ganharam <code>@return</code>.</span></span></li>
+      <li><span class="chip M">M</span><span class="path">include/Personagem.hpp · include/Aventureiro.hpp · include/InimigoBoss.hpp · headers dos 6 inimigos<span class="why"><code>@return</code> em todo método que devolve valor, <code>@param forca</code> que faltava no construtor e documentação de <code>_modificadoresAtivos</code>.</span></span></li>
+      <li><span class="chip M">M</span><span class="path">Makefile<span class="why">Novo alvo <code>make docs</code>, que roda o Doxygen.</span></span></li>
+    </ul>
+  </div>
+
+  <div class="fix">
+    <div class="fix-head"><h3>4. Arquivos de build versionados</h3><span class="pts">Risco na correção</span></div>
+    <p>23 arquivos de <code>build/</code> estavam no git, incluindo o executável <code>jogo</code> e dados de cobertura (<code>.gcda</code>/<code>.gcno</code>) antigos. O corretor pode acabar lendo cobertura velha.</p>
+    <ul class="files">
+      <li><span class="chip M">M</span><span class="path">.gitignore<span class="why">Ignora <code>build/</code>, <code>*.gcno</code>, <code>*.gcda</code> e <code>*.gcov</code>.</span></span></li>
+      <li><span class="chip D">D</span><span class="path">build/ (23 arquivos)<span class="why">Removidos da cópia. No repositório real, falta rodar <code>git rm -r --cached build</code> e commitar.</span></span></li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Como conferir</h2>
+  <p>Dentro de <code>repo-corrigido/</code>:</p>
+<pre>make clean &amp;&amp; make test   # 88 testes + resumo de cobertura
+make run                  # joga
+make docs                 # gera doc/html/index.html</pre>
+  <p>A documentação já está gerada em <code>repo-corrigido/doc/html/index.html</code>. As saídas completas do <code>make test</code> no Linux e no macOS estão em <code>evidencias/</code>, e o diff de tudo em <code>mudancas.diff</code>.</p>
+</section>
+
+<section>
+  <h2>O que ficou com o grupo</h2>
+  <p>Não dava para resolver isto sem informação que só vocês têm, ou que é decisão de vocês.</p>
+  <ol class="advice">
+    <li><strong>Preencher os arquivos de matrícula.</strong> Os 5 arquivos <code>20250xxxxx.txt</code> dizem que só contam commits “de acordo com os dados de usuário cadastrados acima”, mas nenhum tem dados acima. Coloquem nome, usuário do GitHub e e-mail. A nota individual depende disso.</li>
+    <li><strong>Unificar a identidade do git.</strong> Há commits do mesmo aluno com nomes diferentes: <code>Davi Costa</code>/<code>davicostaaa</code>, <code>Kaio Gomes Vieira</code>/<code>szkaio</code>, <code>Joao Pedro Guimaraes Carvalho</code>/<code>João Pedro Guimarães Carvalho</code>/<code>jpgcarvalho9876</code>. Listem todas as identidades no .txt e configurem <code>git config user.name</code> e <code>user.email</code> iguais em todas as máquinas.</li>
+    <li><strong>Aplicar as correções em commits pequenos</strong>, um por problema acima, cada um feito por um aluno diferente. Isso divide a autoria e deixa o histórico legível para o corretor.</li>
+    <li><strong>Rodar uma vez em Linux antes de entregar:</strong> <code>make clean &amp;&amp; make test</code>. Foi assim que os números acima foram medidos.</li>
+  </ol>
+</section>
+
+<section>
+  <h2>Conselhos para subir a nota e o código</h2>
+  <ol class="advice">
+    <li><strong>Cobertura de branches está em 43%.</strong> A de linhas passa folgado, mas a IA dos inimigos depende de <code>rand()</code>. Recebam o gerador como parâmetro, ou chamem <code>srand</code> com semente fixa nos testes, para cobrir os dois lados de cada decisão.</li>
+    <li><strong><code>Aventureiro.cpp</code> (63%) e <code>MotorJogo.cpp</code> (73%) são os menos cobertos.</strong> Com o <code>EntradaSimulada</code> dá para testar o menu de habilidades, o escudo e o frasco de cura do Aventureiro, e o laço de cenas do <code>MotorJogo::rodar()</code>.</li>
+    <li><strong><code>validarNivel</code> nunca lança.</strong> O construtor de <code>Personagem</code> já rejeita <code>nivel &lt;= 0</code> antes, então o <code>throw</code> de <code>Inimigo::validarNivel</code> é código morto (as linhas 22–23 de <code>Inimigo.cpp</code> aparecem sem cobertura por isso). Escolham um dos dois lugares para validar.</li>
+    <li><strong>Cartão CRC de <code>Combate</code></strong> só lista ações. O critério pede responsabilidades de conhecimento (atributos) e de realização (métodos). Acrescentem algo como “conhece o turno atual” e “conhece os dois combatentes”.</li>
+    <li><strong>Escolher um template de PR.</strong> Há <code>.github/pr_template.md</code> e <code>.github/PULL_REQUEST_TEMPLATE.md</code>; o GitHub só usa o segundo.</li>
+    <li><strong>Juntar as notas de design.</strong> <code>notas.md</code>, <code>notas-C6.md</code> e <code>notas-C7.md</code> têm de 4 a 9 linhas cada. Um arquivo só, ou nada.</li>
+    <li><strong><code>.vscode/</code></strong> é configuração local de editor. Coloquem no <code>.gitignore</code>.</li>
+    <li><strong>A main ainda diz “INICIANDO AMBIENTE DE TESTE NA MAIN”</strong> e o herói se chama Aragorn. Para a entrega, troquem por uma abertura do jogo.</li>
+  </ol>
+  <p class="note">Não foi mudada nenhuma regra de jogo, nenhum valor de balanceamento e nenhum texto da história. Toda mudança é de estrutura, testes, tratamento de entrada ou documentação.</p>
+</section>
+
+</div>

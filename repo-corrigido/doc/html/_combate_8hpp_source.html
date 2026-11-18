@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RPG Fight Club - PDS2 Grupo 14: Código-Fonte de include/Combate.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RPG Fight Club - PDS2 Grupo 14
+   </div>
+   <div id="projectbrief">RPG textual por turnos em C++17</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Busca" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('_combate_8hpp_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Combate.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_combate_8hpp.html">Ir para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef COMBATE_HPP</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define COMBATE_HPP</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="_aventureiro_8hpp.html">Aventureiro.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="_inimigo_8hpp.html">Inimigo.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="_combate_invalido_exception_8hpp.html">CombateInvalidoException.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;stdexcept&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">// ============================================================================</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">// CLASSE COMBATE</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">// ============================================================================</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span></div>
+<div class="foldopen" id="foldopen00030" data-start="{" data-end="};">
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_combate.html">   30</a></span><span class="keyword">class </span><a class="code hl_function" href="class_combate.html#af794580bb018faddc19830a0e8aeec40">Combate</a> {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <a class="code hl_function" href="class_combate.html#af794580bb018faddc19830a0e8aeec40">Combate</a>(<a class="code hl_class" href="class_aventureiro.html">Aventureiro</a>&amp; jogador, <a class="code hl_class" href="class_inimigo.html">Inimigo</a>&amp; inimigo);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_combate.html#aef2de1b836840b50cf32d47dbc63273d">iniciar</a>();</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="class_combate.html#acdc51beac7288e9fd059e75dddc35851">   59</a></span>    <a class="code hl_class" href="class_aventureiro.html">Aventureiro</a>&amp; <a class="code hl_variable" href="class_combate.html#acdc51beac7288e9fd059e75dddc35851">_jogador</a>;  </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="class_combate.html#a9a7dc9936ea13896f74b47319a49c3eb">   60</a></span>    <a class="code hl_class" href="class_inimigo.html">Inimigo</a>&amp;     <a class="code hl_variable" href="class_combate.html#a9a7dc9936ea13896f74b47319a49c3eb">_inimigo</a>;  </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="class_combate.html#acc575dc155e0da13fce138117756bd65">   61</a></span>    <span class="keywordtype">int</span>          <a class="code hl_variable" href="class_combate.html#acc575dc155e0da13fce138117756bd65">_turnoAtual</a>; </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_combate.html#abe7f101792b7d5c8cebcbaa8d85f8d83">turnoDoJogador</a>();</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_combate.html#a3ced2e05f48b111bbebe34d9e80f094a">turnoDoInimigo</a>();</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_combate.html#a5684d79004c42aa40863b07d9b2f1418">verificarContinuacao</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_combate.html#a8dba687020088d47184658defa9dc602">renderizarInterfaceTurno</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_combate.html#a9e7b8196ffb78e9ebac6fe0f1fcad23c">renderizarInicioCombate</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_combate.html#ab62278c7f4ce165fb14a438b6b6aa0b6">renderizarFimCombate</a>(<span class="keywordtype">bool</span> jogadorVenceu);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>};</div>
+</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="preprocessor">#endif </span><span class="comment">// COMBATE_HPP</span></div>
+<div class="ttc" id="a_aventureiro_8hpp_html"><div class="ttname"><a href="_aventureiro_8hpp.html">Aventureiro.hpp</a></div><div class="ttdoc">Definição da classe Aventureiro, entidade controlada pelo usuário.</div></div>
+<div class="ttc" id="a_combate_invalido_exception_8hpp_html"><div class="ttname"><a href="_combate_invalido_exception_8hpp.html">CombateInvalidoException.hpp</a></div><div class="ttdoc">Exceção lançada quando um combate não pode começar.</div></div>
+<div class="ttc" id="a_inimigo_8hpp_html"><div class="ttname"><a href="_inimigo_8hpp.html">Inimigo.hpp</a></div><div class="ttdoc">Declaração da classe base abstrata Inimigo.</div></div>
+<div class="ttc" id="aclass_aventureiro_html"><div class="ttname"><a href="class_aventureiro.html">Aventureiro</a></div><div class="ttdoc">Representa o personagem jogável, contendo sistemas de progressão, inventário de habilidades e recurso...</div><div class="ttdef"><b>Definição</b> Aventureiro.hpp:27</div></div>
+<div class="ttc" id="aclass_combate_html_a3ced2e05f48b111bbebe34d9e80f094a"><div class="ttname"><a href="class_combate.html#a3ced2e05f48b111bbebe34d9e80f094a">Combate::turnoDoInimigo</a></div><div class="ttdeci">void turnoDoInimigo()</div><div class="ttdoc">Processa o turno do inimigo com tratamento de exceções.</div><div class="ttdef"><b>Definição</b> Combate.cpp:101</div></div>
+<div class="ttc" id="aclass_combate_html_a5684d79004c42aa40863b07d9b2f1418"><div class="ttname"><a href="class_combate.html#a5684d79004c42aa40863b07d9b2f1418">Combate::verificarContinuacao</a></div><div class="ttdeci">bool verificarContinuacao() const</div><div class="ttdoc">Verifica se o combate deve continuar.</div><div class="ttdef"><b>Definição</b> Combate.cpp:121</div></div>
+<div class="ttc" id="aclass_combate_html_a8dba687020088d47184658defa9dc602"><div class="ttname"><a href="class_combate.html#a8dba687020088d47184658defa9dc602">Combate::renderizarInterfaceTurno</a></div><div class="ttdeci">void renderizarInterfaceTurno() const</div><div class="ttdoc">Renderiza o cabeçalho do turno atual com os status dos combatentes.</div><div class="ttdef"><b>Definição</b> Combate.cpp:129</div></div>
+<div class="ttc" id="aclass_combate_html_a9a7dc9936ea13896f74b47319a49c3eb"><div class="ttname"><a href="class_combate.html#a9a7dc9936ea13896f74b47319a49c3eb">Combate::_inimigo</a></div><div class="ttdeci">Inimigo &amp; _inimigo</div><div class="ttdoc">Referência ao inimigo adversário.</div><div class="ttdef"><b>Definição</b> Combate.hpp:60</div></div>
+<div class="ttc" id="aclass_combate_html_a9e7b8196ffb78e9ebac6fe0f1fcad23c"><div class="ttname"><a href="class_combate.html#a9e7b8196ffb78e9ebac6fe0f1fcad23c">Combate::renderizarInicioCombate</a></div><div class="ttdeci">void renderizarInicioCombate() const</div><div class="ttdoc">Exibe a introdução visual e narrativa do confronto.</div><div class="ttdef"><b>Definição</b> Combate.cpp:139</div></div>
+<div class="ttc" id="aclass_combate_html_ab62278c7f4ce165fb14a438b6b6aa0b6"><div class="ttname"><a href="class_combate.html#ab62278c7f4ce165fb14a438b6b6aa0b6">Combate::renderizarFimCombate</a></div><div class="ttdeci">void renderizarFimCombate(bool jogadorVenceu)</div><div class="ttdoc">Renderiza a tela de desfecho e processa recompensas ou game over.</div><div class="ttdef"><b>Definição</b> Combate.cpp:147</div></div>
+<div class="ttc" id="aclass_combate_html_abe7f101792b7d5c8cebcbaa8d85f8d83"><div class="ttname"><a href="class_combate.html#abe7f101792b7d5c8cebcbaa8d85f8d83">Combate::turnoDoJogador</a></div><div class="ttdeci">void turnoDoJogador()</div><div class="ttdoc">Processa o turno do jogador com tratamento completo de exceções.</div><div class="ttdef"><b>Definição</b> Combate.cpp:72</div></div>
+<div class="ttc" id="aclass_combate_html_acc575dc155e0da13fce138117756bd65"><div class="ttname"><a href="class_combate.html#acc575dc155e0da13fce138117756bd65">Combate::_turnoAtual</a></div><div class="ttdeci">int _turnoAtual</div><div class="ttdoc">Contador de turnos da batalha.</div><div class="ttdef"><b>Definição</b> Combate.hpp:61</div></div>
+<div class="ttc" id="aclass_combate_html_acdc51beac7288e9fd059e75dddc35851"><div class="ttname"><a href="class_combate.html#acdc51beac7288e9fd059e75dddc35851">Combate::_jogador</a></div><div class="ttdeci">Aventureiro &amp; _jogador</div><div class="ttdoc">Referência ao herói controlado pelo jogador.</div><div class="ttdef"><b>Definição</b> Combate.hpp:59</div></div>
+<div class="ttc" id="aclass_combate_html_aef2de1b836840b50cf32d47dbc63273d"><div class="ttname"><a href="class_combate.html#aef2de1b836840b50cf32d47dbc63273d">Combate::iniciar</a></div><div class="ttdeci">bool iniciar()</div><div class="ttdoc">Inicia e gerencia o loop principal da batalha.</div><div class="ttdef"><b>Definição</b> Combate.cpp:31</div></div>
+<div class="ttc" id="aclass_combate_html_af794580bb018faddc19830a0e8aeec40"><div class="ttname"><a href="class_combate.html#af794580bb018faddc19830a0e8aeec40">Combate::Combate</a></div><div class="ttdeci">Combate(Aventureiro &amp;jogador, Inimigo &amp;inimigo)</div><div class="ttdoc">Construtor defensivo da classe Combate.</div><div class="ttdef"><b>Definição</b> Combate.cpp:11</div></div>
+<div class="ttc" id="aclass_inimigo_html"><div class="ttname"><a href="class_inimigo.html">Inimigo</a></div><div class="ttdoc">Classe base para todas as entidades hostis do jogo.</div><div class="ttdef"><b>Definição</b> Inimigo.hpp:21</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>include</b></li><li class="navelem"><a href="_combate_8hpp.html">Combate.hpp</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

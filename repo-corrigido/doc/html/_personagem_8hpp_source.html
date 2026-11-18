@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RPG Fight Club - PDS2 Grupo 14: Código-Fonte de include/Personagem.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RPG Fight Club - PDS2 Grupo 14
+   </div>
+   <div id="projectbrief">RPG textual por turnos em C++17</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Busca" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('_personagem_8hpp_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Personagem.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_personagem_8hpp.html">Ir para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef PERSONAGEM_HPP</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define PERSONAGEM_HPP</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="_habilidade_8hpp.html">Habilidade.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="_efeito_por_tempo_8hpp.html">EfeitoPorTempo.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="_modificador_atributo_8hpp.html">ModificadorAtributo.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span></div>
+<div class="foldopen" id="foldopen00025" data-start="{" data-end="};">
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_personagem.html">   25</a></span><span class="keyword">class </span><a class="code hl_function" href="class_personagem.html#a47c16f9a7fcf6a5c4b8e9ebca3dc13ed">Personagem</a> {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <a class="code hl_function" href="class_personagem.html#a47c16f9a7fcf6a5c4b8e9ebca3dc13ed">Personagem</a>(std::string nome, <span class="keywordtype">int</span> hp, <span class="keywordtype">int</span> defesa, <span class="keywordtype">int</span> forca, <span class="keywordtype">int</span> nivel);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="class_personagem.html#a84f5c498a97451963267510c79261177">   44</a></span>    <span class="keyword">virtual</span> <a class="code hl_function" href="class_personagem.html#a84f5c498a97451963267510c79261177">~Personagem</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="class_personagem.html#a34169763c9896f9fa93f87788dc10210">   52</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_personagem.html#a34169763c9896f9fa93f87788dc10210">executarTurno</a>(<a class="code hl_function" href="class_personagem.html#a47c16f9a7fcf6a5c4b8e9ebca3dc13ed">Personagem</a>&amp; alvo) = 0;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_personagem.html#a27c5ba0e8af0332329a81766f77baa34">adicionarHabilidade</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_habilidade.html">Habilidade</a>&amp; habilidade);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keyword">const</span> std::vector&lt;Habilidade&gt;&amp; <a class="code hl_function" href="class_personagem.html#a6ef19aa17671dce9cf41fa992b49e6fd">getHabilidades</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="class_personagem.html#aa2ca8a887fc13efe068a5af73f858dfb">   70</a></span>    <span class="keyword">virtual</span> std::string <a class="code hl_function" href="class_personagem.html#aa2ca8a887fc13efe068a5af73f858dfb">getDeclaracaoStatus</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_personagem.html#a919f509fb99d7cfc7f3a187264764cb4">receberDano</a>(<span class="keywordtype">int</span> dano, <a class="code hl_enumeration" href="_habilidade_8hpp.html#aa51c8184308d3e880af7237f46b87014">TipoHabilidade</a> tipoDaHabilidade);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_personagem.html#a9cf0387279bb86cc48ee6bcfe01c2880">receberCura</a>(<span class="keywordtype">int</span> valor);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_personagem.html#a93db7403a8d14cc14617ac1b1e38458a">aplicarBuff</a>(std::string nome, std::string atributo, <span class="keywordtype">int</span> valor, <span class="keywordtype">int</span> duracao);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_personagem.html#aa7d09dcb4ab4b25ea0053bd5811b8b41">aplicarDebuff</a>(std::string nome, std::string atributo, <span class="keywordtype">int</span> valor, <span class="keywordtype">int</span> duracao); </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_personagem.html#ab79a961ff523fbfa3e03e398409bd356">aplicarDoT</a>(std::string nome, <span class="keywordtype">int</span> dano, <span class="keywordtype">int</span> duracao);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_personagem.html#a9331594e0e6a58b114d33a36579bc249">aplicarHoT</a>(std::string nome, <span class="keywordtype">int</span> cura, <span class="keywordtype">int</span> duracao);</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_personagem.html#a3afd32d38bd808403db8cd53a6afb32f">processarEfeitosContinuos</a>();</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_personagem.html#adde93429c2cdbe140c438984b8c11e86">limparEfeitosTemporarios</a>();</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_personagem.html#ae2a4d8eb392081372b27750193238516">getDefesa</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span></div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_personagem.html#a84867f900dae1f6a1d5171cd08395aa4">getForcaTotal</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span></div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_personagem.html#a0a536e87fcaec762d983c02b112d32b8">getHP</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_personagem.html#aafc217a5fee9ff31b06a024cff32a98c">getHPMax</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_personagem.html#af424ac9cfdbfb95a91f4889c67f9cf86">estaVivo</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    std::string <a class="code hl_function" href="class_personagem.html#a655543f46b19dd076bc47c0c2c6de68a">getNome</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_personagem.html#ad4a55e257bcd94921da359fd421c1def">getNivel</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span> </div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno"><a class="line" href="class_personagem.html#aa23848afb7f3235a44c841fefb6f820b">  185</a></span>    std::string <a class="code hl_variable" href="class_personagem.html#aa23848afb7f3235a44c841fefb6f820b">_nome</a>;    </div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno"><a class="line" href="class_personagem.html#a092750b5171fb9a640103feb0ab9085f">  186</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_personagem.html#a092750b5171fb9a640103feb0ab9085f">_hp</a>;              </div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno"><a class="line" href="class_personagem.html#a6339381865c9a372fa7c168fe0c2c24f">  187</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_personagem.html#a6339381865c9a372fa7c168fe0c2c24f">_hpMax</a>;           </div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno"><a class="line" href="class_personagem.html#a36a56febda59fb1039abb2290282c176">  188</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_personagem.html#a36a56febda59fb1039abb2290282c176">_defesaBase</a>;      </div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno"><a class="line" href="class_personagem.html#aa7ff238ed78f94cfc75bdb2065cdf45f">  189</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_personagem.html#aa7ff238ed78f94cfc75bdb2065cdf45f">_nivel</a>;           </div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno"><a class="line" href="class_personagem.html#a489fe3312b52d46332c1948d148a261d">  190</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_personagem.html#a489fe3312b52d46332c1948d148a261d">_forcaBase</a>;       </div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno"><a class="line" href="class_personagem.html#a719c3f4dd06f462226f5f5caa0e6a9db">  191</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="class_personagem.html#a719c3f4dd06f462226f5f5caa0e6a9db">_vivo</a>;           </div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno"><a class="line" href="class_personagem.html#a005e889847175663da0bbf5af2e68263">  192</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="class_personagem.html#a005e889847175663da0bbf5af2e68263">_escudoAtivo</a>;    </div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno"><a class="line" href="class_personagem.html#aca8cc356e53a759fc43d73b96fb3ee61">  196</a></span>    std::vector&lt;EfeitoPorTempo&gt; <a class="code hl_variable" href="class_personagem.html#aca8cc356e53a759fc43d73b96fb3ee61">_efeitosAtivos</a>;</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno"><a class="line" href="class_personagem.html#abd635865e75449596938c6cc912d59b2">  197</a></span>    std::vector&lt;ModificadorAtributo&gt; <a class="code hl_variable" href="class_personagem.html#abd635865e75449596938c6cc912d59b2">_modificadoresAtivos</a>; </div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> </div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span><span class="keyword">private</span>: </div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno"><a class="line" href="class_personagem.html#adef99a0e8a2bd861793ffa10d76ccb95">  200</a></span>    std::vector&lt;Habilidade&gt; <a class="code hl_variable" href="class_personagem.html#adef99a0e8a2bd861793ffa10d76ccb95">_habilidades</a>; </div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>};</div>
+</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span> </div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span><span class="preprocessor">#endif </span><span class="comment">// PERSONAGEM_HPP</span></div>
+<div class="ttc" id="a_efeito_por_tempo_8hpp_html"><div class="ttname"><a href="_efeito_por_tempo_8hpp.html">EfeitoPorTempo.hpp</a></div><div class="ttdoc">Estrutura de um efeito contínuo (DoT, HoT, Buff, Debuff).</div></div>
+<div class="ttc" id="a_habilidade_8hpp_html"><div class="ttname"><a href="_habilidade_8hpp.html">Habilidade.hpp</a></div><div class="ttdoc">Definição da classe Habilidade, seu enumerador de tipos e exceções próprias.</div></div>
+<div class="ttc" id="a_habilidade_8hpp_html_aa51c8184308d3e880af7237f46b87014"><div class="ttname"><a href="_habilidade_8hpp.html#aa51c8184308d3e880af7237f46b87014">TipoHabilidade</a></div><div class="ttdeci">TipoHabilidade</div><div class="ttdoc">Define a categoria mecânica e o comportamento do efeito da habilidade.</div><div class="ttdef"><b>Definição</b> Habilidade.hpp:22</div></div>
+<div class="ttc" id="a_modificador_atributo_8hpp_html"><div class="ttname"><a href="_modificador_atributo_8hpp.html">ModificadorAtributo.hpp</a></div><div class="ttdoc">Estrutura de um modificador de atributo (Buff/Debuff) ativo.</div></div>
+<div class="ttc" id="aclass_habilidade_html"><div class="ttname"><a href="class_habilidade.html">Habilidade</a></div><div class="ttdoc">Objeto imutável que encapsula os metadados e parâmetros de uma ação especial.</div><div class="ttdef"><b>Definição</b> Habilidade.hpp:47</div></div>
+<div class="ttc" id="aclass_personagem_html_a005e889847175663da0bbf5af2e68263"><div class="ttname"><a href="class_personagem.html#a005e889847175663da0bbf5af2e68263">Personagem::_escudoAtivo</a></div><div class="ttdeci">bool _escudoAtivo</div><div class="ttdoc">Estado de postura defensiva ativa que mitiga o próximo golpe sofrido.</div><div class="ttdef"><b>Definição</b> Personagem.hpp:192</div></div>
+<div class="ttc" id="aclass_personagem_html_a092750b5171fb9a640103feb0ab9085f"><div class="ttname"><a href="class_personagem.html#a092750b5171fb9a640103feb0ab9085f">Personagem::_hp</a></div><div class="ttdeci">int _hp</div><div class="ttdoc">Pontos de vida (HP) atuais da entidade.</div><div class="ttdef"><b>Definição</b> Personagem.hpp:186</div></div>
+<div class="ttc" id="aclass_personagem_html_a0a536e87fcaec762d983c02b112d32b8"><div class="ttname"><a href="class_personagem.html#a0a536e87fcaec762d983c02b112d32b8">Personagem::getHP</a></div><div class="ttdeci">int getHP() const</div><div class="ttdoc">Retorna os pontos de vida atuais.</div><div class="ttdef"><b>Definição</b> Personagem.cpp:285</div></div>
+<div class="ttc" id="aclass_personagem_html_a27c5ba0e8af0332329a81766f77baa34"><div class="ttname"><a href="class_personagem.html#a27c5ba0e8af0332329a81766f77baa34">Personagem::adicionarHabilidade</a></div><div class="ttdeci">void adicionarHabilidade(const Habilidade &amp;habilidade)</div><div class="ttdoc">Insere com segurança uma nova habilidade no repositório privado da entidade.</div><div class="ttdef"><b>Definição</b> Personagem.cpp:41</div></div>
+<div class="ttc" id="aclass_personagem_html_a34169763c9896f9fa93f87788dc10210"><div class="ttname"><a href="class_personagem.html#a34169763c9896f9fa93f87788dc10210">Personagem::executarTurno</a></div><div class="ttdeci">virtual void executarTurno(Personagem &amp;alvo)=0</div><div class="ttdoc">Método virtual puro que define a Inteligência Artificial ou comportamento de turno da entidade.</div></div>
+<div class="ttc" id="aclass_personagem_html_a36a56febda59fb1039abb2290282c176"><div class="ttname"><a href="class_personagem.html#a36a56febda59fb1039abb2290282c176">Personagem::_defesaBase</a></div><div class="ttdeci">int _defesaBase</div><div class="ttdoc">Atributo nativo de mitigação de dano físico.</div><div class="ttdef"><b>Definição</b> Personagem.hpp:188</div></div>
+<div class="ttc" id="aclass_personagem_html_a3afd32d38bd808403db8cd53a6afb32f"><div class="ttname"><a href="class_personagem.html#a3afd32d38bd808403db8cd53a6afb32f">Personagem::processarEfeitosContinuos</a></div><div class="ttdeci">void processarEfeitosContinuos()</div><div class="ttdoc">Varre e processa todos os efeitos de dano por turno ativos no personagem.</div><div class="ttdef"><b>Definição</b> Personagem.cpp:181</div></div>
+<div class="ttc" id="aclass_personagem_html_a47c16f9a7fcf6a5c4b8e9ebca3dc13ed"><div class="ttname"><a href="class_personagem.html#a47c16f9a7fcf6a5c4b8e9ebca3dc13ed">Personagem::Personagem</a></div><div class="ttdeci">Personagem(std::string nome, int hp, int defesa, int forca, int nivel)</div><div class="ttdoc">Construtor da classe Personagem.</div><div class="ttdef"><b>Definição</b> Personagem.cpp:10</div></div>
+<div class="ttc" id="aclass_personagem_html_a489fe3312b52d46332c1948d148a261d"><div class="ttname"><a href="class_personagem.html#a489fe3312b52d46332c1948d148a261d">Personagem::_forcaBase</a></div><div class="ttdeci">int _forcaBase</div><div class="ttdoc">Atributo nativo de dano físico.</div><div class="ttdef"><b>Definição</b> Personagem.hpp:190</div></div>
+<div class="ttc" id="aclass_personagem_html_a6339381865c9a372fa7c168fe0c2c24f"><div class="ttname"><a href="class_personagem.html#a6339381865c9a372fa7c168fe0c2c24f">Personagem::_hpMax</a></div><div class="ttdeci">int _hpMax</div><div class="ttdoc">Capacidade máxima de armazenamento de saúde.</div><div class="ttdef"><b>Definição</b> Personagem.hpp:187</div></div>
+<div class="ttc" id="aclass_personagem_html_a655543f46b19dd076bc47c0c2c6de68a"><div class="ttname"><a href="class_personagem.html#a655543f46b19dd076bc47c0c2c6de68a">Personagem::getNome</a></div><div class="ttdeci">std::string getNome() const</div><div class="ttdoc">Retorna o nome do personagem.</div><div class="ttdef"><b>Definição</b> Personagem.cpp:297</div></div>
+<div class="ttc" id="aclass_personagem_html_a6ef19aa17671dce9cf41fa992b49e6fd"><div class="ttname"><a href="class_personagem.html#a6ef19aa17671dce9cf41fa992b49e6fd">Personagem::getHabilidades</a></div><div class="ttdeci">const std::vector&lt; Habilidade &gt; &amp; getHabilidades() const</div><div class="ttdoc">Fornece acesso controlado ao acervo de habilidades conhecidas pela entidade.</div><div class="ttdef"><b>Definição</b> Personagem.cpp:45</div></div>
+<div class="ttc" id="aclass_personagem_html_a719c3f4dd06f462226f5f5caa0e6a9db"><div class="ttname"><a href="class_personagem.html#a719c3f4dd06f462226f5f5caa0e6a9db">Personagem::_vivo</a></div><div class="ttdeci">bool _vivo</div><div class="ttdoc">Indica se o Personagem esta vivo.</div><div class="ttdef"><b>Definição</b> Personagem.hpp:191</div></div>
+<div class="ttc" id="aclass_personagem_html_a84867f900dae1f6a1d5171cd08395aa4"><div class="ttname"><a href="class_personagem.html#a84867f900dae1f6a1d5171cd08395aa4">Personagem::getForcaTotal</a></div><div class="ttdeci">virtual int getForcaTotal() const</div><div class="ttdoc">Retorna o poder de ataque total consolidado (_forcaBase + modificadores).</div><div class="ttdef"><b>Definição</b> Personagem.cpp:260</div></div>
+<div class="ttc" id="aclass_personagem_html_a84f5c498a97451963267510c79261177"><div class="ttname"><a href="class_personagem.html#a84f5c498a97451963267510c79261177">Personagem::~Personagem</a></div><div class="ttdeci">virtual ~Personagem()=default</div><div class="ttdoc">Destrutor virtual puro padronizado.</div></div>
+<div class="ttc" id="aclass_personagem_html_a919f509fb99d7cfc7f3a187264764cb4"><div class="ttname"><a href="class_personagem.html#a919f509fb99d7cfc7f3a187264764cb4">Personagem::receberDano</a></div><div class="ttdeci">virtual void receberDano(int dano, TipoHabilidade tipoDaHabilidade)</div><div class="ttdoc">Aplica a redução de pontos de vida (HP) com base na fórmula de armadura.</div><div class="ttdef"><b>Definição</b> Personagem.cpp:53</div></div>
+<div class="ttc" id="aclass_personagem_html_a9331594e0e6a58b114d33a36579bc249"><div class="ttname"><a href="class_personagem.html#a9331594e0e6a58b114d33a36579bc249">Personagem::aplicarHoT</a></div><div class="ttdeci">void aplicarHoT(std::string nome, int cura, int duracao)</div><div class="ttdoc">Aplica com segurança um efeito de cura contínua (HoT - Heal over Time).</div><div class="ttdef"><b>Definição</b> Personagem.cpp:160</div></div>
+<div class="ttc" id="aclass_personagem_html_a93db7403a8d14cc14617ac1b1e38458a"><div class="ttname"><a href="class_personagem.html#a93db7403a8d14cc14617ac1b1e38458a">Personagem::aplicarBuff</a></div><div class="ttdeci">void aplicarBuff(std::string nome, std::string atributo, int valor, int duracao)</div><div class="ttdoc">Aplica um modificador positivo (Buff) em um atributo específico do personagem.</div><div class="ttdef"><b>Definição</b> Personagem.cpp:118</div></div>
+<div class="ttc" id="aclass_personagem_html_a9cf0387279bb86cc48ee6bcfe01c2880"><div class="ttname"><a href="class_personagem.html#a9cf0387279bb86cc48ee6bcfe01c2880">Personagem::receberCura</a></div><div class="ttdeci">virtual void receberCura(int valor)</div><div class="ttdoc">Incrementa os pontos de vida (HP) atuais da entidade.</div><div class="ttdef"><b>Definição</b> Personagem.cpp:113</div></div>
+<div class="ttc" id="aclass_personagem_html_aa23848afb7f3235a44c841fefb6f820b"><div class="ttname"><a href="class_personagem.html#aa23848afb7f3235a44c841fefb6f820b">Personagem::_nome</a></div><div class="ttdeci">std::string _nome</div><div class="ttdoc">Nome da entidade.</div><div class="ttdef"><b>Definição</b> Personagem.hpp:185</div></div>
+<div class="ttc" id="aclass_personagem_html_aa2ca8a887fc13efe068a5af73f858dfb"><div class="ttname"><a href="class_personagem.html#aa2ca8a887fc13efe068a5af73f858dfb">Personagem::getDeclaracaoStatus</a></div><div class="ttdeci">virtual std::string getDeclaracaoStatus() const =0</div><div class="ttdoc">Método virtual puro para exportar os dados de saúde e recursos formatados em texto.</div></div>
+<div class="ttc" id="aclass_personagem_html_aa7d09dcb4ab4b25ea0053bd5811b8b41"><div class="ttname"><a href="class_personagem.html#aa7d09dcb4ab4b25ea0053bd5811b8b41">Personagem::aplicarDebuff</a></div><div class="ttdeci">void aplicarDebuff(std::string nome, std::string atributo, int valor, int duracao)</div><div class="ttdoc">Aplica um modificador negativo (Debuff) reduzindo temporariamente um atributo.</div><div class="ttdef"><b>Definição</b> Personagem.cpp:126</div></div>
+<div class="ttc" id="aclass_personagem_html_aa7ff238ed78f94cfc75bdb2065cdf45f"><div class="ttname"><a href="class_personagem.html#aa7ff238ed78f94cfc75bdb2065cdf45f">Personagem::_nivel</a></div><div class="ttdeci">int _nivel</div><div class="ttdoc">Nível de poder ou escala de atributos da entidade.</div><div class="ttdef"><b>Definição</b> Personagem.hpp:189</div></div>
+<div class="ttc" id="aclass_personagem_html_aafc217a5fee9ff31b06a024cff32a98c"><div class="ttname"><a href="class_personagem.html#aafc217a5fee9ff31b06a024cff32a98c">Personagem::getHPMax</a></div><div class="ttdeci">int getHPMax() const</div><div class="ttdoc">Retorna o limite máximo de pontos de vida.</div><div class="ttdef"><b>Definição</b> Personagem.cpp:289</div></div>
+<div class="ttc" id="aclass_personagem_html_ab79a961ff523fbfa3e03e398409bd356"><div class="ttname"><a href="class_personagem.html#ab79a961ff523fbfa3e03e398409bd356">Personagem::aplicarDoT</a></div><div class="ttdeci">void aplicarDoT(std::string nome, int dano, int duracao)</div><div class="ttdoc">Injeta e registra um novo efeito de dano por turno (DoT) na lista do personagem.</div><div class="ttdef"><b>Definição</b> Personagem.cpp:134</div></div>
+<div class="ttc" id="aclass_personagem_html_abd635865e75449596938c6cc912d59b2"><div class="ttname"><a href="class_personagem.html#abd635865e75449596938c6cc912d59b2">Personagem::_modificadoresAtivos</a></div><div class="ttdeci">std::vector&lt; ModificadorAtributo &gt; _modificadoresAtivos</div><div class="ttdoc">Buffs e Debuffs ativos no personagem.</div><div class="ttdef"><b>Definição</b> Personagem.hpp:197</div></div>
+<div class="ttc" id="aclass_personagem_html_aca8cc356e53a759fc43d73b96fb3ee61"><div class="ttname"><a href="class_personagem.html#aca8cc356e53a759fc43d73b96fb3ee61">Personagem::_efeitosAtivos</a></div><div class="ttdeci">std::vector&lt; EfeitoPorTempo &gt; _efeitosAtivos</div><div class="ttdoc">Vetor que armazena todos os efeitos de dano contínuo ativos no personagem.</div><div class="ttdef"><b>Definição</b> Personagem.hpp:196</div></div>
+<div class="ttc" id="aclass_personagem_html_ad4a55e257bcd94921da359fd421c1def"><div class="ttname"><a href="class_personagem.html#ad4a55e257bcd94921da359fd421c1def">Personagem::getNivel</a></div><div class="ttdeci">int getNivel() const</div><div class="ttdoc">Retorna o nível atual.</div><div class="ttdef"><b>Definição</b> Personagem.cpp:301</div></div>
+<div class="ttc" id="aclass_personagem_html_adde93429c2cdbe140c438984b8c11e86"><div class="ttname"><a href="class_personagem.html#adde93429c2cdbe140c438984b8c11e86">Personagem::limparEfeitosTemporarios</a></div><div class="ttdeci">void limparEfeitosTemporarios()</div><div class="ttdoc">Remove todos os DoTs, HoTs, Buffs e Debuffs ativos de um combate passado.</div><div class="ttdef"><b>Definição</b> Personagem.cpp:274</div></div>
+<div class="ttc" id="aclass_personagem_html_adef99a0e8a2bd861793ffa10d76ccb95"><div class="ttname"><a href="class_personagem.html#adef99a0e8a2bd861793ffa10d76ccb95">Personagem::_habilidades</a></div><div class="ttdeci">std::vector&lt; Habilidade &gt; _habilidades</div><div class="ttdoc">Repositório privado e blindado contendo as técnicas da entidade.</div><div class="ttdef"><b>Definição</b> Personagem.hpp:200</div></div>
+<div class="ttc" id="aclass_personagem_html_ae2a4d8eb392081372b27750193238516"><div class="ttname"><a href="class_personagem.html#ae2a4d8eb392081372b27750193238516">Personagem::getDefesa</a></div><div class="ttdeci">virtual int getDefesa() const</div><div class="ttdoc">Retorna o valor de defesa ativo do personagem para cálculos de mitigação.</div><div class="ttdef"><b>Definição</b> Personagem.cpp:246</div></div>
+<div class="ttc" id="aclass_personagem_html_af424ac9cfdbfb95a91f4889c67f9cf86"><div class="ttname"><a href="class_personagem.html#af424ac9cfdbfb95a91f4889c67f9cf86">Personagem::estaVivo</a></div><div class="ttdeci">bool estaVivo() const</div><div class="ttdoc">Verifica se o personagem ainda está vivo.</div><div class="ttdef"><b>Definição</b> Personagem.cpp:293</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>include</b></li><li class="navelem"><a href="_personagem_8hpp.html">Personagem.hpp</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

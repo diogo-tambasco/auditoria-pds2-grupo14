@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RPG Fight Club - PDS2 Grupo 14: Código-Fonte de include/Aventureiro.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RPG Fight Club - PDS2 Grupo 14
+   </div>
+   <div id="projectbrief">RPG textual por turnos em C++17</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Busca" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('_aventureiro_8hpp_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Aventureiro.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_aventureiro_8hpp.html">Ir para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef AVENTUREIRO_HPP</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define AVENTUREIRO_HPP</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="_personagem_8hpp.html">Personagem.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="_habilidade_8hpp.html">Habilidade.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="_cena_8hpp.html">Cena.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span></div>
+<div class="foldopen" id="foldopen00027" data-start="{" data-end="};">
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_aventureiro.html">   27</a></span><span class="keyword">class </span><a class="code hl_function" href="class_aventureiro.html#a3ff3d54a0354bad7ca239baecd0f123a">Aventureiro</a> : <span class="keyword">public</span> <a class="code hl_function" href="class_personagem.html#a47c16f9a7fcf6a5c4b8e9ebca3dc13ed">Personagem</a> {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <a class="code hl_function" href="class_aventureiro.html#a3ff3d54a0354bad7ca239baecd0f123a">Aventureiro</a>(std::string nome, <span class="keywordtype">int</span> hp, <span class="keywordtype">int</span> defesa, <span class="keywordtype">int</span> forca);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_aventureiro.html#a59d1795fe9a78339e4d623f98c129efd">executarTurno</a>(<a class="code hl_function" href="class_personagem.html#a47c16f9a7fcf6a5c4b8e9ebca3dc13ed">Personagem</a>&amp; alvo) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_aventureiro.html#a80d550a91c6a86aae83b7f4c26ae537c">recuperarRecursos</a>();</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_aventureiro.html#a1827ebec4e1fbf9bc5299aef372962fc">consumirMP</a>(<span class="keywordtype">int</span> qtd);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_aventureiro.html#a6eb39c0708157e56a3efbaf2a5c44b71">consumirEnergia</a>(<span class="keywordtype">int</span> qtd);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_aventureiro.html#a4e2b70eeb90011cae6f04595b5da13e1">usarEscudo</a>();</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_aventureiro.html#a03a4f7e7e7e06b613b4977cc949770e0">dormir</a>();</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_aventureiro.html#ab65aa55f67d0540d6b01e37505b64e65">ganharExperiencia</a>(<span class="keywordtype">int</span> qtd);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_aventureiro.html#a5ddee89035fc3af285e89ac4843c67de">buffArma</a>(<span class="keywordtype">int</span> valor);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_aventureiro.html#a6a644e5fb7d6e217fe76a57d7a0227f1">buffArmadura</a>(<span class="keywordtype">int</span> valor);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    std::string <a class="code hl_function" href="class_aventureiro.html#a1c2915b753fcd67c2af2400965e01c65">getDeclaracaoStatus</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="comment">// ==========================================</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="comment">// GETTERS E SETTERS DE ESTADO</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="comment">// ==========================================</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_aventureiro.html#a46334c04a09542c8f90dbf24fc9ac913">getIDCheckpoint</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_aventureiro.html#a88c38c9be16ed838a51aeca1a5f3bbb5">setIDCheckpoint</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_aventureiro.html#ac6e4fd3d144c89a53970399e7595fa07">getMP</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_aventureiro.html#a2ce24d80f714846d5f74a8af7a6788e8">getMPMax</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_aventureiro.html#aa783621d84f52923db8a194d884b39b5">getEnergia</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_aventureiro.html#a354f0a885763e1f464880a86db47ecec">getEnergiaMax</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_aventureiro.html#a747d037142bc4771c9fe422a6c173980">getDefesa</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_aventureiro.html#ab80b60fecbabe21bc31830a8fee9175a">getForcaTotal</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno"><a class="line" href="class_aventureiro.html#aa9f9483f4ca9bb5ad5e94f7b9fcf1d36">  152</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_aventureiro.html#aa9f9483f4ca9bb5ad5e94f7b9fcf1d36">_energia</a>;               </div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno"><a class="line" href="class_aventureiro.html#ad8d120e6f9b800931d3eedc615bc0fc9">  153</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_aventureiro.html#ad8d120e6f9b800931d3eedc615bc0fc9">_energiaMax</a>;            </div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno"><a class="line" href="class_aventureiro.html#aaeba9b7ab099a82ad140f264d0418a15">  154</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_aventureiro.html#aaeba9b7ab099a82ad140f264d0418a15">_mp</a>;                    </div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno"><a class="line" href="class_aventureiro.html#a0a8ac1fecbe851d4df2e42dfaf194992">  155</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_aventureiro.html#a0a8ac1fecbe851d4df2e42dfaf194992">_mpMax</a>;                 </div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno"><a class="line" href="class_aventureiro.html#a2c8ea3310e30e6f08795f0217d984373">  156</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_aventureiro.html#a2c8ea3310e30e6f08795f0217d984373">_frascos</a>;               </div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno"><a class="line" href="class_aventureiro.html#a93332ff8268d656886c233b1a08412f0">  157</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_aventureiro.html#a93332ff8268d656886c233b1a08412f0">_bonusArma</a>;             </div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno"><a class="line" href="class_aventureiro.html#a5e7adec04d1d2fea240ee0613bbf4ef5">  158</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_aventureiro.html#a5e7adec04d1d2fea240ee0613bbf4ef5">_bonusArmadura</a>;         </div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno"><a class="line" href="class_aventureiro.html#a13c217c41d8c97cacdd927c24076647c">  159</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_aventureiro.html#a13c217c41d8c97cacdd927c24076647c">_xp</a>;                    </div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno"><a class="line" href="class_aventureiro.html#a8e1579dece2367e1a65bdf3ced771ef4">  160</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_aventureiro.html#a8e1579dece2367e1a65bdf3ced771ef4">_xpProxNivel</a>;           </div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno"><a class="line" href="class_aventureiro.html#acbb5d24bbd9db9332d2a9171427be0f3">  161</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_aventureiro.html#acbb5d24bbd9db9332d2a9171427be0f3">_idCenaCheckpoint</a>;      </div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_aventureiro.html#a0e5382ef40dc2e42642a9ffb20ef97f8">subirNivel</a>();</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>};</div>
+</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="preprocessor">#endif </span><span class="comment">// AVENTUREIRO_HPP</span></div>
+<div class="ttc" id="a_cena_8hpp_html"><div class="ttname"><a href="_cena_8hpp.html">Cena.hpp</a></div><div class="ttdoc">Definição da estrutura Escolha e da classe Cena para o fluxo narrativo.</div></div>
+<div class="ttc" id="a_habilidade_8hpp_html"><div class="ttname"><a href="_habilidade_8hpp.html">Habilidade.hpp</a></div><div class="ttdoc">Definição da classe Habilidade, seu enumerador de tipos e exceções próprias.</div></div>
+<div class="ttc" id="a_personagem_8hpp_html"><div class="ttname"><a href="_personagem_8hpp.html">Personagem.hpp</a></div><div class="ttdoc">Definição da classe base abstrata Personagem.</div></div>
+<div class="ttc" id="aclass_aventureiro_html_a03a4f7e7e7e06b613b4977cc949770e0"><div class="ttname"><a href="class_aventureiro.html#a03a4f7e7e7e06b613b4977cc949770e0">Aventureiro::dormir</a></div><div class="ttdeci">void dormir()</div><div class="ttdoc">Restaura completamente a saúde, recursos do herói e recarrega os frascos de cura.</div><div class="ttdef"><b>Definição</b> Aventureiro.cpp:188</div></div>
+<div class="ttc" id="aclass_aventureiro_html_a0a8ac1fecbe851d4df2e42dfaf194992"><div class="ttname"><a href="class_aventureiro.html#a0a8ac1fecbe851d4df2e42dfaf194992">Aventureiro::_mpMax</a></div><div class="ttdeci">int _mpMax</div><div class="ttdoc">Capacidade máxima de armazenamento mágico.</div><div class="ttdef"><b>Definição</b> Aventureiro.hpp:155</div></div>
+<div class="ttc" id="aclass_aventureiro_html_a0e5382ef40dc2e42642a9ffb20ef97f8"><div class="ttname"><a href="class_aventureiro.html#a0e5382ef40dc2e42642a9ffb20ef97f8">Aventureiro::subirNivel</a></div><div class="ttdeci">void subirNivel()</div><div class="ttdoc">Executa as atualizações aritméticas de atributos ao subir de nível.</div><div class="ttdef"><b>Definição</b> Aventureiro.cpp:200</div></div>
+<div class="ttc" id="aclass_aventureiro_html_a13c217c41d8c97cacdd927c24076647c"><div class="ttname"><a href="class_aventureiro.html#a13c217c41d8c97cacdd927c24076647c">Aventureiro::_xp</a></div><div class="ttdeci">int _xp</div><div class="ttdoc">Experiência acumulada no nível atual.</div><div class="ttdef"><b>Definição</b> Aventureiro.hpp:159</div></div>
+<div class="ttc" id="aclass_aventureiro_html_a1827ebec4e1fbf9bc5299aef372962fc"><div class="ttname"><a href="class_aventureiro.html#a1827ebec4e1fbf9bc5299aef372962fc">Aventureiro::consumirMP</a></div><div class="ttdeci">void consumirMP(int qtd)</div><div class="ttdoc">Deduz uma quantidade específica da barra de Mana (MP).</div><div class="ttdef"><b>Definição</b> Aventureiro.cpp:178</div></div>
+<div class="ttc" id="aclass_aventureiro_html_a1c2915b753fcd67c2af2400965e01c65"><div class="ttname"><a href="class_aventureiro.html#a1c2915b753fcd67c2af2400965e01c65">Aventureiro::getDeclaracaoStatus</a></div><div class="ttdeci">std::string getDeclaracaoStatus() const override</div><div class="ttdoc">Empacota e retorna uma string ricamente formatada com os recursos específicos do jogador.</div><div class="ttdef"><b>Definição</b> Aventureiro.cpp:280</div></div>
+<div class="ttc" id="aclass_aventureiro_html_a2c8ea3310e30e6f08795f0217d984373"><div class="ttname"><a href="class_aventureiro.html#a2c8ea3310e30e6f08795f0217d984373">Aventureiro::_frascos</a></div><div class="ttdeci">int _frascos</div><div class="ttdoc">Quantidade restante de cargas de cura (limite base de 3).</div><div class="ttdef"><b>Definição</b> Aventureiro.hpp:156</div></div>
+<div class="ttc" id="aclass_aventureiro_html_a2ce24d80f714846d5f74a8af7a6788e8"><div class="ttname"><a href="class_aventureiro.html#a2ce24d80f714846d5f74a8af7a6788e8">Aventureiro::getMPMax</a></div><div class="ttdeci">int getMPMax() const</div><div class="ttdoc">Retorna o limite máximo de pontos de Mana.</div><div class="ttdef"><b>Definição</b> Aventureiro.cpp:326</div></div>
+<div class="ttc" id="aclass_aventureiro_html_a354f0a885763e1f464880a86db47ecec"><div class="ttname"><a href="class_aventureiro.html#a354f0a885763e1f464880a86db47ecec">Aventureiro::getEnergiaMax</a></div><div class="ttdeci">int getEnergiaMax() const</div><div class="ttdoc">Retorna o limite máximo de pontos de Energia.</div><div class="ttdef"><b>Definição</b> Aventureiro.cpp:328</div></div>
+<div class="ttc" id="aclass_aventureiro_html_a3ff3d54a0354bad7ca239baecd0f123a"><div class="ttname"><a href="class_aventureiro.html#a3ff3d54a0354bad7ca239baecd0f123a">Aventureiro::Aventureiro</a></div><div class="ttdeci">Aventureiro(std::string nome, int hp, int defesa, int forca)</div><div class="ttdoc">Construtor da classe Aventureiro.</div><div class="ttdef"><b>Definição</b> Aventureiro.cpp:10</div></div>
+<div class="ttc" id="aclass_aventureiro_html_a46334c04a09542c8f90dbf24fc9ac913"><div class="ttname"><a href="class_aventureiro.html#a46334c04a09542c8f90dbf24fc9ac913">Aventureiro::getIDCheckpoint</a></div><div class="ttdeci">int getIDCheckpoint() const</div><div class="ttdoc">Retorna o ID da cena que serve como ponto de ressurreição ativo.</div><div class="ttdef"><b>Definição</b> Aventureiro.cpp:317</div></div>
+<div class="ttc" id="aclass_aventureiro_html_a4e2b70eeb90011cae6f04595b5da13e1"><div class="ttname"><a href="class_aventureiro.html#a4e2b70eeb90011cae6f04595b5da13e1">Aventureiro::usarEscudo</a></div><div class="ttdeci">void usarEscudo()</div><div class="ttdoc">Ativa a postura defensiva para o próximo ataque recebido.</div><div class="ttdef"><b>Definição</b> Aventureiro.cpp:167</div></div>
+<div class="ttc" id="aclass_aventureiro_html_a59d1795fe9a78339e4d623f98c129efd"><div class="ttname"><a href="class_aventureiro.html#a59d1795fe9a78339e4d623f98c129efd">Aventureiro::executarTurno</a></div><div class="ttdeci">void executarTurno(Personagem &amp;alvo) override</div><div class="ttdoc">Sobrescreve a execução do turno para processar o menu interativo do jogador.</div><div class="ttdef"><b>Definição</b> Aventureiro.cpp:22</div></div>
+<div class="ttc" id="aclass_aventureiro_html_a5ddee89035fc3af285e89ac4843c67de"><div class="ttname"><a href="class_aventureiro.html#a5ddee89035fc3af285e89ac4843c67de">Aventureiro::buffArma</a></div><div class="ttdeci">void buffArma(int valor)</div><div class="ttdoc">Incrementa permanentemente o bônus de dano de ataque por modificação de equipamento.</div><div class="ttdef"><b>Definição</b> Aventureiro.cpp:270</div></div>
+<div class="ttc" id="aclass_aventureiro_html_a5e7adec04d1d2fea240ee0613bbf4ef5"><div class="ttname"><a href="class_aventureiro.html#a5e7adec04d1d2fea240ee0613bbf4ef5">Aventureiro::_bonusArmadura</a></div><div class="ttdeci">int _bonusArmadura</div><div class="ttdoc">Modificador de defesa somado por melhoria de equipamento.</div><div class="ttdef"><b>Definição</b> Aventureiro.hpp:158</div></div>
+<div class="ttc" id="aclass_aventureiro_html_a6a644e5fb7d6e217fe76a57d7a0227f1"><div class="ttname"><a href="class_aventureiro.html#a6a644e5fb7d6e217fe76a57d7a0227f1">Aventureiro::buffArmadura</a></div><div class="ttdeci">void buffArmadura(int valor)</div><div class="ttdoc">Incrementa permanentemente o bônus de redução de dano por modificação de equipamento.</div><div class="ttdef"><b>Definição</b> Aventureiro.cpp:275</div></div>
+<div class="ttc" id="aclass_aventureiro_html_a6eb39c0708157e56a3efbaf2a5c44b71"><div class="ttname"><a href="class_aventureiro.html#a6eb39c0708157e56a3efbaf2a5c44b71">Aventureiro::consumirEnergia</a></div><div class="ttdeci">void consumirEnergia(int qtd)</div><div class="ttdoc">Deduz uma quantidade específica da barra de Energia.</div><div class="ttdef"><b>Definição</b> Aventureiro.cpp:183</div></div>
+<div class="ttc" id="aclass_aventureiro_html_a747d037142bc4771c9fe422a6c173980"><div class="ttname"><a href="class_aventureiro.html#a747d037142bc4771c9fe422a6c173980">Aventureiro::getDefesa</a></div><div class="ttdeci">int getDefesa() const override</div><div class="ttdoc">Retorna a defesa somada ao bônus de armadura.</div><div class="ttdef"><b>Definição</b> Aventureiro.cpp:312</div></div>
+<div class="ttc" id="aclass_aventureiro_html_a80d550a91c6a86aae83b7f4c26ae537c"><div class="ttname"><a href="class_aventureiro.html#a80d550a91c6a86aae83b7f4c26ae537c">Aventureiro::recuperarRecursos</a></div><div class="ttdeci">void recuperarRecursos()</div><div class="ttdoc">Regenera passivamente uma fração de Mana (MP) e Energia.</div><div class="ttdef"><b>Definição</b> Aventureiro.cpp:172</div></div>
+<div class="ttc" id="aclass_aventureiro_html_a88c38c9be16ed838a51aeca1a5f3bbb5"><div class="ttname"><a href="class_aventureiro.html#a88c38c9be16ed838a51aeca1a5f3bbb5">Aventureiro::setIDCheckpoint</a></div><div class="ttdeci">void setIDCheckpoint(int id)</div><div class="ttdoc">Altera o ID da cena de salvamento ativo onde o jogador reaparecerá se morrer.</div><div class="ttdef"><b>Definição</b> Aventureiro.cpp:319</div></div>
+<div class="ttc" id="aclass_aventureiro_html_a8e1579dece2367e1a65bdf3ced771ef4"><div class="ttname"><a href="class_aventureiro.html#a8e1579dece2367e1a65bdf3ced771ef4">Aventureiro::_xpProxNivel</a></div><div class="ttdeci">int _xpProxNivel</div><div class="ttdoc">Meta de experiência necessária para o próximo nível.</div><div class="ttdef"><b>Definição</b> Aventureiro.hpp:160</div></div>
+<div class="ttc" id="aclass_aventureiro_html_a93332ff8268d656886c233b1a08412f0"><div class="ttname"><a href="class_aventureiro.html#a93332ff8268d656886c233b1a08412f0">Aventureiro::_bonusArma</a></div><div class="ttdeci">int _bonusArma</div><div class="ttdoc">Modificador de dano somado por melhoria de equipamento.</div><div class="ttdef"><b>Definição</b> Aventureiro.hpp:157</div></div>
+<div class="ttc" id="aclass_aventureiro_html_aa783621d84f52923db8a194d884b39b5"><div class="ttname"><a href="class_aventureiro.html#aa783621d84f52923db8a194d884b39b5">Aventureiro::getEnergia</a></div><div class="ttdeci">int getEnergia() const</div><div class="ttdoc">Retorna os pontos de Energia atuais.</div><div class="ttdef"><b>Definição</b> Aventureiro.cpp:327</div></div>
+<div class="ttc" id="aclass_aventureiro_html_aa9f9483f4ca9bb5ad5e94f7b9fcf1d36"><div class="ttname"><a href="class_aventureiro.html#aa9f9483f4ca9bb5ad5e94f7b9fcf1d36">Aventureiro::_energia</a></div><div class="ttdeci">int _energia</div><div class="ttdoc">Pontos de fadiga física atuais.</div><div class="ttdef"><b>Definição</b> Aventureiro.hpp:152</div></div>
+<div class="ttc" id="aclass_aventureiro_html_aaeba9b7ab099a82ad140f264d0418a15"><div class="ttname"><a href="class_aventureiro.html#aaeba9b7ab099a82ad140f264d0418a15">Aventureiro::_mp</a></div><div class="ttdeci">int _mp</div><div class="ttdoc">Pontos de energia mágica atuais.</div><div class="ttdef"><b>Definição</b> Aventureiro.hpp:154</div></div>
+<div class="ttc" id="aclass_aventureiro_html_ab65aa55f67d0540d6b01e37505b64e65"><div class="ttname"><a href="class_aventureiro.html#ab65aa55f67d0540d6b01e37505b64e65">Aventureiro::ganharExperiencia</a></div><div class="ttdeci">void ganharExperiencia(int qtd)</div><div class="ttdoc">Concede pontos de experiência ao herói e gerencia o evento de subida de nível.</div><div class="ttdef"><b>Definição</b> Aventureiro.cpp:258</div></div>
+<div class="ttc" id="aclass_aventureiro_html_ab80b60fecbabe21bc31830a8fee9175a"><div class="ttname"><a href="class_aventureiro.html#ab80b60fecbabe21bc31830a8fee9175a">Aventureiro::getForcaTotal</a></div><div class="ttdeci">int getForcaTotal() const override</div><div class="ttdoc">Retorna a força somada ao bônus de arma.</div><div class="ttdef"><b>Definição</b> Aventureiro.cpp:307</div></div>
+<div class="ttc" id="aclass_aventureiro_html_ac6e4fd3d144c89a53970399e7595fa07"><div class="ttname"><a href="class_aventureiro.html#ac6e4fd3d144c89a53970399e7595fa07">Aventureiro::getMP</a></div><div class="ttdeci">int getMP() const</div><div class="ttdoc">Retorna os pontos de Mana atuais.</div><div class="ttdef"><b>Definição</b> Aventureiro.cpp:325</div></div>
+<div class="ttc" id="aclass_aventureiro_html_acbb5d24bbd9db9332d2a9171427be0f3"><div class="ttname"><a href="class_aventureiro.html#acbb5d24bbd9db9332d2a9171427be0f3">Aventureiro::_idCenaCheckpoint</a></div><div class="ttdeci">int _idCenaCheckpoint</div><div class="ttdoc">ID da cena mapeada como último ponto de descanso seguro visitado.</div><div class="ttdef"><b>Definição</b> Aventureiro.hpp:161</div></div>
+<div class="ttc" id="aclass_aventureiro_html_ad8d120e6f9b800931d3eedc615bc0fc9"><div class="ttname"><a href="class_aventureiro.html#ad8d120e6f9b800931d3eedc615bc0fc9">Aventureiro::_energiaMax</a></div><div class="ttdeci">int _energiaMax</div><div class="ttdoc">Capacidade máxima de armazenamento de fadiga.</div><div class="ttdef"><b>Definição</b> Aventureiro.hpp:153</div></div>
+<div class="ttc" id="aclass_personagem_html_a47c16f9a7fcf6a5c4b8e9ebca3dc13ed"><div class="ttname"><a href="class_personagem.html#a47c16f9a7fcf6a5c4b8e9ebca3dc13ed">Personagem::Personagem</a></div><div class="ttdeci">Personagem(std::string nome, int hp, int defesa, int forca, int nivel)</div><div class="ttdoc">Construtor da classe Personagem.</div><div class="ttdef"><b>Definição</b> Personagem.cpp:10</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>include</b></li><li class="navelem"><a href="_aventureiro_8hpp.html">Aventureiro.hpp</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

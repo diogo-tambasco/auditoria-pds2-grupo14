@@ -1,0 +1,2202 @@
+==================================================
+        INICIANDO AMBIENTE DE TESTE NA MAIN       
+==================================================
+
+==================================================
+                   INSÔNIA CRÔNICA            
+==================================================
+Faz semanas que você não dorme de verdade. Os dias se 
+misturam em reuniões, fotocópias e um vazio que nenhum 
+trabalho preenche. Você sente que precisa de alguma saída 
+antes que a exaustão te apague por completo.
+--------------------------------------------------
+1 - Procurar um grupo de apoio só para conseguir dormir
+2 - Afogar as mágoas em um bar barato no fim da rua
+Escolha uma opcao: 
+==================================================
+                   TURISTAS DE LUTO          
+==================================================
+No porão de uma igreja, em um círculo de estranhos, você 
+finalmente sente algo parecido com paz. Lá conhece Marla 
+Singer, outra turista de luto que finge sofrer doenças que 
+não tem. Por uma noite, ao menos, você consegue dormir.
+--------------------------------------------------
+1 - Voltar para a rotina vazia, ainda sem rumo
+Escolha uma opcao: 
+==================================================
+                   ENCONTRO ACASAL            
+==================================================
+Em um voo de trabalho você conhece Tyler Durden: carismático, 
+imprevisível, dono de uma filosofia perigosa sobre liberdade e 
+destruição. Ao desembarcar, descobre que sua mala foi destruída 
+e sua casa, misteriosamente, explodiu. Tyler oferece um lugar 
+para ficar — com uma condição.
+--------------------------------------------------
+1 - Aceitar o convite de Tyler e ligar para ele
+Escolha uma opcao: 
+[ITEM OBTIDO]: Cartão do Tyler Durden (+5 de Força)!
+
+==================================================
+                 ME BATA O MAIS FORTE         
+==================================================
+Vocês se encontram em um bar decadente. Depois de algumas 
+cervejas, Tyler faz um pedido estranho: que você o acerte com 
+toda a força que tiver. No estacionamento, sob a luz fraca de 
+um poste, a primeira luta do que viria a ser o Fight Club 
+começa sem regras e sem motivo — só pela sensação de estar vivo.
+--------------------------------------------------
+1 - Acertar o primeiro golpe e aceitar a briga
+Escolha uma opcao: Um DesafianteDoBar selvagem apareceu!
+
+=======================================================
+                 💥 COMBATE INICIADO! 💥
+=======================================================
+       Aragorn   VS   Desafiante do Bar
+=======================================================
+
+=======================================================
+                  ⚔️  TURNO 1  ⚔️
+=======================================================
+-> Desafiante do Bar [HP: 150/150]
+-------------------------------------------------------
+> Turno iniciado. Você recuperou 5 de Energia e 1 de MP.
+
+==================================================
+  STATUS DE Aragorn [Nível 1]
+==================================================
+  ❤️ HP       : 120 / 120
+  ⚡ Energia  : 100 / 100
+  🔮 MP       : 50 / 50
+--------------------------------------------------
+  ⚔️ Força    : 15 (+ 15 Arma)
+  🛡️ Defesa   : 10 (+ 0 Armadura)
+--------------------------------------------------
+  🧪 Frascos  : 3 restantes
+  ✨ XP       : 0 / 60
+==================================================
+1 - Ataque Básico (Grátis)
+2 - Habilidades
+3 - Erguer Escudo (Gasta: 6 Energia)
+4 - Usar Frasco de Cura
+Escolha uma opcao: 
+👊 [ATAQUE FÍSICO] Aragorn avança para um Ataque Básico!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Desafiante do Bar recebeu: -26 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+⚡ RESPOSTA DE Desafiante do Bar:
+
+👊 [ATAQUE FÍSICO] Desafiante do Bar avança cambaleando com um Soco Bêbado!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Aragorn recebeu: -13 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+=======================================================
+                  ⚔️  TURNO 2  ⚔️
+=======================================================
+-> Desafiante do Bar [HP: 124/150]
+-------------------------------------------------------
+> Turno iniciado. Você recuperou 5 de Energia e 1 de MP.
+
+==================================================
+  STATUS DE Aragorn [Nível 1]
+==================================================
+  ❤️ HP       : 107 / 120
+  ⚡ Energia  : 100 / 100
+  🔮 MP       : 50 / 50
+--------------------------------------------------
+  ⚔️ Força    : 15 (+ 15 Arma)
+  🛡️ Defesa   : 10 (+ 0 Armadura)
+--------------------------------------------------
+  🧪 Frascos  : 3 restantes
+  ✨ XP       : 0 / 60
+==================================================
+1 - Ataque Básico (Grátis)
+2 - Habilidades
+3 - Erguer Escudo (Gasta: 6 Energia)
+4 - Usar Frasco de Cura
+Escolha uma opcao: 
+👊 [ATAQUE FÍSICO] Aragorn avança para um Ataque Básico!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Desafiante do Bar recebeu: -26 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+⚡ RESPOSTA DE Desafiante do Bar:
+
+👊 [ATAQUE FÍSICO] Desafiante do Bar avança cambaleando com um Soco Bêbado!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Aragorn recebeu: -13 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+=======================================================
+                  ⚔️  TURNO 3  ⚔️
+=======================================================
+-> Desafiante do Bar [HP: 98/150]
+-------------------------------------------------------
+> Turno iniciado. Você recuperou 5 de Energia e 1 de MP.
+
+==================================================
+  STATUS DE Aragorn [Nível 1]
+==================================================
+  ❤️ HP       : 94 / 120
+  ⚡ Energia  : 100 / 100
+  🔮 MP       : 50 / 50
+--------------------------------------------------
+  ⚔️ Força    : 15 (+ 15 Arma)
+  🛡️ Defesa   : 10 (+ 0 Armadura)
+--------------------------------------------------
+  🧪 Frascos  : 3 restantes
+  ✨ XP       : 0 / 60
+==================================================
+1 - Ataque Básico (Grátis)
+2 - Habilidades
+3 - Erguer Escudo (Gasta: 6 Energia)
+4 - Usar Frasco de Cura
+Escolha uma opcao: 
+👊 [ATAQUE FÍSICO] Aragorn avança para um Ataque Básico!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Desafiante do Bar recebeu: -26 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+⚡ RESPOSTA DE Desafiante do Bar:
+
+👊 [ATAQUE FÍSICO] Desafiante do Bar avança cambaleando com um Soco Bêbado!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Aragorn recebeu: -13 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+=======================================================
+                  ⚔️  TURNO 4  ⚔️
+=======================================================
+-> Desafiante do Bar [HP: 72/150]
+-------------------------------------------------------
+> Turno iniciado. Você recuperou 5 de Energia e 1 de MP.
+
+==================================================
+  STATUS DE Aragorn [Nível 1]
+==================================================
+  ❤️ HP       : 81 / 120
+  ⚡ Energia  : 100 / 100
+  🔮 MP       : 50 / 50
+--------------------------------------------------
+  ⚔️ Força    : 15 (+ 15 Arma)
+  🛡️ Defesa   : 10 (+ 0 Armadura)
+--------------------------------------------------
+  🧪 Frascos  : 3 restantes
+  ✨ XP       : 0 / 60
+==================================================
+1 - Ataque Básico (Grátis)
+2 - Habilidades
+3 - Erguer Escudo (Gasta: 6 Energia)
+4 - Usar Frasco de Cura
+Escolha uma opcao: 
+👊 [ATAQUE FÍSICO] Aragorn avança para um Ataque Básico!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Desafiante do Bar recebeu: -26 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+⚡ RESPOSTA DE Desafiante do Bar:
+
+👊 [ATAQUE FÍSICO] Desafiante do Bar avança cambaleando com um Soco Bêbado!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Aragorn recebeu: -13 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+=======================================================
+                  ⚔️  TURNO 5  ⚔️
+=======================================================
+-> Desafiante do Bar [HP: 46/150]
+-------------------------------------------------------
+> Turno iniciado. Você recuperou 5 de Energia e 1 de MP.
+
+==================================================
+  STATUS DE Aragorn [Nível 1]
+==================================================
+  ❤️ HP       : 68 / 120
+  ⚡ Energia  : 100 / 100
+  🔮 MP       : 50 / 50
+--------------------------------------------------
+  ⚔️ Força    : 15 (+ 15 Arma)
+  🛡️ Defesa   : 10 (+ 0 Armadura)
+--------------------------------------------------
+  🧪 Frascos  : 3 restantes
+  ✨ XP       : 0 / 60
+==================================================
+1 - Ataque Básico (Grátis)
+2 - Habilidades
+3 - Erguer Escudo (Gasta: 6 Energia)
+4 - Usar Frasco de Cura
+Escolha uma opcao: 
+👊 [ATAQUE FÍSICO] Aragorn avança para um Ataque Básico!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Desafiante do Bar recebeu: -26 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+⚡ RESPOSTA DE Desafiante do Bar:
+
+👊 [ATAQUE FÍSICO] Desafiante do Bar avança cambaleando com um Soco Bêbado!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Aragorn recebeu: -13 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+=======================================================
+                  ⚔️  TURNO 6  ⚔️
+=======================================================
+-> Desafiante do Bar [HP: 20/150]
+-------------------------------------------------------
+> Turno iniciado. Você recuperou 5 de Energia e 1 de MP.
+
+==================================================
+  STATUS DE Aragorn [Nível 1]
+==================================================
+  ❤️ HP       : 55 / 120
+  ⚡ Energia  : 100 / 100
+  🔮 MP       : 50 / 50
+--------------------------------------------------
+  ⚔️ Força    : 15 (+ 15 Arma)
+  🛡️ Defesa   : 10 (+ 0 Armadura)
+--------------------------------------------------
+  🧪 Frascos  : 3 restantes
+  ✨ XP       : 0 / 60
+==================================================
+1 - Ataque Básico (Grátis)
+2 - Habilidades
+3 - Erguer Escudo (Gasta: 6 Energia)
+4 - Usar Frasco de Cura
+Escolha uma opcao: 
+👊 [ATAQUE FÍSICO] Aragorn avança para um Ataque Básico!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Desafiante do Bar recebeu: -26 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+=======================================================
+                 💀 FIM DE COMBATE 💀
+=======================================================
+✨ Vitória! Você derrotou Desafiante do Bar.
+🎁 Recompensa: +60 XP.
+
+✨ SEU NÍVEL AUMENTOU PARA O NÍVEL 2! ✨
+[NOVA HABILIDADE] Você aprendeu: Soco Forte!
+[NOVA HABILIDADE] Você aprendeu: Usar Dipirona!
+=======================================================
+
+==================================================
+                   A PRIMEIRA REGRA          
+==================================================
+A notícia se espalha sem que ninguém precise falar nada. Toda 
+semana mais homens descem ao porão do bar para sangrar e se 
+sentir, por uma hora, donos da própria vida. As regras já 
+começam a se formar: a primeira regra é não falar sobre o clube.
+--------------------------------------------------
+1 - Continuar fingindo normalidade no escritório durante o dia
+2 - Largar tudo e se mudar para a casa de Tyler
+Escolha uma opcao: Um TrabalhadorNoturno selvagem apareceu!
+
+=======================================================
+                 💥 COMBATE INICIADO! 💥
+=======================================================
+       Aragorn   VS   Trabalhador Noturno
+=======================================================
+
+=======================================================
+                  ⚔️  TURNO 1  ⚔️
+=======================================================
+-> Trabalhador Noturno [HP: 150/150]
+-------------------------------------------------------
+> Turno iniciado. Você recuperou 5 de Energia e 1 de MP.
+
+==================================================
+  STATUS DE Aragorn [Nível 2]
+==================================================
+  ❤️ HP       : 160 / 160
+  ⚡ Energia  : 100 / 100
+  🔮 MP       : 50 / 50
+--------------------------------------------------
+  ⚔️ Força    : 27 (+ 15 Arma)
+  🛡️ Defesa   : 17 (+ 0 Armadura)
+--------------------------------------------------
+  🧪 Frascos  : 3 restantes
+  ✨ XP       : 0 / 120
+==================================================
+1 - Ataque Básico (Grátis)
+2 - Habilidades
+3 - Erguer Escudo (Gasta: 6 Energia)
+4 - Usar Frasco de Cura
+Escolha uma opcao: 
+👊 [ATAQUE FÍSICO] Aragorn avança para um Ataque Básico!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Trabalhador Noturno recebeu: -36 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+⚡ RESPOSTA DE Trabalhador Noturno:
+
+🚨 💥 [GOLPE CRÍTICO] Trabalhador Noturno entra em colapso de raiva e ativa Surto de Raiva!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Aragorn recebeu: -34 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+=======================================================
+                  ⚔️  TURNO 2  ⚔️
+=======================================================
+-> Trabalhador Noturno [HP: 114/150]
+-------------------------------------------------------
+> Turno iniciado. Você recuperou 5 de Energia e 1 de MP.
+
+==================================================
+  STATUS DE Aragorn [Nível 2]
+==================================================
+  ❤️ HP       : 126 / 160
+  ⚡ Energia  : 100 / 100
+  🔮 MP       : 50 / 50
+--------------------------------------------------
+  ⚔️ Força    : 27 (+ 15 Arma)
+  🛡️ Defesa   : 17 (+ 0 Armadura)
+--------------------------------------------------
+  🧪 Frascos  : 3 restantes
+  ✨ XP       : 0 / 120
+==================================================
+1 - Ataque Básico (Grátis)
+2 - Habilidades
+3 - Erguer Escudo (Gasta: 6 Energia)
+4 - Usar Frasco de Cura
+Escolha uma opcao: 
+👊 [ATAQUE FÍSICO] Aragorn avança para um Ataque Básico!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Trabalhador Noturno recebeu: -36 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+⚡ RESPOSTA DE Trabalhador Noturno:
+
+👊 [ATAQUE FÍSICO] Trabalhador Noturno desfere um soco desesperado de exaustão!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Aragorn recebeu: -17 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+=======================================================
+                  ⚔️  TURNO 3  ⚔️
+=======================================================
+-> Trabalhador Noturno [HP: 78/150]
+-------------------------------------------------------
+> Turno iniciado. Você recuperou 5 de Energia e 1 de MP.
+
+==================================================
+  STATUS DE Aragorn [Nível 2]
+==================================================
+  ❤️ HP       : 109 / 160
+  ⚡ Energia  : 100 / 100
+  🔮 MP       : 50 / 50
+--------------------------------------------------
+  ⚔️ Força    : 27 (+ 15 Arma)
+  🛡️ Defesa   : 17 (+ 0 Armadura)
+--------------------------------------------------
+  🧪 Frascos  : 3 restantes
+  ✨ XP       : 0 / 120
+==================================================
+1 - Ataque Básico (Grátis)
+2 - Habilidades
+3 - Erguer Escudo (Gasta: 6 Energia)
+4 - Usar Frasco de Cura
+Escolha uma opcao: 
+👊 [ATAQUE FÍSICO] Aragorn avança para um Ataque Básico!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Trabalhador Noturno recebeu: -36 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+⚡ RESPOSTA DE Trabalhador Noturno:
+
+👊 [ATAQUE FÍSICO] Trabalhador Noturno desfere um soco desesperado de exaustão!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Aragorn recebeu: -17 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+=======================================================
+                  ⚔️  TURNO 4  ⚔️
+=======================================================
+-> Trabalhador Noturno [HP: 42/150]
+-------------------------------------------------------
+> Turno iniciado. Você recuperou 5 de Energia e 1 de MP.
+
+==================================================
+  STATUS DE Aragorn [Nível 2]
+==================================================
+  ❤️ HP       : 92 / 160
+  ⚡ Energia  : 100 / 100
+  🔮 MP       : 50 / 50
+--------------------------------------------------
+  ⚔️ Força    : 27 (+ 15 Arma)
+  🛡️ Defesa   : 17 (+ 0 Armadura)
+--------------------------------------------------
+  🧪 Frascos  : 3 restantes
+  ✨ XP       : 0 / 120
+==================================================
+1 - Ataque Básico (Grátis)
+2 - Habilidades
+3 - Erguer Escudo (Gasta: 6 Energia)
+4 - Usar Frasco de Cura
+Escolha uma opcao: 
+👊 [ATAQUE FÍSICO] Aragorn avança para um Ataque Básico!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Trabalhador Noturno recebeu: -36 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+⚡ RESPOSTA DE Trabalhador Noturno:
+
+👊 [ATAQUE FÍSICO] Trabalhador Noturno desfere um soco desesperado de exaustão!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Aragorn recebeu: -17 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+=======================================================
+                  ⚔️  TURNO 5  ⚔️
+=======================================================
+-> Trabalhador Noturno [HP: 6/150]
+-------------------------------------------------------
+> Turno iniciado. Você recuperou 5 de Energia e 1 de MP.
+
+==================================================
+  STATUS DE Aragorn [Nível 2]
+==================================================
+  ❤️ HP       : 75 / 160
+  ⚡ Energia  : 100 / 100
+  🔮 MP       : 50 / 50
+--------------------------------------------------
+  ⚔️ Força    : 27 (+ 15 Arma)
+  🛡️ Defesa   : 17 (+ 0 Armadura)
+--------------------------------------------------
+  🧪 Frascos  : 3 restantes
+  ✨ XP       : 0 / 120
+==================================================
+1 - Ataque Básico (Grátis)
+2 - Habilidades
+3 - Erguer Escudo (Gasta: 6 Energia)
+4 - Usar Frasco de Cura
+Escolha uma opcao: 
+👊 [ATAQUE FÍSICO] Aragorn avança para um Ataque Básico!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Trabalhador Noturno recebeu: -36 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+=======================================================
+                 💀 FIM DE COMBATE 💀
+=======================================================
+✨ Vitória! Você derrotou Trabalhador Noturno.
+🎁 Recompensa: +90 XP.
+=======================================================
+
+==================================================
+                SINAIS DE DESGASTE          
+==================================================
+Exausto e com hematomas que não consegue mais esconder, você 
+enfrenta um colega à beira de um colapso nervoso por excesso 
+de trabalho. Depois do confronto, fica claro que esse emprego 
+nunca mais vai caber na vida que está construindo.
+--------------------------------------------------
+1 - Seguir para a casa decadente na Paper Street
+Escolha uma opcao: 
+==================================================
+                   RUA PAPER, Nº 516          
+==================================================
+A casa é úmida, decrépita e quase caindo aos pedaços — mas é 
+livre. Sem televisão, sem chefe, sem móveis decentes. Aos 
+poucos outros homens insatisfeitos com suas próprias vidas 
+começam a aparecer, pedindo para fazer parte do que está 
+nascendo ali.
+--------------------------------------------------
+1 - Treinar no porão com os novos integrantes do clube
+2 - Investigar os planos cada vez mais sombrios de Tyler
+Escolha uma opcao: Um SegurancaDeBalada selvagem apareceu!
+
+=======================================================
+                 💥 COMBATE INICIADO! 💥
+=======================================================
+       Aragorn   VS   Segurança de Balada
+=======================================================
+
+=======================================================
+                  ⚔️  TURNO 1  ⚔️
+=======================================================
+-> Segurança de Balada [HP: 140/140]
+-------------------------------------------------------
+> Turno iniciado. Você recuperou 5 de Energia e 1 de MP.
+
+==================================================
+  STATUS DE Aragorn [Nível 2]
+==================================================
+  ❤️ HP       : 75 / 160
+  ⚡ Energia  : 100 / 100
+  🔮 MP       : 50 / 50
+--------------------------------------------------
+  ⚔️ Força    : 27 (+ 15 Arma)
+  🛡️ Defesa   : 17 (+ 0 Armadura)
+--------------------------------------------------
+  🧪 Frascos  : 3 restantes
+  ✨ XP       : 90 / 120
+==================================================
+1 - Ataque Básico (Grátis)
+2 - Habilidades
+3 - Erguer Escudo (Gasta: 6 Energia)
+4 - Usar Frasco de Cura
+Escolha uma opcao: 
+👊 [ATAQUE FÍSICO] Aragorn avança para um Ataque Básico!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Segurança de Balada recebeu: -33 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+⚡ RESPOSTA DE Segurança de Balada:
+
+💥 [ATAQUE] Segurança de Balada projeta o corpo à frente com um Empurrão de Segurança!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Aragorn recebeu: -12 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+=======================================================
+                  ⚔️  TURNO 2  ⚔️
+=======================================================
+-> Segurança de Balada [HP: 107/140]
+-------------------------------------------------------
+> Turno iniciado. Você recuperou 5 de Energia e 1 de MP.
+
+==================================================
+  STATUS DE Aragorn [Nível 2]
+==================================================
+  ❤️ HP       : 63 / 160
+  ⚡ Energia  : 100 / 100
+  🔮 MP       : 50 / 50
+--------------------------------------------------
+  ⚔️ Força    : 27 (+ 15 Arma)
+  🛡️ Defesa   : 17 (+ 0 Armadura)
+--------------------------------------------------
+  🧪 Frascos  : 3 restantes
+  ✨ XP       : 90 / 120
+==================================================
+1 - Ataque Básico (Grátis)
+2 - Habilidades
+3 - Erguer Escudo (Gasta: 6 Energia)
+4 - Usar Frasco de Cura
+Escolha uma opcao: 
+👊 [ATAQUE FÍSICO] Aragorn avança para um Ataque Básico!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Segurança de Balada recebeu: -33 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+⚡ RESPOSTA DE Segurança de Balada:
+
+💥 [ATAQUE] Segurança de Balada projeta o corpo à frente com um Empurrão de Segurança!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Aragorn recebeu: -12 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+=======================================================
+                  ⚔️  TURNO 3  ⚔️
+=======================================================
+-> Segurança de Balada [HP: 74/140]
+-------------------------------------------------------
+> Turno iniciado. Você recuperou 5 de Energia e 1 de MP.
+
+==================================================
+  STATUS DE Aragorn [Nível 2]
+==================================================
+  ❤️ HP       : 51 / 160
+  ⚡ Energia  : 100 / 100
+  🔮 MP       : 50 / 50
+--------------------------------------------------
+  ⚔️ Força    : 27 (+ 15 Arma)
+  🛡️ Defesa   : 17 (+ 0 Armadura)
+--------------------------------------------------
+  🧪 Frascos  : 3 restantes
+  ✨ XP       : 90 / 120
+==================================================
+1 - Ataque Básico (Grátis)
+2 - Habilidades
+3 - Erguer Escudo (Gasta: 6 Energia)
+4 - Usar Frasco de Cura
+Escolha uma opcao: 
+👊 [ATAQUE FÍSICO] Aragorn avança para um Ataque Básico!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Segurança de Balada recebeu: -33 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+⚡ RESPOSTA DE Segurança de Balada:
+
+🛡️  [POSTURA] Segurança de Balada cruza os braços e finca a base!
+    > Escudo Ativo: Impacto de ataques comuns mitigado pela metade até a próxima rodada.
+
+💥 [ATAQUE] Segurança de Balada projeta o corpo à frente com um Empurrão de Segurança!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Aragorn recebeu: -12 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+=======================================================
+                  ⚔️  TURNO 4  ⚔️
+=======================================================
+-> Segurança de Balada [HP: 41/140]
+-------------------------------------------------------
+> Turno iniciado. Você recuperou 5 de Energia e 1 de MP.
+
+==================================================
+  STATUS DE Aragorn [Nível 2]
+==================================================
+  ❤️ HP       : 39 / 160
+  ⚡ Energia  : 100 / 100
+  🔮 MP       : 50 / 50
+--------------------------------------------------
+  ⚔️ Força    : 27 (+ 15 Arma)
+  🛡️ Defesa   : 17 (+ 0 Armadura)
+--------------------------------------------------
+  🧪 Frascos  : 3 restantes
+  ✨ XP       : 90 / 120
+==================================================
+1 - Ataque Básico (Grátis)
+2 - Habilidades
+3 - Erguer Escudo (Gasta: 6 Energia)
+4 - Usar Frasco de Cura
+Escolha uma opcao: 
+👊 [ATAQUE FÍSICO] Aragorn avança para um Ataque Básico!
+Segurança de Balada posicionou o escudo e mitigou metade do impacto!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Segurança de Balada recebeu: -16 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+⚡ RESPOSTA DE Segurança de Balada:
+
+💥 [ATAQUE] Segurança de Balada projeta o corpo à frente com um Empurrão de Segurança!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Aragorn recebeu: -12 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+=======================================================
+                  ⚔️  TURNO 5  ⚔️
+=======================================================
+-> Segurança de Balada [HP: 25/140]
+-------------------------------------------------------
+> Turno iniciado. Você recuperou 5 de Energia e 1 de MP.
+
+==================================================
+  STATUS DE Aragorn [Nível 2]
+==================================================
+  ❤️ HP       : 27 / 160
+  ⚡ Energia  : 100 / 100
+  🔮 MP       : 50 / 50
+--------------------------------------------------
+  ⚔️ Força    : 27 (+ 15 Arma)
+  🛡️ Defesa   : 17 (+ 0 Armadura)
+--------------------------------------------------
+  🧪 Frascos  : 3 restantes
+  ✨ XP       : 90 / 120
+==================================================
+1 - Ataque Básico (Grátis)
+2 - Habilidades
+3 - Erguer Escudo (Gasta: 6 Energia)
+4 - Usar Frasco de Cura
+Escolha uma opcao: 
+👊 [ATAQUE FÍSICO] Aragorn avança para um Ataque Básico!
+Segurança de Balada posicionou o escudo e mitigou metade do impacto!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Segurança de Balada recebeu: -16 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+⚡ RESPOSTA DE Segurança de Balada:
+
+💥 [ATAQUE] Segurança de Balada projeta o corpo à frente com um Empurrão de Segurança!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Aragorn recebeu: -12 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+=======================================================
+                  ⚔️  TURNO 6  ⚔️
+=======================================================
+-> Segurança de Balada [HP: 9/140]
+-------------------------------------------------------
+> Turno iniciado. Você recuperou 5 de Energia e 1 de MP.
+
+==================================================
+  STATUS DE Aragorn [Nível 2]
+==================================================
+  ❤️ HP       : 15 / 160
+  ⚡ Energia  : 100 / 100
+  🔮 MP       : 50 / 50
+--------------------------------------------------
+  ⚔️ Força    : 27 (+ 15 Arma)
+  🛡️ Defesa   : 17 (+ 0 Armadura)
+--------------------------------------------------
+  🧪 Frascos  : 3 restantes
+  ✨ XP       : 90 / 120
+==================================================
+1 - Ataque Básico (Grátis)
+2 - Habilidades
+3 - Erguer Escudo (Gasta: 6 Energia)
+4 - Usar Frasco de Cura
+Escolha uma opcao: 
+👊 [ATAQUE FÍSICO] Aragorn avança para um Ataque Básico!
+Segurança de Balada posicionou o escudo e mitigou metade do impacto!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Segurança de Balada recebeu: -16 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+=======================================================
+                 💀 FIM DE COMBATE 💀
+=======================================================
+✨ Vitória! Você derrotou Segurança de Balada.
+🎁 Recompensa: +200 XP.
+
+✨ SEU NÍVEL AUMENTOU PARA O NÍVEL 3! ✨
+[NOVA HABILIDADE] Você aprendeu: Perfurar!
+[NOVA HABILIDADE] Você aprendeu: Usar Spray de Pimenta!
+=======================================================
+
+[ITEM OBTIDO]: Colete de Segurança (+3 de Defesa)!
+
+==================================================
+                  EXÉRCITO NAS SOMBRAS       
+==================================================
+O Fight Club deixou de ser segredo de poucos. O porão lota 
+toda semana e os rostos vão se tornando irreconhecíveis sob o 
+sangue e o entusiasmo. Tyler observa tudo com um sorriso que 
+começa a incomodar.
+--------------------------------------------------
+1 - Seguir adiante com o que Tyler chama de Projeto Mayhem
+Escolha uma opcao: 
+==================================================
+                   PROJETO MAYHEM            
+==================================================
+Tyler reúne os membros mais fiéis e anuncia uma nova fase: 
+tarefas, missões de sabotagem, uma estrutura quase militar. 
+Ninguém faz perguntas — perguntar não é permitido. Você 
+recebe sua primeira missão.
+--------------------------------------------------
+1 - Aplicar a doutrina do clube em um recruta hesitante
+2 - Invadir um prédio corporativo vigiado
+3 - Eliminar um sabotador rival que ameaça o Projeto
+Escolha uma opcao: Um RecrutaDoutrinado selvagem apareceu!
+
+=======================================================
+                 💥 COMBATE INICIADO! 💥
+=======================================================
+       Aragorn   VS   Recruta Doutrinado
+=======================================================
+
+=======================================================
+                  ⚔️  TURNO 1  ⚔️
+=======================================================
+-> Recruta Doutrinado [HP: 300/300]
+-------------------------------------------------------
+> Turno iniciado. Você recuperou 5 de Energia e 1 de MP.
+
+==================================================
+  STATUS DE Aragorn [Nível 3]
+==================================================
+  ❤️ HP       : 200 / 200
+  ⚡ Energia  : 100 / 100
+  🔮 MP       : 50 / 50
+--------------------------------------------------
+  ⚔️ Força    : 39 (+ 15 Arma)
+  🛡️ Defesa   : 24 (+ 3 Armadura)
+--------------------------------------------------
+  🧪 Frascos  : 3 restantes
+  ✨ XP       : 170 / 180
+==================================================
+1 - Ataque Básico (Grátis)
+2 - Habilidades
+3 - Erguer Escudo (Gasta: 6 Energia)
+4 - Usar Frasco de Cura
+Escolha uma opcao: 
+👊 [ATAQUE FÍSICO] Aragorn avança para um Ataque Básico!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Recruta Doutrinado recebeu: -41 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+⚡ RESPOSTA DE Recruta Doutrinado:
+Recruta Doutrinado avança sem recuar, ignorando a própria dor!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Aragorn recebeu: -28 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+=======================================================
+                  ⚔️  TURNO 2  ⚔️
+=======================================================
+-> Recruta Doutrinado [HP: 259/300]
+-------------------------------------------------------
+> Turno iniciado. Você recuperou 5 de Energia e 1 de MP.
+
+==================================================
+  STATUS DE Aragorn [Nível 3]
+==================================================
+  ❤️ HP       : 172 / 200
+  ⚡ Energia  : 100 / 100
+  🔮 MP       : 50 / 50
+--------------------------------------------------
+  ⚔️ Força    : 39 (+ 15 Arma)
+  🛡️ Defesa   : 24 (+ 3 Armadura)
+--------------------------------------------------
+  🧪 Frascos  : 3 restantes
+  ✨ XP       : 170 / 180
+==================================================
+1 - Ataque Básico (Grátis)
+2 - Habilidades
+3 - Erguer Escudo (Gasta: 6 Energia)
+4 - Usar Frasco de Cura
+Escolha uma opcao: 
+👊 [ATAQUE FÍSICO] Aragorn avança para um Ataque Básico!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Recruta Doutrinado recebeu: -41 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+⚡ RESPOSTA DE Recruta Doutrinado:
+Recruta Doutrinado rasga um corte profundo — Sangramento aplicado!
+[STATUS] Aragorn foi afetado por Sangramento (8 de dano/turno por 3 turnos)!
+
+=======================================================
+                  ⚔️  TURNO 3  ⚔️
+=======================================================
+-> Recruta Doutrinado [HP: 218/300]
+-------------------------------------------------------
+
+┌───────────────────────────────────────────────────────┐
+  ⏳ [EFEITO ATIVO]: Sangramento
+  👤 Alvo          : Aragorn
+└───────────────────────────────────────────────────────┘
+
+  ┌───────────────────────────────────────────────────┐
+  🤢 [EFEITO CONTÍNUO] Aragorn sofreu: -6 HP
+  └───────────────────────────────────────────────────┘
+
+> Turno iniciado. Você recuperou 5 de Energia e 1 de MP.
+
+==================================================
+  STATUS DE Aragorn [Nível 3]
+==================================================
+  ❤️ HP       : 166 / 200
+  ⚡ Energia  : 100 / 100
+  🔮 MP       : 50 / 50
+--------------------------------------------------
+  ⚔️ Força    : 39 (+ 15 Arma)
+  🛡️ Defesa   : 24 (+ 3 Armadura)
+--------------------------------------------------
+  🧪 Frascos  : 3 restantes
+  ✨ XP       : 170 / 180
+==================================================
+1 - Ataque Básico (Grátis)
+2 - Habilidades
+3 - Erguer Escudo (Gasta: 6 Energia)
+4 - Usar Frasco de Cura
+Escolha uma opcao: 
+👊 [ATAQUE FÍSICO] Aragorn avança para um Ataque Básico!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Recruta Doutrinado recebeu: -41 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+⚡ RESPOSTA DE Recruta Doutrinado:
+Recruta Doutrinado avança sem recuar, ignorando a própria dor!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Aragorn recebeu: -28 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+=======================================================
+                  ⚔️  TURNO 4  ⚔️
+=======================================================
+-> Recruta Doutrinado [HP: 177/300]
+-------------------------------------------------------
+
+┌───────────────────────────────────────────────────────┐
+  ⏳ [EFEITO ATIVO]: Sangramento
+  👤 Alvo          : Aragorn
+└───────────────────────────────────────────────────────┘
+
+  ┌───────────────────────────────────────────────────┐
+  🤢 [EFEITO CONTÍNUO] Aragorn sofreu: -6 HP
+  └───────────────────────────────────────────────────┘
+
+> Turno iniciado. Você recuperou 5 de Energia e 1 de MP.
+
+==================================================
+  STATUS DE Aragorn [Nível 3]
+==================================================
+  ❤️ HP       : 132 / 200
+  ⚡ Energia  : 100 / 100
+  🔮 MP       : 50 / 50
+--------------------------------------------------
+  ⚔️ Força    : 39 (+ 15 Arma)
+  🛡️ Defesa   : 24 (+ 3 Armadura)
+--------------------------------------------------
+  🧪 Frascos  : 3 restantes
+  ✨ XP       : 170 / 180
+==================================================
+1 - Ataque Básico (Grátis)
+2 - Habilidades
+3 - Erguer Escudo (Gasta: 6 Energia)
+4 - Usar Frasco de Cura
+Escolha uma opcao: 
+👊 [ATAQUE FÍSICO] Aragorn avança para um Ataque Básico!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Recruta Doutrinado recebeu: -41 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+⚡ RESPOSTA DE Recruta Doutrinado:
+Recruta Doutrinado recita as regras do clube em voz alta — Grito de Doutrina! Sua força aumenta por 2 turnos!
+> Recruta Doutrinado recebeu o Buff 'Grito de Doutrina' (+10 de forca) por 2 turnos.
+Recruta Doutrinado avança com vigor redobrado!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Aragorn recebeu: -28 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+=======================================================
+                  ⚔️  TURNO 5  ⚔️
+=======================================================
+-> Recruta Doutrinado [HP: 136/300]
+-------------------------------------------------------
+
+┌───────────────────────────────────────────────────────┐
+  ⏳ [EFEITO ATIVO]: Sangramento
+  👤 Alvo          : Aragorn
+└───────────────────────────────────────────────────────┘
+
+  ┌───────────────────────────────────────────────────┐
+  🤢 [EFEITO CONTÍNUO] Aragorn sofreu: -6 HP
+  └───────────────────────────────────────────────────┘
+
+
+O efeito de Sangramento em Aragorn expirou.
+
+> Turno iniciado. Você recuperou 5 de Energia e 1 de MP.
+
+==================================================
+  STATUS DE Aragorn [Nível 3]
+==================================================
+  ❤️ HP       : 98 / 200
+  ⚡ Energia  : 100 / 100
+  🔮 MP       : 50 / 50
+--------------------------------------------------
+  ⚔️ Força    : 39 (+ 15 Arma)
+  🛡️ Defesa   : 24 (+ 3 Armadura)
+--------------------------------------------------
+  🧪 Frascos  : 3 restantes
+  ✨ XP       : 170 / 180
+==================================================
+1 - Ataque Básico (Grátis)
+2 - Habilidades
+3 - Erguer Escudo (Gasta: 6 Energia)
+4 - Usar Frasco de Cura
+Escolha uma opcao: 
+👊 [ATAQUE FÍSICO] Aragorn avança para um Ataque Básico!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Recruta Doutrinado recebeu: -41 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+⚡ RESPOSTA DE Recruta Doutrinado:
+Recruta Doutrinado invade seu espaço e grita na sua cara — Intimidação! Sua defesa cai por 2 turnos!
+> Aragorn sofreu o Debuff 'Intimidação' (-12 de defesa) por 2 turnos.
+
+=======================================================
+                  ⚔️  TURNO 6  ⚔️
+=======================================================
+-> Recruta Doutrinado [HP: 95/300]
+-------------------------------------------------------
+> Turno iniciado. Você recuperou 5 de Energia e 1 de MP.
+
+==================================================
+  STATUS DE Aragorn [Nível 3]
+==================================================
+  ❤️ HP       : 98 / 200
+  ⚡ Energia  : 100 / 100
+  🔮 MP       : 50 / 50
+--------------------------------------------------
+  ⚔️ Força    : 39 (+ 15 Arma)
+  🛡️ Defesa   : 24 (+ 3 Armadura)
+--------------------------------------------------
+  🧪 Frascos  : 3 restantes
+  ✨ XP       : 170 / 180
+==================================================
+1 - Ataque Básico (Grátis)
+2 - Habilidades
+3 - Erguer Escudo (Gasta: 6 Energia)
+4 - Usar Frasco de Cura
+Escolha uma opcao: 
+👊 [ATAQUE FÍSICO] Aragorn avança para um Ataque Básico!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Recruta Doutrinado recebeu: -41 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+⚡ RESPOSTA DE Recruta Doutrinado:
+
+> O efeito 'Grito de Doutrina' aplicado em Recruta Doutrinado expirou.
+Recruta Doutrinado rasga um corte profundo — Sangramento aplicado!
+[STATUS] Aragorn foi afetado por Sangramento (8 de dano/turno por 3 turnos)!
+
+=======================================================
+                  ⚔️  TURNO 7  ⚔️
+=======================================================
+-> Recruta Doutrinado [HP: 54/300]
+-------------------------------------------------------
+
+┌───────────────────────────────────────────────────────┐
+  ⏳ [EFEITO ATIVO]: Sangramento
+  👤 Alvo          : Aragorn
+└───────────────────────────────────────────────────────┘
+
+  ┌───────────────────────────────────────────────────┐
+  🤢 [EFEITO CONTÍNUO] Aragorn sofreu: -6 HP
+  └───────────────────────────────────────────────────┘
+
+
+> O efeito 'Intimidação' aplicado em Aragorn expirou.
+> Turno iniciado. Você recuperou 5 de Energia e 1 de MP.
+
+==================================================
+  STATUS DE Aragorn [Nível 3]
+==================================================
+  ❤️ HP       : 92 / 200
+  ⚡ Energia  : 100 / 100
+  🔮 MP       : 50 / 50
+--------------------------------------------------
+  ⚔️ Força    : 39 (+ 15 Arma)
+  🛡️ Defesa   : 24 (+ 3 Armadura)
+--------------------------------------------------
+  🧪 Frascos  : 3 restantes
+  ✨ XP       : 170 / 180
+==================================================
+1 - Ataque Básico (Grátis)
+2 - Habilidades
+3 - Erguer Escudo (Gasta: 6 Energia)
+4 - Usar Frasco de Cura
+Escolha uma opcao: 
+👊 [ATAQUE FÍSICO] Aragorn avança para um Ataque Básico!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Recruta Doutrinado recebeu: -41 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+⚡ RESPOSTA DE Recruta Doutrinado:
+Recruta Doutrinado avança sem recuar, ignorando a própria dor!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Aragorn recebeu: -28 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+=======================================================
+                  ⚔️  TURNO 8  ⚔️
+=======================================================
+-> Recruta Doutrinado [HP: 13/300]
+-------------------------------------------------------
+
+┌───────────────────────────────────────────────────────┐
+  ⏳ [EFEITO ATIVO]: Sangramento
+  👤 Alvo          : Aragorn
+└───────────────────────────────────────────────────────┘
+
+  ┌───────────────────────────────────────────────────┐
+  🤢 [EFEITO CONTÍNUO] Aragorn sofreu: -6 HP
+  └───────────────────────────────────────────────────┘
+
+> Turno iniciado. Você recuperou 5 de Energia e 1 de MP.
+
+==================================================
+  STATUS DE Aragorn [Nível 3]
+==================================================
+  ❤️ HP       : 58 / 200
+  ⚡ Energia  : 100 / 100
+  🔮 MP       : 50 / 50
+--------------------------------------------------
+  ⚔️ Força    : 39 (+ 15 Arma)
+  🛡️ Defesa   : 24 (+ 3 Armadura)
+--------------------------------------------------
+  🧪 Frascos  : 3 restantes
+  ✨ XP       : 170 / 180
+==================================================
+1 - Ataque Básico (Grátis)
+2 - Habilidades
+3 - Erguer Escudo (Gasta: 6 Energia)
+4 - Usar Frasco de Cura
+Escolha uma opcao: 
+👊 [ATAQUE FÍSICO] Aragorn avança para um Ataque Básico!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Recruta Doutrinado recebeu: -41 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+=======================================================
+                 💀 FIM DE COMBATE 💀
+=======================================================
+✨ Vitória! Você derrotou Recruta Doutrinado.
+🎁 Recompensa: +400 XP.
+
+✨ SEU NÍVEL AUMENTOU PARA O NÍVEL 4! ✨
+[NOVA HABILIDADE] Você aprendeu: Aplicar Adrenalina!
+[NOVA HABILIDADE] Você aprendeu: Focar!
+
+✨ SEU NÍVEL AUMENTOU PARA O NÍVEL 5! ✨
+[NOVA HABILIDADE] Você aprendeu: ATAQUE MENTAL!
+=======================================================
+
+[ITEM OBTIDO]: Soco Ingles (+8 de Força)!
+
+==================================================
+                       DOUTRINAÇÃO           
+==================================================
+O recruta cai, mas se levanta orgulhoso, repetindo as regras 
+do clube como um mantra. Você percebe o quanto essas pessoas 
+estão dispostas a obedecer sem questionar — e isso te 
+incomoda mais do que devia.
+--------------------------------------------------
+1 - Voltar à casa e procurar Tyler
+Escolha uma opcao: 
+==================================================
+                       O DESPERTAR              
+==================================================
+Pedaço por pedaço, as coincidências deixam de fazer sentido 
+como coincidências. As pessoas te chamam pelo nome de Tyler. 
+Você nunca os viu juntos no mesmo lugar. A verdade começa a 
+se formar, terrível e inevitável: Tyler Durden nunca existiu 
+fora da sua própria cabeça.
+--------------------------------------------------
+1 - Confrontar a verdade sobre Tyler Durden de uma vez
+Escolha uma opcao: 
+==================================================
+                      EU CONTRA EU           
+==================================================
+Você encontra Tyler em meio aos escombros de tudo o que 
+ajudou a construir. Ele sorri, sabendo exatamente o que você 
+está pensando — porque ele é você. Não há mais como fugir 
+dessa luta: é preciso enfrentá-lo, de uma vez por todas, para 
+recuperar o controle sobre a própria vida.
+--------------------------------------------------
+1 - Enfrentar Tyler Durden de uma vez por todas
+Escolha uma opcao: Um TylerDurden selvagem apareceu!
+
+=======================================================
+                 💥 COMBATE INICIADO! 💥
+=======================================================
+       Aragorn   VS   Tyler Durden
+=======================================================
+
+=======================================================
+                  ⚔️  TURNO 1  ⚔️
+=======================================================
+-> Tyler Durden [HP: 400/400]
+-------------------------------------------------------
+> Turno iniciado. Você recuperou 5 de Energia e 1 de MP.
+
+==================================================
+  STATUS DE Aragorn [Nível 5]
+==================================================
+  ❤️ HP       : 280 / 280
+  ⚡ Energia  : 100 / 100
+  🔮 MP       : 50 / 50
+--------------------------------------------------
+  ⚔️ Força    : 63 (+ 23 Arma)
+  🛡️ Defesa   : 38 (+ 3 Armadura)
+--------------------------------------------------
+  🧪 Frascos  : 3 restantes
+  ✨ XP       : 150 / 300
+==================================================
+1 - Ataque Básico (Grátis)
+2 - Habilidades
+3 - Erguer Escudo (Gasta: 6 Energia)
+4 - Usar Frasco de Cura
+Escolha uma opcao: 
+👊 [ATAQUE FÍSICO] Aragorn avança para um Ataque Básico!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Tyler Durden recebeu: -66 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+⚡ RESPOSTA DE Tyler Durden:
+
+👊 [ATAQUE FÍSICO] Tyler Durden avança com Soco do Caos!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Aragorn recebeu: -28 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+=======================================================
+                  ⚔️  TURNO 2  ⚔️
+=======================================================
+-> Tyler Durden [HP: 334/400]
+-------------------------------------------------------
+> Turno iniciado. Você recuperou 5 de Energia e 1 de MP.
+
+==================================================
+  STATUS DE Aragorn [Nível 5]
+==================================================
+  ❤️ HP       : 252 / 280
+  ⚡ Energia  : 100 / 100
+  🔮 MP       : 50 / 50
+--------------------------------------------------
+  ⚔️ Força    : 63 (+ 23 Arma)
+  🛡️ Defesa   : 38 (+ 3 Armadura)
+--------------------------------------------------
+  🧪 Frascos  : 3 restantes
+  ✨ XP       : 150 / 300
+==================================================
+1 - Ataque Básico (Grátis)
+2 - Habilidades
+3 - Erguer Escudo (Gasta: 6 Energia)
+4 - Usar Frasco de Cura
+Escolha uma opcao: 
+👊 [ATAQUE FÍSICO] Aragorn avança para um Ataque Básico!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Tyler Durden recebeu: -66 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+⚡ RESPOSTA DE Tyler Durden:
+
+👊 [ATAQUE FÍSICO] Tyler Durden avança com Soco do Caos!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Aragorn recebeu: -28 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+=======================================================
+                  ⚔️  TURNO 3  ⚔️
+=======================================================
+-> Tyler Durden [HP: 268/400]
+-------------------------------------------------------
+> Turno iniciado. Você recuperou 5 de Energia e 1 de MP.
+
+==================================================
+  STATUS DE Aragorn [Nível 5]
+==================================================
+  ❤️ HP       : 224 / 280
+  ⚡ Energia  : 100 / 100
+  🔮 MP       : 50 / 50
+--------------------------------------------------
+  ⚔️ Força    : 63 (+ 23 Arma)
+  🛡️ Defesa   : 38 (+ 3 Armadura)
+--------------------------------------------------
+  🧪 Frascos  : 3 restantes
+  ✨ XP       : 150 / 300
+==================================================
+1 - Ataque Básico (Grátis)
+2 - Habilidades
+3 - Erguer Escudo (Gasta: 6 Energia)
+4 - Usar Frasco de Cura
+Escolha uma opcao: 
+👊 [ATAQUE FÍSICO] Aragorn avança para um Ataque Básico!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Tyler Durden recebeu: -66 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+⚡ RESPOSTA DE Tyler Durden:
+🩸 [EFEITO] Tyler Durden causa uma lacração violenta: +Sangramento (DoT).
+[STATUS] Aragorn foi afetado por Sangramento (Tyler) (40 de dano/turno por 3 turnos)!
+
+👊 [ATAQUE FÍSICO] Tyler Durden avança com Soco do Caos!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Aragorn recebeu: -28 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+=======================================================
+                  ⚔️  TURNO 4  ⚔️
+=======================================================
+-> Tyler Durden [HP: 202/400]
+-------------------------------------------------------
+
+┌───────────────────────────────────────────────────────┐
+  ⏳ [EFEITO ATIVO]: Sangramento (Tyler)
+  👤 Alvo          : Aragorn
+└───────────────────────────────────────────────────────┘
+
+  ┌───────────────────────────────────────────────────┐
+  🤢 [EFEITO CONTÍNUO] Aragorn sofreu: -28 HP
+  └───────────────────────────────────────────────────┘
+
+> Turno iniciado. Você recuperou 5 de Energia e 1 de MP.
+
+==================================================
+  STATUS DE Aragorn [Nível 5]
+==================================================
+  ❤️ HP       : 168 / 280
+  ⚡ Energia  : 100 / 100
+  🔮 MP       : 50 / 50
+--------------------------------------------------
+  ⚔️ Força    : 63 (+ 23 Arma)
+  🛡️ Defesa   : 38 (+ 3 Armadura)
+--------------------------------------------------
+  🧪 Frascos  : 3 restantes
+  ✨ XP       : 150 / 300
+==================================================
+1 - Ataque Básico (Grátis)
+2 - Habilidades
+3 - Erguer Escudo (Gasta: 6 Energia)
+4 - Usar Frasco de Cura
+Escolha uma opcao: 
+👊 [ATAQUE FÍSICO] Aragorn avança para um Ataque Básico!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Tyler Durden recebeu: -66 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+⚡ RESPOSTA DE Tyler Durden:
+
+🔥 🛑 🛑 🛑 🛑 🛑 🛑 🛑 FASE 2 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🔥
+  💬 [TYLER]: "Você me fez assim. Aguente as consequências."
+  🧠 Postura Alterada — Os ataques agora penetram sua mente!
+🔥 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🔥
+
+✨ [SUPORTE] Tyler Durden canaliza foco interno: +Resiliência Estóica (HoT).
+[STATUS] Tyler Durden recebeu o efeito Resiliência Estóica (60 de cura/turno por 2 turnos)!
+
+🔮 [ATAQUE ESPECIAL] Tyler Durden usa Impacto Psicológico!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Aragorn recebeu: -47 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+=======================================================
+                  ⚔️  TURNO 5  ⚔️
+=======================================================
+-> Tyler Durden [HP: 136/400]
+-------------------------------------------------------
+
+┌───────────────────────────────────────────────────────┐
+  ⏳ [EFEITO ATIVO]: Sangramento (Tyler)
+  👤 Alvo          : Aragorn
+└───────────────────────────────────────────────────────┘
+
+  ┌───────────────────────────────────────────────────┐
+  🤢 [EFEITO CONTÍNUO] Aragorn sofreu: -28 HP
+  └───────────────────────────────────────────────────┘
+
+> Turno iniciado. Você recuperou 5 de Energia e 1 de MP.
+
+==================================================
+  STATUS DE Aragorn [Nível 5]
+==================================================
+  ❤️ HP       : 93 / 280
+  ⚡ Energia  : 100 / 100
+  🔮 MP       : 50 / 50
+--------------------------------------------------
+  ⚔️ Força    : 63 (+ 23 Arma)
+  🛡️ Defesa   : 38 (+ 3 Armadura)
+--------------------------------------------------
+  🧪 Frascos  : 3 restantes
+  ✨ XP       : 150 / 300
+==================================================
+1 - Ataque Básico (Grátis)
+2 - Habilidades
+3 - Erguer Escudo (Gasta: 6 Energia)
+4 - Usar Frasco de Cura
+Escolha uma opcao: 
+👊 [ATAQUE FÍSICO] Aragorn avança para um Ataque Básico!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Tyler Durden recebeu: -66 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+⚡ RESPOSTA DE Tyler Durden:
+
+┌───────────────────────────────────────────────────────┐
+  ⏳ [EFEITO ATIVO]: Resiliência Estóica
+  👤 Alvo          : Tyler Durden
+└───────────────────────────────────────────────────────┘
+
+Tyler Durden recuperou 60 de HP por efeito contínuo!
+
+
+🔮 [ATAQUE ESPECIAL] Tyler Durden usa Impacto Psicológico!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Aragorn recebeu: -47 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+=======================================================
+                  ⚔️  TURNO 6  ⚔️
+=======================================================
+-> Tyler Durden [HP: 130/400]
+-------------------------------------------------------
+
+┌───────────────────────────────────────────────────────┐
+  ⏳ [EFEITO ATIVO]: Sangramento (Tyler)
+  👤 Alvo          : Aragorn
+└───────────────────────────────────────────────────────┘
+
+  ┌───────────────────────────────────────────────────┐
+  🤢 [EFEITO CONTÍNUO] Aragorn sofreu: -28 HP
+  └───────────────────────────────────────────────────┘
+
+
+O efeito de Sangramento (Tyler) em Aragorn expirou.
+
+> Turno iniciado. Você recuperou 5 de Energia e 1 de MP.
+
+==================================================
+  STATUS DE Aragorn [Nível 5]
+==================================================
+  ❤️ HP       : 18 / 280
+  ⚡ Energia  : 100 / 100
+  🔮 MP       : 50 / 50
+--------------------------------------------------
+  ⚔️ Força    : 63 (+ 23 Arma)
+  🛡️ Defesa   : 38 (+ 3 Armadura)
+--------------------------------------------------
+  🧪 Frascos  : 3 restantes
+  ✨ XP       : 150 / 300
+==================================================
+1 - Ataque Básico (Grátis)
+2 - Habilidades
+3 - Erguer Escudo (Gasta: 6 Energia)
+4 - Usar Frasco de Cura
+Escolha uma opcao: 
+👊 [ATAQUE FÍSICO] Aragorn avança para um Ataque Básico!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Tyler Durden recebeu: -66 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+⚡ RESPOSTA DE Tyler Durden:
+
+┌───────────────────────────────────────────────────────┐
+  ⏳ [EFEITO ATIVO]: Resiliência Estóica
+  👤 Alvo          : Tyler Durden
+└───────────────────────────────────────────────────────┘
+
+Tyler Durden recuperou 60 de HP por efeito contínuo!
+
+
+O efeito de Resiliência Estóica em Tyler Durden expirou.
+
+
+💥⚡💥⚡💥⚡💥⚡💥⚡💥⚡💥⚡💥⚡💥⚡💥⚡💥⚡💥⚡💥⚡💥⚡💥⚡💥
+  💬 [TYLER]: "Você estava morto muito antes de entrar nisso."
+  🚨 Tyler Durden ativa a DESCONSTRUÇÃO TOTAL!
+💥⚡💥⚡💥⚡💥⚡💥⚡💥⚡💥⚡💥⚡💥⚡💥⚡💥⚡💥⚡💥⚡💥⚡💥⚡💥
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Aragorn recebeu: -86 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+=======================================================
+                 💀 FIM DE COMBATE 💀
+=======================================================
+❌ Derrota... A jornada de Aragorn termina aqui.
+=======================================================
+
+Você foi derrotado! Retornando ao último checkpoint...
+
+[RECONFORTO] Você descansa profundamente. Seus recursos foram totalmente restaurados!
+
+==================================================
+                   PROJETO MAYHEM            
+==================================================
+Tyler reúne os membros mais fiéis e anuncia uma nova fase: 
+tarefas, missões de sabotagem, uma estrutura quase militar. 
+Ninguém faz perguntas — perguntar não é permitido. Você 
+recebe sua primeira missão.
+--------------------------------------------------
+1 - Aplicar a doutrina do clube em um recruta hesitante
+2 - Invadir um prédio corporativo vigiado
+3 - Eliminar um sabotador rival que ameaça o Projeto
+Escolha uma opcao: Um RecrutaDoutrinado selvagem apareceu!
+
+=======================================================
+                 💥 COMBATE INICIADO! 💥
+=======================================================
+       Aragorn   VS   Recruta Doutrinado
+=======================================================
+
+=======================================================
+                  ⚔️  TURNO 1  ⚔️
+=======================================================
+-> Recruta Doutrinado [HP: 300/300]
+-------------------------------------------------------
+> Turno iniciado. Você recuperou 5 de Energia e 1 de MP.
+
+==================================================
+  STATUS DE Aragorn [Nível 5]
+==================================================
+  ❤️ HP       : 280 / 280
+  ⚡ Energia  : 100 / 100
+  🔮 MP       : 50 / 50
+--------------------------------------------------
+  ⚔️ Força    : 63 (+ 23 Arma)
+  🛡️ Defesa   : 38 (+ 3 Armadura)
+--------------------------------------------------
+  🧪 Frascos  : 3 restantes
+  ✨ XP       : 150 / 300
+==================================================
+1 - Ataque Básico (Grátis)
+2 - Habilidades
+3 - Erguer Escudo (Gasta: 6 Energia)
+4 - Usar Frasco de Cura
+Escolha uma opcao: 
+👊 [ATAQUE FÍSICO] Aragorn avança para um Ataque Básico!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Recruta Doutrinado recebeu: -66 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+⚡ RESPOSTA DE Recruta Doutrinado:
+Recruta Doutrinado avança sem recuar, ignorando a própria dor!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Aragorn recebeu: -25 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+=======================================================
+                  ⚔️  TURNO 2  ⚔️
+=======================================================
+-> Recruta Doutrinado [HP: 234/300]
+-------------------------------------------------------
+> Turno iniciado. Você recuperou 5 de Energia e 1 de MP.
+
+==================================================
+  STATUS DE Aragorn [Nível 5]
+==================================================
+  ❤️ HP       : 255 / 280
+  ⚡ Energia  : 100 / 100
+  🔮 MP       : 50 / 50
+--------------------------------------------------
+  ⚔️ Força    : 63 (+ 23 Arma)
+  🛡️ Defesa   : 38 (+ 3 Armadura)
+--------------------------------------------------
+  🧪 Frascos  : 3 restantes
+  ✨ XP       : 150 / 300
+==================================================
+1 - Ataque Básico (Grátis)
+2 - Habilidades
+3 - Erguer Escudo (Gasta: 6 Energia)
+4 - Usar Frasco de Cura
+Escolha uma opcao: 
+👊 [ATAQUE FÍSICO] Aragorn avança para um Ataque Básico!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Recruta Doutrinado recebeu: -66 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+⚡ RESPOSTA DE Recruta Doutrinado:
+Recruta Doutrinado rasga um corte profundo — Sangramento aplicado!
+
+=======================================================
+                  ⚔️  TURNO 3  ⚔️
+=======================================================
+-> Recruta Doutrinado [HP: 168/300]
+-------------------------------------------------------
+> Turno iniciado. Você recuperou 5 de Energia e 1 de MP.
+
+==================================================
+  STATUS DE Aragorn [Nível 5]
+==================================================
+  ❤️ HP       : 255 / 280
+  ⚡ Energia  : 100 / 100
+  🔮 MP       : 50 / 50
+--------------------------------------------------
+  ⚔️ Força    : 63 (+ 23 Arma)
+  🛡️ Defesa   : 38 (+ 3 Armadura)
+--------------------------------------------------
+  🧪 Frascos  : 3 restantes
+  ✨ XP       : 150 / 300
+==================================================
+1 - Ataque Básico (Grátis)
+2 - Habilidades
+3 - Erguer Escudo (Gasta: 6 Energia)
+4 - Usar Frasco de Cura
+Escolha uma opcao: 
+👊 [ATAQUE FÍSICO] Aragorn avança para um Ataque Básico!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Recruta Doutrinado recebeu: -66 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+⚡ RESPOSTA DE Recruta Doutrinado:
+Recruta Doutrinado avança sem recuar, ignorando a própria dor!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Aragorn recebeu: -25 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+=======================================================
+                  ⚔️  TURNO 4  ⚔️
+=======================================================
+-> Recruta Doutrinado [HP: 102/300]
+-------------------------------------------------------
+> Turno iniciado. Você recuperou 5 de Energia e 1 de MP.
+
+==================================================
+  STATUS DE Aragorn [Nível 5]
+==================================================
+  ❤️ HP       : 230 / 280
+  ⚡ Energia  : 100 / 100
+  🔮 MP       : 50 / 50
+--------------------------------------------------
+  ⚔️ Força    : 63 (+ 23 Arma)
+  🛡️ Defesa   : 38 (+ 3 Armadura)
+--------------------------------------------------
+  🧪 Frascos  : 3 restantes
+  ✨ XP       : 150 / 300
+==================================================
+1 - Ataque Básico (Grátis)
+2 - Habilidades
+3 - Erguer Escudo (Gasta: 6 Energia)
+4 - Usar Frasco de Cura
+Escolha uma opcao: 
+👊 [ATAQUE FÍSICO] Aragorn avança para um Ataque Básico!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Recruta Doutrinado recebeu: -66 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+⚡ RESPOSTA DE Recruta Doutrinado:
+Recruta Doutrinado recita as regras do clube em voz alta — Grito de Doutrina! Sua força aumenta por 2 turnos!
+> Recruta Doutrinado recebeu o Buff 'Grito de Doutrina' (+10 de forca) por 2 turnos.
+Recruta Doutrinado avança com vigor redobrado!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Aragorn recebeu: -25 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+=======================================================
+                  ⚔️  TURNO 5  ⚔️
+=======================================================
+-> Recruta Doutrinado [HP: 36/300]
+-------------------------------------------------------
+> Turno iniciado. Você recuperou 5 de Energia e 1 de MP.
+
+==================================================
+  STATUS DE Aragorn [Nível 5]
+==================================================
+  ❤️ HP       : 205 / 280
+  ⚡ Energia  : 100 / 100
+  🔮 MP       : 50 / 50
+--------------------------------------------------
+  ⚔️ Força    : 63 (+ 23 Arma)
+  🛡️ Defesa   : 38 (+ 3 Armadura)
+--------------------------------------------------
+  🧪 Frascos  : 3 restantes
+  ✨ XP       : 150 / 300
+==================================================
+1 - Ataque Básico (Grátis)
+2 - Habilidades
+3 - Erguer Escudo (Gasta: 6 Energia)
+4 - Usar Frasco de Cura
+Escolha uma opcao: 
+👊 [ATAQUE FÍSICO] Aragorn avança para um Ataque Básico!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Recruta Doutrinado recebeu: -66 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+=======================================================
+                 💀 FIM DE COMBATE 💀
+=======================================================
+✨ Vitória! Você derrotou Recruta Doutrinado.
+🎁 Recompensa: +400 XP.
+
+✨ SEU NÍVEL AUMENTOU PARA O NÍVEL 6! ✨
+=======================================================
+
+[ITEM OBTIDO]: Soco Ingles (+8 de Força)!
+
+==================================================
+                       DOUTRINAÇÃO           
+==================================================
+O recruta cai, mas se levanta orgulhoso, repetindo as regras 
+do clube como um mantra. Você percebe o quanto essas pessoas 
+estão dispostas a obedecer sem questionar — e isso te 
+incomoda mais do que devia.
+--------------------------------------------------
+1 - Voltar à casa e procurar Tyler
+Escolha uma opcao: 
+==================================================
+                       O DESPERTAR              
+==================================================
+Pedaço por pedaço, as coincidências deixam de fazer sentido 
+como coincidências. As pessoas te chamam pelo nome de Tyler. 
+Você nunca os viu juntos no mesmo lugar. A verdade começa a 
+se formar, terrível e inevitável: Tyler Durden nunca existiu 
+fora da sua própria cabeça.
+--------------------------------------------------
+1 - Confrontar a verdade sobre Tyler Durden de uma vez
+Escolha uma opcao: 
+==================================================
+                      EU CONTRA EU           
+==================================================
+Você encontra Tyler em meio aos escombros de tudo o que 
+ajudou a construir. Ele sorri, sabendo exatamente o que você 
+está pensando — porque ele é você. Não há mais como fugir 
+dessa luta: é preciso enfrentá-lo, de uma vez por todas, para 
+recuperar o controle sobre a própria vida.
+--------------------------------------------------
+1 - Enfrentar Tyler Durden de uma vez por todas
+Escolha uma opcao: Um TylerDurden selvagem apareceu!
+
+=======================================================
+                 💥 COMBATE INICIADO! 💥
+=======================================================
+       Aragorn   VS   Tyler Durden
+=======================================================
+
+=======================================================
+                  ⚔️  TURNO 1  ⚔️
+=======================================================
+-> Tyler Durden [HP: 400/400]
+-------------------------------------------------------
+> Turno iniciado. Você recuperou 5 de Energia e 1 de MP.
+
+==================================================
+  STATUS DE Aragorn [Nível 6]
+==================================================
+  ❤️ HP       : 320 / 320
+  ⚡ Energia  : 100 / 100
+  🔮 MP       : 50 / 50
+--------------------------------------------------
+  ⚔️ Força    : 75 (+ 31 Arma)
+  🛡️ Defesa   : 45 (+ 3 Armadura)
+--------------------------------------------------
+  🧪 Frascos  : 3 restantes
+  ✨ XP       : 250 / 360
+==================================================
+1 - Ataque Básico (Grátis)
+2 - Habilidades
+3 - Erguer Escudo (Gasta: 6 Energia)
+4 - Usar Frasco de Cura
+Escolha uma opcao: 
+👊 [ATAQUE FÍSICO] Aragorn avança para um Ataque Básico!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Tyler Durden recebeu: -81 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+⚡ RESPOSTA DE Tyler Durden:
+
+👊 [ATAQUE FÍSICO] Tyler Durden avança com Soco do Caos!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Aragorn recebeu: -27 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+=======================================================
+                  ⚔️  TURNO 2  ⚔️
+=======================================================
+-> Tyler Durden [HP: 319/400]
+-------------------------------------------------------
+> Turno iniciado. Você recuperou 5 de Energia e 1 de MP.
+
+==================================================
+  STATUS DE Aragorn [Nível 6]
+==================================================
+  ❤️ HP       : 293 / 320
+  ⚡ Energia  : 100 / 100
+  🔮 MP       : 50 / 50
+--------------------------------------------------
+  ⚔️ Força    : 75 (+ 31 Arma)
+  🛡️ Defesa   : 45 (+ 3 Armadura)
+--------------------------------------------------
+  🧪 Frascos  : 3 restantes
+  ✨ XP       : 250 / 360
+==================================================
+1 - Ataque Básico (Grátis)
+2 - Habilidades
+3 - Erguer Escudo (Gasta: 6 Energia)
+4 - Usar Frasco de Cura
+Escolha uma opcao: 
+👊 [ATAQUE FÍSICO] Aragorn avança para um Ataque Básico!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Tyler Durden recebeu: -81 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+⚡ RESPOSTA DE Tyler Durden:
+
+👊 [ATAQUE FÍSICO] Tyler Durden avança com Soco do Caos!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Aragorn recebeu: -27 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+=======================================================
+                  ⚔️  TURNO 3  ⚔️
+=======================================================
+-> Tyler Durden [HP: 238/400]
+-------------------------------------------------------
+> Turno iniciado. Você recuperou 5 de Energia e 1 de MP.
+
+==================================================
+  STATUS DE Aragorn [Nível 6]
+==================================================
+  ❤️ HP       : 266 / 320
+  ⚡ Energia  : 100 / 100
+  🔮 MP       : 50 / 50
+--------------------------------------------------
+  ⚔️ Força    : 75 (+ 31 Arma)
+  🛡️ Defesa   : 45 (+ 3 Armadura)
+--------------------------------------------------
+  🧪 Frascos  : 3 restantes
+  ✨ XP       : 250 / 360
+==================================================
+1 - Ataque Básico (Grátis)
+2 - Habilidades
+3 - Erguer Escudo (Gasta: 6 Energia)
+4 - Usar Frasco de Cura
+Escolha uma opcao: 
+👊 [ATAQUE FÍSICO] Aragorn avança para um Ataque Básico!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Tyler Durden recebeu: -81 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+⚡ RESPOSTA DE Tyler Durden:
+
+🔥 🛑 🛑 🛑 🛑 🛑 🛑 🛑 FASE 2 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🔥
+  💬 [TYLER]: "Você me fez assim. Aguente as consequências."
+  🧠 Postura Alterada — Os ataques agora penetram sua mente!
+🔥 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🔥
+
+💀 [DEBUFF] Tyler Durden quebra sua postura com escárnio: -Humilhação (Defesa reduzida).
+> Aragorn sofreu o Debuff 'Humilhação' (-50 de defesa) por 2 turnos.
+🩸 [EFEITO] Tyler Durden desfere um corte profundo: +Sangramento (DoT).
+
+🔮 [ATAQUE ESPECIAL] Tyler Durden usa Impacto Psicológico!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Aragorn recebeu: -44 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+=======================================================
+                  ⚔️  TURNO 4  ⚔️
+=======================================================
+-> Tyler Durden [HP: 157/400]
+-------------------------------------------------------
+> Turno iniciado. Você recuperou 5 de Energia e 1 de MP.
+
+==================================================
+  STATUS DE Aragorn [Nível 6]
+==================================================
+  ❤️ HP       : 222 / 320
+  ⚡ Energia  : 100 / 100
+  🔮 MP       : 50 / 50
+--------------------------------------------------
+  ⚔️ Força    : 75 (+ 31 Arma)
+  🛡️ Defesa   : 45 (+ 3 Armadura)
+--------------------------------------------------
+  🧪 Frascos  : 3 restantes
+  ✨ XP       : 250 / 360
+==================================================
+1 - Ataque Básico (Grátis)
+2 - Habilidades
+3 - Erguer Escudo (Gasta: 6 Energia)
+4 - Usar Frasco de Cura
+Escolha uma opcao: 
+👊 [ATAQUE FÍSICO] Aragorn avança para um Ataque Básico!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Tyler Durden recebeu: -81 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+⚡ RESPOSTA DE Tyler Durden:
+
+┌───────────────────────────────────────────────────────┐
+  💬 [TYLER]: "A dor é purificadora."
+  💚 Tyler recupera o controle — Cura Estóica! (+200 HP)
+└───────────────────────────────────────────────────────┘
+
+┌───────────────────────────────────────────────────────┐
+  💬 [TYLER]: "Sem medo. Sem hesitação."
+  💪 [BUFF] Tyler acumula fúria bruta: +Foco Destrutivo (Força aumentada).
+└───────────────────────────────────────────────────────┘
+> Tyler Durden recebeu o Buff 'Foco Destrutivo' (+40 de forca) por 2 turnos.
+
+👊 [ATAQUE FÍSICO] Tyler Durden avança com Soco do Caos!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Aragorn recebeu: -27 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+=======================================================
+                  ⚔️  TURNO 5  ⚔️
+=======================================================
+-> Tyler Durden [HP: 276/400]
+-------------------------------------------------------
+> Turno iniciado. Você recuperou 5 de Energia e 1 de MP.
+
+==================================================
+  STATUS DE Aragorn [Nível 6]
+==================================================
+  ❤️ HP       : 195 / 320
+  ⚡ Energia  : 100 / 100
+  🔮 MP       : 50 / 50
+--------------------------------------------------
+  ⚔️ Força    : 75 (+ 31 Arma)
+  🛡️ Defesa   : 45 (+ 3 Armadura)
+--------------------------------------------------
+  🧪 Frascos  : 3 restantes
+  ✨ XP       : 250 / 360
+==================================================
+1 - Ataque Básico (Grátis)
+2 - Habilidades
+3 - Erguer Escudo (Gasta: 6 Energia)
+4 - Usar Frasco de Cura
+Escolha uma opcao: 
+👊 [ATAQUE FÍSICO] Aragorn avança para um Ataque Básico!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Tyler Durden recebeu: -81 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+⚡ RESPOSTA DE Tyler Durden:
+
+🔮 [ATAQUE ESPECIAL] Tyler Durden usa Impacto Psicológico!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Aragorn recebeu: -44 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+=======================================================
+                  ⚔️  TURNO 6  ⚔️
+=======================================================
+-> Tyler Durden [HP: 195/400]
+-------------------------------------------------------
+> Turno iniciado. Você recuperou 5 de Energia e 1 de MP.
+
+==================================================
+  STATUS DE Aragorn [Nível 6]
+==================================================
+  ❤️ HP       : 151 / 320
+  ⚡ Energia  : 100 / 100
+  🔮 MP       : 50 / 50
+--------------------------------------------------
+  ⚔️ Força    : 75 (+ 31 Arma)
+  🛡️ Defesa   : 45 (+ 3 Armadura)
+--------------------------------------------------
+  🧪 Frascos  : 3 restantes
+  ✨ XP       : 250 / 360
+==================================================
+1 - Ataque Básico (Grátis)
+2 - Habilidades
+3 - Erguer Escudo (Gasta: 6 Energia)
+4 - Usar Frasco de Cura
+Escolha uma opcao: 
+👊 [ATAQUE FÍSICO] Aragorn avança para um Ataque Básico!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Tyler Durden recebeu: -81 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+⚡ RESPOSTA DE Tyler Durden:
+
+> O efeito 'Foco Destrutivo' aplicado em Tyler Durden expirou.
+💀 [DEBUFF] Tyler Durden quebra sua postura com escárnio: -Humilhação (Defesa reduzida).
+> Aragorn sofreu o Debuff 'Humilhação' (-50 de defesa) por 2 turnos.
+🩸 [EFEITO] Tyler Durden desfere um corte profundo: +Sangramento (DoT).
+
+🔮 [ATAQUE ESPECIAL] Tyler Durden usa Impacto Psicológico!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Aragorn recebeu: -44 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+=======================================================
+                  ⚔️  TURNO 7  ⚔️
+=======================================================
+-> Tyler Durden [HP: 114/400]
+-------------------------------------------------------
+> Turno iniciado. Você recuperou 5 de Energia e 1 de MP.
+
+==================================================
+  STATUS DE Aragorn [Nível 6]
+==================================================
+  ❤️ HP       : 107 / 320
+  ⚡ Energia  : 100 / 100
+  🔮 MP       : 50 / 50
+--------------------------------------------------
+  ⚔️ Força    : 75 (+ 31 Arma)
+  🛡️ Defesa   : 45 (+ 3 Armadura)
+--------------------------------------------------
+  🧪 Frascos  : 3 restantes
+  ✨ XP       : 250 / 360
+==================================================
+1 - Ataque Básico (Grátis)
+2 - Habilidades
+3 - Erguer Escudo (Gasta: 6 Energia)
+4 - Usar Frasco de Cura
+Escolha uma opcao: 
+👊 [ATAQUE FÍSICO] Aragorn avança para um Ataque Básico!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Tyler Durden recebeu: -81 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+⚡ RESPOSTA DE Tyler Durden:
+
+🔮 [ATAQUE ESPECIAL] Tyler Durden usa Impacto Psicológico!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Aragorn recebeu: -44 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+=======================================================
+                  ⚔️  TURNO 8  ⚔️
+=======================================================
+-> Tyler Durden [HP: 33/400]
+-------------------------------------------------------
+> Turno iniciado. Você recuperou 5 de Energia e 1 de MP.
+
+==================================================
+  STATUS DE Aragorn [Nível 6]
+==================================================
+  ❤️ HP       : 63 / 320
+  ⚡ Energia  : 100 / 100
+  🔮 MP       : 50 / 50
+--------------------------------------------------
+  ⚔️ Força    : 75 (+ 31 Arma)
+  🛡️ Defesa   : 45 (+ 3 Armadura)
+--------------------------------------------------
+  🧪 Frascos  : 3 restantes
+  ✨ XP       : 250 / 360
+==================================================
+1 - Ataque Básico (Grátis)
+2 - Habilidades
+3 - Erguer Escudo (Gasta: 6 Energia)
+4 - Usar Frasco de Cura
+Escolha uma opcao: 
+👊 [ATAQUE FÍSICO] Aragorn avança para um Ataque Básico!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Tyler Durden recebeu: -81 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+=======================================================
+                 💀 FIM DE COMBATE 💀
+=======================================================
+✨ Vitória! Você derrotou Tyler Durden.
+🎁 Recompensa: +2500 XP.
+
+✨ SEU NÍVEL AUMENTOU PARA O NÍVEL 7! ✨
+
+✨ SEU NÍVEL AUMENTOU PARA O NÍVEL 8! ✨
+
+✨ SEU NÍVEL AUMENTOU PARA O NÍVEL 9! ✨
+
+✨ SEU NÍVEL AUMENTOU PARA O NÍVEL 10! ✨
+
+✨ SEU NÍVEL AUMENTOU PARA O NÍVEL 11! ✨
+=======================================================
+
+==================================================
+                  FIM DA JORNADA                  
+==================================================
+De mãos dadas com Marla, você observa os prédios ao redor 
+começarem a cair, um a um, no horizonte. Pela primeira vez em 
+muito tempo, a mente está silenciosa. O que vem a seguir é 
+incerto — mas, enfim, é só seu.
+==================================================
+

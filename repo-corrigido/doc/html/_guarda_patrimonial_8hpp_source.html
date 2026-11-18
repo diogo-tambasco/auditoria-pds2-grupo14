@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RPG Fight Club - PDS2 Grupo 14: Código-Fonte de include/GuardaPatrimonial.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RPG Fight Club - PDS2 Grupo 14
+   </div>
+   <div id="projectbrief">RPG textual por turnos em C++17</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Busca" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('_guarda_patrimonial_8hpp_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">GuardaPatrimonial.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_guarda_patrimonial_8hpp.html">Ir para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef GUARDA_PATRIMONIAL_HPP</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define GUARDA_PATRIMONIAL_HPP</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="_inimigo_8hpp.html">Inimigo.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span></div>
+<div class="foldopen" id="foldopen00025" data-start="{" data-end="};">
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_guarda_patrimonial.html">   25</a></span><span class="keyword">class </span><a class="code hl_function" href="class_guarda_patrimonial.html#abf8b33ac37630415a89377c668103b06">GuardaPatrimonial</a> : <span class="keyword">public</span> <a class="code hl_function" href="class_inimigo.html#a627673f8d2f3d0afe0cc546d8d38223f">Inimigo</a> {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keyword">explicit</span> <a class="code hl_function" href="class_guarda_patrimonial.html#abf8b33ac37630415a89377c668103b06">GuardaPatrimonial</a>(std::string nome, <span class="keywordtype">int</span> nivel);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_guarda_patrimonial.html#ac4faf424168a68ca3a11558bf277a7bc">executarTurno</a>(<a class="code hl_function" href="class_personagem.html#a47c16f9a7fcf6a5c4b8e9ebca3dc13ed">Personagem</a>&amp; alvo) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    std::string <a class="code hl_function" href="class_guarda_patrimonial.html#a21535a28d04c971131fef52f618b5a42">getDeclaracaoStatus</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>};</div>
+</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="preprocessor">#endif </span><span class="comment">// GUARDA_PATRIMONIAL_HPP</span></div>
+<div class="ttc" id="a_inimigo_8hpp_html"><div class="ttname"><a href="_inimigo_8hpp.html">Inimigo.hpp</a></div><div class="ttdoc">Declaração da classe base abstrata Inimigo.</div></div>
+<div class="ttc" id="aclass_guarda_patrimonial_html_a21535a28d04c971131fef52f618b5a42"><div class="ttname"><a href="class_guarda_patrimonial.html#a21535a28d04c971131fef52f618b5a42">GuardaPatrimonial::getDeclaracaoStatus</a></div><div class="ttdeci">std::string getDeclaracaoStatus() const override</div><div class="ttdoc">Monta o status do inimigo para exibir no combate.</div><div class="ttdef"><b>Definição</b> GuardaPatrimonial.cpp:87</div></div>
+<div class="ttc" id="aclass_guarda_patrimonial_html_abf8b33ac37630415a89377c668103b06"><div class="ttname"><a href="class_guarda_patrimonial.html#abf8b33ac37630415a89377c668103b06">GuardaPatrimonial::GuardaPatrimonial</a></div><div class="ttdeci">GuardaPatrimonial(std::string nome, int nivel)</div><div class="ttdoc">Constrói um Guarda Patrimonial para um determinado nível.</div><div class="ttdef"><b>Definição</b> GuardaPatrimonial.cpp:6</div></div>
+<div class="ttc" id="aclass_guarda_patrimonial_html_ac4faf424168a68ca3a11558bf277a7bc"><div class="ttname"><a href="class_guarda_patrimonial.html#ac4faf424168a68ca3a11558bf277a7bc">GuardaPatrimonial::executarTurno</a></div><div class="ttdeci">void executarTurno(Personagem &amp;alvo) override</div><div class="ttdoc">Executa o turno com rotação de 4 habilidades distintas baseada no contador.</div><div class="ttdef"><b>Definição</b> GuardaPatrimonial.cpp:42</div></div>
+<div class="ttc" id="aclass_inimigo_html_a627673f8d2f3d0afe0cc546d8d38223f"><div class="ttname"><a href="class_inimigo.html#a627673f8d2f3d0afe0cc546d8d38223f">Inimigo::Inimigo</a></div><div class="ttdeci">Inimigo(std::string nome, int hp, int defesa, int forca, int nivel, int xp)</div><div class="ttdoc">Construtor da classe Inimigo.</div><div class="ttdef"><b>Definição</b> Inimigo.cpp:9</div></div>
+<div class="ttc" id="aclass_personagem_html_a47c16f9a7fcf6a5c4b8e9ebca3dc13ed"><div class="ttname"><a href="class_personagem.html#a47c16f9a7fcf6a5c4b8e9ebca3dc13ed">Personagem::Personagem</a></div><div class="ttdeci">Personagem(std::string nome, int hp, int defesa, int forca, int nivel)</div><div class="ttdoc">Construtor da classe Personagem.</div><div class="ttdef"><b>Definição</b> Personagem.cpp:10</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>include</b></li><li class="navelem"><a href="_guarda_patrimonial_8hpp.html">GuardaPatrimonial.hpp</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

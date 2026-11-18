@@ -1,0 +1,362 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RPG Fight Club - PDS2 Grupo 14: Referência da Classe Combate</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RPG Fight Club - PDS2 Grupo 14
+   </div>
+   <div id="projectbrief">RPG textual por turnos em C++17</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Busca" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('class_combate.html','','class_combate-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Referência da Classe Combate</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Mediador do loop de batalha por turnos entre <a class="el" href="class_aventureiro.html" title="Representa o personagem jogável, contendo sistemas de progressão, inventário de habilidades e recurso...">Aventureiro</a> e <a class="el" href="class_inimigo.html" title="Classe base para todas as entidades hostis do jogo.">Inimigo</a>.  
+ <a href="#details">Mais...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_combate_8hpp_source.html">Combate.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Membros Públicos</h2></td></tr>
+<tr class="memitem:af794580bb018faddc19830a0e8aeec40" id="r_af794580bb018faddc19830a0e8aeec40"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#af794580bb018faddc19830a0e8aeec40">Combate</a> (<a class="el" href="class_aventureiro.html">Aventureiro</a> &amp;jogador, <a class="el" href="class_inimigo.html">Inimigo</a> &amp;inimigo)</td></tr>
+<tr class="memdesc:af794580bb018faddc19830a0e8aeec40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construtor defensivo da classe <a class="el" href="class_combate.html" title="Mediador do loop de batalha por turnos entre Aventureiro e Inimigo.">Combate</a>.  <br /></td></tr>
+<tr class="memitem:aef2de1b836840b50cf32d47dbc63273d" id="r_aef2de1b836840b50cf32d47dbc63273d"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#aef2de1b836840b50cf32d47dbc63273d">iniciar</a> ()</td></tr>
+<tr class="memdesc:aef2de1b836840b50cf32d47dbc63273d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicia e gerencia o loop principal da batalha.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Membros privados</h2></td></tr>
+<tr class="memitem:abe7f101792b7d5c8cebcbaa8d85f8d83" id="r_abe7f101792b7d5c8cebcbaa8d85f8d83"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#abe7f101792b7d5c8cebcbaa8d85f8d83">turnoDoJogador</a> ()</td></tr>
+<tr class="memdesc:abe7f101792b7d5c8cebcbaa8d85f8d83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processa o turno do jogador com tratamento completo de exceções.  <br /></td></tr>
+<tr class="memitem:a3ced2e05f48b111bbebe34d9e80f094a" id="r_a3ced2e05f48b111bbebe34d9e80f094a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a3ced2e05f48b111bbebe34d9e80f094a">turnoDoInimigo</a> ()</td></tr>
+<tr class="memdesc:a3ced2e05f48b111bbebe34d9e80f094a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processa o turno do inimigo com tratamento de exceções.  <br /></td></tr>
+<tr class="memitem:a5684d79004c42aa40863b07d9b2f1418" id="r_a5684d79004c42aa40863b07d9b2f1418"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a5684d79004c42aa40863b07d9b2f1418">verificarContinuacao</a> () const</td></tr>
+<tr class="memdesc:a5684d79004c42aa40863b07d9b2f1418"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica se o combate deve continuar.  <br /></td></tr>
+<tr class="memitem:a8dba687020088d47184658defa9dc602" id="r_a8dba687020088d47184658defa9dc602"><td class="memItemLeft"><a id="a8dba687020088d47184658defa9dc602" name="a8dba687020088d47184658defa9dc602"></a>
+void&#160;</td><td class="memItemRight"><b>renderizarInterfaceTurno</b> () const</td></tr>
+<tr class="memdesc:a8dba687020088d47184658defa9dc602"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renderiza o cabeçalho do turno atual com os status dos combatentes. <br /></td></tr>
+<tr class="memitem:a9e7b8196ffb78e9ebac6fe0f1fcad23c" id="r_a9e7b8196ffb78e9ebac6fe0f1fcad23c"><td class="memItemLeft"><a id="a9e7b8196ffb78e9ebac6fe0f1fcad23c" name="a9e7b8196ffb78e9ebac6fe0f1fcad23c"></a>
+void&#160;</td><td class="memItemRight"><b>renderizarInicioCombate</b> () const</td></tr>
+<tr class="memdesc:a9e7b8196ffb78e9ebac6fe0f1fcad23c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exibe a introdução visual e narrativa do confronto. <br /></td></tr>
+<tr class="memitem:ab62278c7f4ce165fb14a438b6b6aa0b6" id="r_ab62278c7f4ce165fb14a438b6b6aa0b6"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab62278c7f4ce165fb14a438b6b6aa0b6">renderizarFimCombate</a> (bool jogadorVenceu)</td></tr>
+<tr class="memdesc:ab62278c7f4ce165fb14a438b6b6aa0b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renderiza a tela de desfecho e processa recompensas ou game over.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Atributos Privados</h2></td></tr>
+<tr class="memitem:acdc51beac7288e9fd059e75dddc35851" id="r_acdc51beac7288e9fd059e75dddc35851"><td class="memItemLeft"><a id="acdc51beac7288e9fd059e75dddc35851" name="acdc51beac7288e9fd059e75dddc35851"></a>
+<a class="el" href="class_aventureiro.html">Aventureiro</a> &amp;&#160;</td><td class="memItemRight"><b>_jogador</b></td></tr>
+<tr class="memdesc:acdc51beac7288e9fd059e75dddc35851"><td class="mdescLeft">&#160;</td><td class="mdescRight">Referência ao herói controlado pelo jogador. <br /></td></tr>
+<tr class="memitem:a9a7dc9936ea13896f74b47319a49c3eb" id="r_a9a7dc9936ea13896f74b47319a49c3eb"><td class="memItemLeft"><a id="a9a7dc9936ea13896f74b47319a49c3eb" name="a9a7dc9936ea13896f74b47319a49c3eb"></a>
+<a class="el" href="class_inimigo.html">Inimigo</a> &amp;&#160;</td><td class="memItemRight"><b>_inimigo</b></td></tr>
+<tr class="memdesc:a9a7dc9936ea13896f74b47319a49c3eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Referência ao inimigo adversário. <br /></td></tr>
+<tr class="memitem:acc575dc155e0da13fce138117756bd65" id="r_acc575dc155e0da13fce138117756bd65"><td class="memItemLeft"><a id="acc575dc155e0da13fce138117756bd65" name="acc575dc155e0da13fce138117756bd65"></a>
+int&#160;</td><td class="memItemRight"><b>_turnoAtual</b></td></tr>
+<tr class="memdesc:acc575dc155e0da13fce138117756bd65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contador de turnos da batalha. <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Mediador do loop de batalha por turnos entre <a class="el" href="class_aventureiro.html" title="Representa o personagem jogável, contendo sistemas de progressão, inventário de habilidades e recurso...">Aventureiro</a> e <a class="el" href="class_inimigo.html" title="Classe base para todas as entidades hostis do jogo.">Inimigo</a>. </p>
+<p>Segue o padrão Mediator: desacopla as entidades combatentes coordenando a ordem de ações, a renderização de estado e as condições de vitória/derrota.</p>
+<p>Todas as entradas do usuário são validadas defensivamente antes de serem processadas. Exceções de domínio são capturadas e tratadas localmente sempre que possível, expondo ao chamador apenas falhas não recuperáveis. </p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Construtores e Destrutores</h2>
+<a id="af794580bb018faddc19830a0e8aeec40" name="af794580bb018faddc19830a0e8aeec40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af794580bb018faddc19830a0e8aeec40">&#9670;&#160;</a></span>Combate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Combate::Combate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_aventureiro.html">Aventureiro</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>jogador</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_inimigo.html">Inimigo</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>inimigo</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construtor defensivo da classe <a class="el" href="class_combate.html" title="Mediador do loop de batalha por turnos entre Aventureiro e Inimigo.">Combate</a>. </p>
+<p>Valida o estado inicial de ambos os combatentes antes de aceitar as referências. Um combate não pode ser criado com entidades mortas.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">jogador</td><td>Referência para o <a class="el" href="class_aventureiro.html" title="Representa o personagem jogável, contendo sistemas de progressão, inventário de habilidades e recurso...">Aventureiro</a> controlado pelo usuário. </td></tr>
+    <tr><td class="paramname">inimigo</td><td>Referência para a subclasse de <a class="el" href="class_inimigo.html" title="Classe base para todas as entidades hostis do jogo.">Inimigo</a> adversária.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceções</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="class_combate_invalido_exception.html" title="Exceção lançada quando o estado dos combatentes impede o início do combate.">CombateInvalidoException</a></td><td>se jogador ou inimigo não estiverem vivos. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentação das funções</h2>
+<a id="aef2de1b836840b50cf32d47dbc63273d" name="aef2de1b836840b50cf32d47dbc63273d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef2de1b836840b50cf32d47dbc63273d">&#9670;&#160;</a></span>iniciar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Combate::iniciar </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inicia e gerencia o loop principal da batalha. </p>
+<p>Executa turnos alternados até que um dos combatentes seja derrotado. Processa recompensas (XP) em caso de vitória ou exibe game over em derrota. Captura exceções internas para garantir que o loop nunca trave por entradas inesperadas do usuário.</p>
+<dl class="section return"><dt>Retorna</dt><dd>true se o aventureiro venceu. </dd>
+<dd>
+false se o aventureiro foi derrotado. </dd></dl>
+
+</div>
+</div>
+<a id="ab62278c7f4ce165fb14a438b6b6aa0b6" name="ab62278c7f4ce165fb14a438b6b6aa0b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab62278c7f4ce165fb14a438b6b6aa0b6">&#9670;&#160;</a></span>renderizarFimCombate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Combate::renderizarFimCombate </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>jogadorVenceu</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Renderiza a tela de desfecho e processa recompensas ou game over. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">jogadorVenceu</td><td>true se o aventureiro venceu. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3ced2e05f48b111bbebe34d9e80f094a" name="a3ced2e05f48b111bbebe34d9e80f094a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ced2e05f48b111bbebe34d9e80f094a">&#9670;&#160;</a></span>turnoDoInimigo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Combate::turnoDoInimigo </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Processa o turno do inimigo com tratamento de exceções. </p>
+<p>Invoca o método polimórfico executarTurno do inimigo protegido por try-catch. Erros inesperados de IA são logados mas não interrompem o combate. </p>
+
+</div>
+</div>
+<a id="abe7f101792b7d5c8cebcbaa8d85f8d83" name="abe7f101792b7d5c8cebcbaa8d85f8d83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe7f101792b7d5c8cebcbaa8d85f8d83">&#9670;&#160;</a></span>turnoDoJogador()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Combate::turnoDoJogador </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Processa o turno do jogador com tratamento completo de exceções. </p>
+<p>Chama executarTurno do <a class="el" href="class_aventureiro.html" title="Representa o personagem jogável, contendo sistemas de progressão, inventário de habilidades e recurso...">Aventureiro</a> dentro de um bloco try-catch para garantir que erros de entrada (std::invalid_argument, std::out_of_range) nunca interrompam o fluxo de combate. </p>
+
+</div>
+</div>
+<a id="a5684d79004c42aa40863b07d9b2f1418" name="a5684d79004c42aa40863b07d9b2f1418"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5684d79004c42aa40863b07d9b2f1418">&#9670;&#160;</a></span>verificarContinuacao()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Combate::verificarContinuacao </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Verifica se o combate deve continuar. </p>
+<dl class="section return"><dt>Retorna</dt><dd>true se ambos os combatentes ainda tiverem HP &gt; 0. </dd></dl>
+
+</div>
+</div>
+<hr/>A documentação para essa classe foi gerada a partir dos seguintes arquivos:<ul>
+<li>include/<a class="el" href="_combate_8hpp_source.html">Combate.hpp</a></li>
+<li>src/<b>Combate.cpp</b></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="class_combate.html">Combate</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

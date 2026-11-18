@@ -1,0 +1,927 @@
+g++ -std=gnu++17 -Wall -Wextra -D_GNU_SOURCE -Iinclude -DDOCTEST_CONFIG_NO_MULTITHREADING -DDOCTEST_CONFIG_NO_WINDOWS_SEH --coverage -fprofile-arcs -ftest-coverage -c src/Aventureiro.cpp -o build/Aventureiro.o
+g++ -std=gnu++17 -Wall -Wextra -D_GNU_SOURCE -Iinclude -DDOCTEST_CONFIG_NO_MULTITHREADING -DDOCTEST_CONFIG_NO_WINDOWS_SEH --coverage -fprofile-arcs -ftest-coverage -c src/Cena.cpp -o build/Cena.o
+g++ -std=gnu++17 -Wall -Wextra -D_GNU_SOURCE -Iinclude -DDOCTEST_CONFIG_NO_MULTITHREADING -DDOCTEST_CONFIG_NO_WINDOWS_SEH --coverage -fprofile-arcs -ftest-coverage -c src/Combate.cpp -o build/Combate.o
+g++ -std=gnu++17 -Wall -Wextra -D_GNU_SOURCE -Iinclude -DDOCTEST_CONFIG_NO_MULTITHREADING -DDOCTEST_CONFIG_NO_WINDOWS_SEH --coverage -fprofile-arcs -ftest-coverage -c src/DesafianteDoBar.cpp -o build/DesafianteDoBar.o
+g++ -std=gnu++17 -Wall -Wextra -D_GNU_SOURCE -Iinclude -DDOCTEST_CONFIG_NO_MULTITHREADING -DDOCTEST_CONFIG_NO_WINDOWS_SEH --coverage -fprofile-arcs -ftest-coverage -c src/GuardaPatrimonial.cpp -o build/GuardaPatrimonial.o
+g++ -std=gnu++17 -Wall -Wextra -D_GNU_SOURCE -Iinclude -DDOCTEST_CONFIG_NO_MULTITHREADING -DDOCTEST_CONFIG_NO_WINDOWS_SEH --coverage -fprofile-arcs -ftest-coverage -c src/Habilidade.cpp -o build/Habilidade.o
+g++ -std=gnu++17 -Wall -Wextra -D_GNU_SOURCE -Iinclude -DDOCTEST_CONFIG_NO_MULTITHREADING -DDOCTEST_CONFIG_NO_WINDOWS_SEH --coverage -fprofile-arcs -ftest-coverage -c src/Inimigo.cpp -o build/Inimigo.o
+g++ -std=gnu++17 -Wall -Wextra -D_GNU_SOURCE -Iinclude -DDOCTEST_CONFIG_NO_MULTITHREADING -DDOCTEST_CONFIG_NO_WINDOWS_SEH --coverage -fprofile-arcs -ftest-coverage -c src/InimigoBoss.cpp -o build/InimigoBoss.o
+g++ -std=gnu++17 -Wall -Wextra -D_GNU_SOURCE -Iinclude -DDOCTEST_CONFIG_NO_MULTITHREADING -DDOCTEST_CONFIG_NO_WINDOWS_SEH --coverage -fprofile-arcs -ftest-coverage -c src/InterfaceJogo.cpp -o build/InterfaceJogo.o
+g++ -std=gnu++17 -Wall -Wextra -D_GNU_SOURCE -Iinclude -DDOCTEST_CONFIG_NO_MULTITHREADING -DDOCTEST_CONFIG_NO_WINDOWS_SEH --coverage -fprofile-arcs -ftest-coverage -c src/MotorJogo.cpp -o build/MotorJogo.o
+g++ -std=gnu++17 -Wall -Wextra -D_GNU_SOURCE -Iinclude -DDOCTEST_CONFIG_NO_MULTITHREADING -DDOCTEST_CONFIG_NO_WINDOWS_SEH --coverage -fprofile-arcs -ftest-coverage -c src/Personagem.cpp -o build/Personagem.o
+g++ -std=gnu++17 -Wall -Wextra -D_GNU_SOURCE -Iinclude -DDOCTEST_CONFIG_NO_MULTITHREADING -DDOCTEST_CONFIG_NO_WINDOWS_SEH --coverage -fprofile-arcs -ftest-coverage -c src/RecrutaDoutrinado.cpp -o build/RecrutaDoutrinado.o
+g++ -std=gnu++17 -Wall -Wextra -D_GNU_SOURCE -Iinclude -DDOCTEST_CONFIG_NO_MULTITHREADING -DDOCTEST_CONFIG_NO_WINDOWS_SEH --coverage -fprofile-arcs -ftest-coverage -c src/SabotadorRival.cpp -o build/SabotadorRival.o
+g++ -std=gnu++17 -Wall -Wextra -D_GNU_SOURCE -Iinclude -DDOCTEST_CONFIG_NO_MULTITHREADING -DDOCTEST_CONFIG_NO_WINDOWS_SEH --coverage -fprofile-arcs -ftest-coverage -c src/SegurancaDeBalada.cpp -o build/SegurancaDeBalada.o
+g++ -std=gnu++17 -Wall -Wextra -D_GNU_SOURCE -Iinclude -DDOCTEST_CONFIG_NO_MULTITHREADING -DDOCTEST_CONFIG_NO_WINDOWS_SEH --coverage -fprofile-arcs -ftest-coverage -c src/TrabalhadorNoturno.cpp -o build/TrabalhadorNoturno.o
+g++ -std=gnu++17 -Wall -Wextra -D_GNU_SOURCE -Iinclude -DDOCTEST_CONFIG_NO_MULTITHREADING -DDOCTEST_CONFIG_NO_WINDOWS_SEH -c tests/main_test.cpp -o build/test_main_test.o
+g++ -std=gnu++17 -Wall -Wextra -D_GNU_SOURCE -Iinclude -DDOCTEST_CONFIG_NO_MULTITHREADING -DDOCTEST_CONFIG_NO_WINDOWS_SEH -c tests/test_Aventureiro.cpp -o build/test_test_Aventureiro.o
+g++ -std=gnu++17 -Wall -Wextra -D_GNU_SOURCE -Iinclude -DDOCTEST_CONFIG_NO_MULTITHREADING -DDOCTEST_CONFIG_NO_WINDOWS_SEH -c tests/test_Cena.cpp -o build/test_test_Cena.o
+g++ -std=gnu++17 -Wall -Wextra -D_GNU_SOURCE -Iinclude -DDOCTEST_CONFIG_NO_MULTITHREADING -DDOCTEST_CONFIG_NO_WINDOWS_SEH -c tests/test_Combate.cpp -o build/test_test_Combate.o
+g++ -std=gnu++17 -Wall -Wextra -D_GNU_SOURCE -Iinclude -DDOCTEST_CONFIG_NO_MULTITHREADING -DDOCTEST_CONFIG_NO_WINDOWS_SEH -c tests/test_Habilidade.cpp -o build/test_test_Habilidade.o
+g++ -std=gnu++17 -Wall -Wextra -D_GNU_SOURCE -Iinclude -DDOCTEST_CONFIG_NO_MULTITHREADING -DDOCTEST_CONFIG_NO_WINDOWS_SEH -c tests/test_InimigoBoss.cpp -o build/test_test_InimigoBoss.o
+g++ -std=gnu++17 -Wall -Wextra -D_GNU_SOURCE -Iinclude -DDOCTEST_CONFIG_NO_MULTITHREADING -DDOCTEST_CONFIG_NO_WINDOWS_SEH -c tests/test_InimigoComum.cpp -o build/test_test_InimigoComum.o
+g++ -std=gnu++17 -Wall -Wextra -D_GNU_SOURCE -Iinclude -DDOCTEST_CONFIG_NO_MULTITHREADING -DDOCTEST_CONFIG_NO_WINDOWS_SEH -c tests/test_InimigoIncomum.cpp -o build/test_test_InimigoIncomum.o
+g++ -std=gnu++17 -Wall -Wextra -D_GNU_SOURCE -Iinclude -DDOCTEST_CONFIG_NO_MULTITHREADING -DDOCTEST_CONFIG_NO_WINDOWS_SEH -c tests/test_InterfaceJogo.cpp -o build/test_test_InterfaceJogo.o
+g++ -std=gnu++17 -Wall -Wextra -D_GNU_SOURCE -Iinclude -DDOCTEST_CONFIG_NO_MULTITHREADING -DDOCTEST_CONFIG_NO_WINDOWS_SEH -c tests/test_MotorJogo.cpp -o build/test_test_MotorJogo.o
+Linkando executavel de testes...
+g++ -std=gnu++17 -Wall -Wextra -D_GNU_SOURCE -Iinclude -DDOCTEST_CONFIG_NO_MULTITHREADING -DDOCTEST_CONFIG_NO_WINDOWS_SEH --coverage -fprofile-arcs -ftest-coverage build/Aventureiro.o build/Cena.o build/Combate.o build/DesafianteDoBar.o build/GuardaPatrimonial.o build/Habilidade.o build/Inimigo.o build/InimigoBoss.o build/InterfaceJogo.o build/MotorJogo.o build/Personagem.o build/RecrutaDoutrinado.o build/SabotadorRival.o build/SegurancaDeBalada.o build/TrabalhadorNoturno.o build/test_main_test.o build/test_test_Aventureiro.o build/test_test_Cena.o build/test_test_Combate.o build/test_test_Habilidade.o build/test_test_InimigoBoss.o build/test_test_InimigoComum.o build/test_test_InimigoIncomum.o build/test_test_InterfaceJogo.o build/test_test_MotorJogo.o -o ./build/exec_tests.exe
+
+========================================================
+                  EXECUTANDO TESTES                     
+========================================================
+./build/exec_tests.exe
+[doctest] doctest version is "2.5.2"
+[doctest] run with "--help" for options
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Defensivo recebeu: -25 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Tanque recebeu: -1 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Escudeiro posicionou o escudo e mitigou metade do impacto!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Escudeiro recebeu: -20 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[PERIGO] O ataque é do tipo ULTRA! O escudo foi completamente ignorado!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] ContraUltra recebeu: -40 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[EFEITO] O dano contínuo (DoT) agiu por baixo do escudo!
+
+  ┌───────────────────────────────────────────────────┐
+  🤢 [EFEITO CONTÍNUO] ContraDot sofreu: -40 HP
+  └───────────────────────────────────────────────────┘
+
+> Goku recebeu o Buff 'Furia' (+5 de forca) por 3 turnos.
+> Goku recebeu o Buff 'Poder' (+5 de Força) por 3 turnos.
+> Goku sofreu o Debuff 'Exposto' (-4 de defesa) por 2 turnos.
+> Goku sofreu o Debuff 'Quebra' (-3 de DEFESA) por 2 turnos.
+> Goku sofreu o Debuff 'Maldição' (-50 de defesa) por 2 turnos.
+[STATUS] Alvo foi afetado por Veneno (20 de dano/turno por 2 turnos)!
+> Alvo recebeu o Buff 'Surto' (+10 de forca) por 1 turnos.
+
+┌───────────────────────────────────────────────────────┐
+  ⏳ [EFEITO ATIVO]: Veneno
+  👤 Alvo          : Alvo
+└───────────────────────────────────────────────────────┘
+
+  ┌───────────────────────────────────────────────────┐
+  🤢 [EFEITO CONTÍNUO] Alvo sofreu: -10 HP
+  └───────────────────────────────────────────────────┘
+
+
+> O efeito 'Surto' aplicado em Alvo expirou.
+
+┌───────────────────────────────────────────────────────┐
+  ⏳ [EFEITO ATIVO]: Veneno
+  👤 Alvo          : Alvo
+└───────────────────────────────────────────────────────┘
+
+  ┌───────────────────────────────────────────────────┐
+  🤢 [EFEITO CONTÍNUO] Alvo sofreu: -10 HP
+  └───────────────────────────────────────────────────┘
+
+
+O efeito de Veneno em Alvo expirou.
+
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Paciente recebeu: -36 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[STATUS] Paciente recebeu o efeito Bênção (15 de cura/turno por 2 turnos)!
+
+┌───────────────────────────────────────────────────────┐
+  ⏳ [EFEITO ATIVO]: Bênção
+  👤 Alvo          : Paciente
+└───────────────────────────────────────────────────────┘
+
+Paciente recuperou 15 de HP por efeito contínuo!
+
+
+✨ SEU NÍVEL AUMENTOU PARA O NÍVEL 2! ✨
+[NOVA HABILIDADE] Você aprendeu: Soco Forte!
+[NOVA HABILIDADE] Você aprendeu: Usar Dipirona!
+
+✨ SEU NÍVEL AUMENTOU PARA O NÍVEL 3! ✨
+[NOVA HABILIDADE] Você aprendeu: Perfurar!
+[NOVA HABILIDADE] Você aprendeu: Usar Spray de Pimenta!
+
+✨ SEU NÍVEL AUMENTOU PARA O NÍVEL 4! ✨
+[NOVA HABILIDADE] Você aprendeu: Aplicar Adrenalina!
+[NOVA HABILIDADE] Você aprendeu: Focar!
+
+✨ SEU NÍVEL AUMENTOU PARA O NÍVEL 5! ✨
+[NOVA HABILIDADE] Você aprendeu: ATAQUE MENTAL!
+> Turno iniciado. Você recuperou 5 de Energia e 1 de MP.
+
+[RECONFORTO] Você descansa profundamente. Seus recursos foram totalmente restaurados!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Herói Caído recebeu: -454 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Bêbado do Bar recebeu: -434 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+=======================================================
+                 💥 COMBATE INICIADO! 💥
+=======================================================
+       Herói Forte   VS   Bêbado do Bar
+=======================================================
+
+=======================================================
+                  ⚔️  TURNO 1  ⚔️
+=======================================================
+-> Bêbado do Bar [HP: 150/150]
+-------------------------------------------------------
+> Turno iniciado. Você recuperou 5 de Energia e 1 de MP.
+
+==================================================
+  STATUS DE Herói Forte [Nível 1]
+==================================================
+  ❤️ HP       : 500 / 500
+  ⚡ Energia  : 100 / 100
+  🔮 MP       : 50 / 50
+--------------------------------------------------
+  ⚔️ Força    : 9999 (+ 0 Arma)
+  🛡️ Defesa   : 50 (+ 0 Armadura)
+--------------------------------------------------
+  🧪 Frascos  : 3 restantes
+  ✨ XP       : 0 / 60
+==================================================
+1 - Ataque Básico (Grátis)
+2 - Habilidades
+3 - Erguer Escudo (Gasta: 6 Energia)
+4 - Usar Frasco de Cura
+Escolha uma opcao: 
+👊 [ATAQUE FÍSICO] Herói Forte avança para um Ataque Básico!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Bêbado do Bar recebeu: -8694 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+=======================================================
+                 💀 FIM DE COMBATE 💀
+=======================================================
+✨ Vitória! Você derrotou Bêbado do Bar.
+🎁 Recompensa: +60 XP.
+
+✨ SEU NÍVEL AUMENTOU PARA O NÍVEL 2! ✨
+[NOVA HABILIDADE] Você aprendeu: Soco Forte!
+[NOVA HABILIDADE] Você aprendeu: Usar Dipirona!
+=======================================================
+
+=======================================================
+                 💥 COMBATE INICIADO! 💥
+=======================================================
+       Herói Frágil   VS   Tyler
+=======================================================
+
+=======================================================
+                  ⚔️  TURNO 1  ⚔️
+=======================================================
+-> Tyler [HP: 400/400]
+-------------------------------------------------------
+> Turno iniciado. Você recuperou 5 de Energia e 1 de MP.
+
+==================================================
+  STATUS DE Herói Frágil [Nível 1]
+==================================================
+  ❤️ HP       : 10 / 10
+  ⚡ Energia  : 100 / 100
+  🔮 MP       : 50 / 50
+--------------------------------------------------
+  ⚔️ Força    : 1 (+ 0 Arma)
+  🛡️ Defesa   : 1 (+ 0 Armadura)
+--------------------------------------------------
+  🧪 Frascos  : 3 restantes
+  ✨ XP       : 0 / 60
+==================================================
+1 - Ataque Básico (Grátis)
+2 - Habilidades
+3 - Erguer Escudo (Gasta: 6 Energia)
+4 - Usar Frasco de Cura
+Escolha uma opcao: 
+👊 [ATAQUE FÍSICO] Herói Frágil avança para um Ataque Básico!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Tyler recebeu: -1 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+⚡ RESPOSTA DE Tyler:
+
+👊 [ATAQUE FÍSICO] Tyler avança com Soco do Caos!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Herói Frágil recebeu: -39 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+=======================================================
+                 💀 FIM DE COMBATE 💀
+=======================================================
+❌ Derrota... A jornada de Herói Frágil termina aqui.
+=======================================================
+
+=======================================================
+                 💥 COMBATE INICIADO! 💥
+=======================================================
+       Aventureiro Veloz   VS   Guarda
+=======================================================
+
+=======================================================
+                  ⚔️  TURNO 1  ⚔️
+=======================================================
+-> Guarda [HP: 140/140]
+-------------------------------------------------------
+> Turno iniciado. Você recuperou 5 de Energia e 1 de MP.
+
+==================================================
+  STATUS DE Aventureiro Veloz [Nível 1]
+==================================================
+  ❤️ HP       : 500 / 500
+  ⚡ Energia  : 100 / 100
+  🔮 MP       : 50 / 50
+--------------------------------------------------
+  ⚔️ Força    : 9999 (+ 0 Arma)
+  🛡️ Defesa   : 10 (+ 0 Armadura)
+--------------------------------------------------
+  🧪 Frascos  : 3 restantes
+  ✨ XP       : 0 / 60
+==================================================
+1 - Ataque Básico (Grátis)
+2 - Habilidades
+3 - Erguer Escudo (Gasta: 6 Energia)
+4 - Usar Frasco de Cura
+Escolha uma opcao: 
+👊 [ATAQUE FÍSICO] Aventureiro Veloz avança para um Ataque Básico!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Guarda recebeu: -7999 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+=======================================================
+                 💀 FIM DE COMBATE 💀
+=======================================================
+✨ Vitória! Você derrotou Guarda.
+🎁 Recompensa: +200 XP.
+
+✨ SEU NÍVEL AUMENTOU PARA O NÍVEL 2! ✨
+[NOVA HABILIDADE] Você aprendeu: Soco Forte!
+[NOVA HABILIDADE] Você aprendeu: Usar Dipirona!
+
+✨ SEU NÍVEL AUMENTOU PARA O NÍVEL 3! ✨
+[NOVA HABILIDADE] Você aprendeu: Perfurar!
+[NOVA HABILIDADE] Você aprendeu: Usar Spray de Pimenta!
+=======================================================
+
+=======================================================
+                 💥 COMBATE INICIADO! 💥
+=======================================================
+       Herói   VS   Bêbado do Bar
+=======================================================
+
+=======================================================
+                  ⚔️  TURNO 1  ⚔️
+=======================================================
+-> Bêbado do Bar [HP: 150/150]
+-------------------------------------------------------
+> Turno iniciado. Você recuperou 5 de Energia e 1 de MP.
+
+==================================================
+  STATUS DE Herói [Nível 1]
+==================================================
+  ❤️ HP       : 100 / 100
+  ⚡ Energia  : 100 / 100
+  🔮 MP       : 50 / 50
+--------------------------------------------------
+  ⚔️ Força    : 10 (+ 0 Arma)
+  🛡️ Defesa   : 10 (+ 0 Armadura)
+--------------------------------------------------
+  🧪 Frascos  : 3 restantes
+  ✨ XP       : 0 / 60
+==================================================
+1 - Ataque Básico (Grátis)
+2 - Habilidades
+3 - Erguer Escudo (Gasta: 6 Energia)
+4 - Usar Frasco de Cura
+Escolha uma opcao: 
+👊 [ATAQUE FÍSICO] Tyler avança com Soco do Caos!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Heroi recebeu: -36 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+👊 [ATAQUE FÍSICO] Tyler avança com Soco do Caos!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Heroi recebeu: -36 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🩸 [EFEITO] Tyler causa uma lacração violenta: +Sangramento (DoT).
+[STATUS] Heroi foi afetado por Sangramento (Tyler) (8 de dano/turno por 3 turnos)!
+
+👊 [ATAQUE FÍSICO] Tyler avança com Soco do Caos!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Heroi recebeu: -36 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+┌───────────────────────────────────────────────────────┐
+  💬 [TYLER]: "Sem medo. Sem hesitação."
+  💪 [BUFF] Tyler acumula fúria bruta: +Foco Destrutivo (Força aumentada).
+└───────────────────────────────────────────────────────┘
+> Tyler recebeu o Buff 'Foco Destrutivo' (+8 de forca) por 2 turnos.
+
+👊 [ATAQUE FÍSICO] Tyler avança com Soco do Caos!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Heroi recebeu: -36 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Tyler recebeu: -38 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Tyler recebeu: -38 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Tyler recebeu: -38 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Tyler recebeu: -38 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Tyler recebeu: -38 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Tyler recebeu: -38 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+🔥 🛑 🛑 🛑 🛑 🛑 🛑 🛑 FASE 2 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🔥
+  💬 [TYLER]: "Você me fez assim. Aguente as consequências."
+  🧠 Postura Alterada — Os ataques agora penetram sua mente!
+🔥 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🔥
+
+
+🔮 [ATAQUE ESPECIAL] Tyler usa Impacto Psicológico!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Heroi recebeu: -40 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+🔮 [ATAQUE ESPECIAL] Tyler usa Impacto Psicológico!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Heroi recebeu: -40 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💀 [DEBUFF] Tyler quebra sua postura com escárnio: -Humilhação (Defesa reduzida).
+> Heroi sofreu o Debuff 'Humilhação' (-10 de defesa) por 2 turnos.
+🩸 [EFEITO] Tyler desfere um corte profundo: +Sangramento (DoT).
+[STATUS] Heroi foi afetado por Sangramento (Tyler) (8 de dano/turno por 3 turnos)!
+
+🔮 [ATAQUE ESPECIAL] Tyler usa Impacto Psicológico!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Heroi recebeu: -40 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✨ [SUPORTE] Tyler canaliza foco interno: +Resiliência Estóica (HoT).
+[STATUS] Tyler recebeu o efeito Resiliência Estóica (12 de cura/turno por 2 turnos)!
+
+🔮 [ATAQUE ESPECIAL] Tyler usa Impacto Psicológico!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Heroi recebeu: -40 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Tyler recebeu: -38 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Tyler recebeu: -38 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Tyler recebeu: -38 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Tyler recebeu: -38 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Tyler recebeu: -38 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Tyler recebeu: -38 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Tyler recebeu: -38 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Tyler recebeu: -38 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+🔥 🛑 🛑 🛑 🛑 🛑 🛑 🛑 FASE 2 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🔥
+  💬 [TYLER]: "Você me fez assim. Aguente as consequências."
+  🧠 Postura Alterada — Os ataques agora penetram sua mente!
+🔥 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🔥
+
+
+🔮 [ATAQUE ESPECIAL] Tyler usa Impacto Psicológico!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Heroi recebeu: -40 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Tyler recebeu: -15 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Tyler recebeu: -15 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Tyler recebeu: -15 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Tyler recebeu: -15 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Tyler recebeu: -15 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Tyler recebeu: -15 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Tyler recebeu: -15 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Tyler recebeu: -15 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Tyler recebeu: -15 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Tyler recebeu: -15 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Tyler recebeu: -15 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Tyler recebeu: -15 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Tyler recebeu: -15 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Tyler recebeu: -15 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Tyler recebeu: -15 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Tyler recebeu: -15 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Tyler recebeu: -15 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Tyler recebeu: -15 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Tyler recebeu: -15 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Tyler recebeu: -15 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Tyler recebeu: -15 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Tyler recebeu: -15 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+┌───────────────────────────────────────────────────────┐
+  💬 [TYLER]: "A dor é purificadora."
+  💚 Tyler recupera o controle — Cura Estóica! (+40 HP)
+└───────────────────────────────────────────────────────┘
+
+🔥 🛑 🛑 🛑 🛑 🛑 🛑 🛑 FASE 2 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🔥
+  💬 [TYLER]: "Você me fez assim. Aguente as consequências."
+  🧠 Postura Alterada — Os ataques agora penetram sua mente!
+🔥 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🔥
+
+
+🔮 [ATAQUE ESPECIAL] Tyler usa Impacto Psicológico!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Heroi recebeu: -40 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Tyler recebeu: -307 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+🔥 🛑 🛑 🛑 🛑 🛑 🛑 🛑 FASE 2 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🔥
+  💬 [TYLER]: "Você me fez assim. Aguente as consequências."
+  🧠 Postura Alterada — Os ataques agora penetram sua mente!
+🔥 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🛑 🔥
+
+
+🔮 [ATAQUE ESPECIAL] Tyler usa Impacto Psicológico!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Heroi recebeu: -40 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+👊 [ATAQUE FÍSICO] Valentão avança cambaleando com um Soco Bêbado!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Heroi recebeu: -14 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+🚨 💥 [GOLPE CRÍTICO] Operário Puto entra em colapso de raiva e ativa Surto de Raiva!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Heroi recebeu: -39 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+👊 [ATAQUE FÍSICO] Operário Puto desfere um soco desesperado de exaustão!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Heroi recebeu: -19 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+💥 [ATAQUE] Guarda projeta o corpo à frente com um Empurrão de Segurança!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Heroi recebeu: -14 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+💥 [ATAQUE] Guarda projeta o corpo à frente com um Empurrão de Segurança!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Heroi recebeu: -14 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+🛡️  [POSTURA] Guarda cruza os braços e finca a base!
+    > Escudo Ativo: Impacto de ataques comuns mitigado pela metade até a próxima rodada.
+
+💥 [ATAQUE] Guarda projeta o corpo à frente com um Empurrão de Segurança!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Heroi recebeu: -14 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Heroi recebeu: -476 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Recruta Teste avança sem recuar, ignorando a própria dor!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Heroi recebeu: -34 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Recruta Teste rasga um corte profundo — Sangramento aplicado!
+[STATUS] Heroi foi afetado por Sangramento (4 de dano/turno por 3 turnos)!
+Recruta Teste avança sem recuar, ignorando a própria dor!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Heroi recebeu: -34 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Recruta Teste recita as regras do clube em voz alta — Grito de Doutrina! Sua força aumenta por 2 turnos!
+> Recruta Teste recebeu o Buff 'Grito de Doutrina' (+5 de forca) por 2 turnos.
+Recruta Teste avança com vigor redobrado!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Heroi recebeu: -34 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Recruta Teste invade seu espaço e grita na sua cara — Intimidação! Sua defesa cai por 2 turnos!
+> Heroi sofreu o Debuff 'Intimidação' (-6 de defesa) por 2 turnos.
+Guarda Teste avança com o cassetete!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Heroi recebeu: -24 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Guarda Teste avança com o cassetete!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Heroi recebeu: -24 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Guarda Teste acerta um golpe preciso no crânio — Atordoamento! Sua força cai drasticamente por 1 turno!
+> Heroi sofreu o Debuff 'Atordoamento' (-12 de forca) por 1 turnos.
+Guarda Teste dispara o spray de gás lacrimogêneo — Sua defesa cai por 2 turnos!
+> Heroi sofreu o Debuff 'Gás Lacrimogêneo' (-8 de defesa) por 2 turnos.
+Guarda Teste abre o kit de primeiros socorros rapidamente — Bandagem de Campo! Recuperando HP por 2 turnos.
+[STATUS] Guarda Teste recebeu o efeito Bandagem de Campo (6 de cura/turno por 2 turnos)!
+Guarda Teste avança sem hesitar!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Heroi recebeu: -24 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Sabotador Teste arremessa um explosivo improvisado!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Heroi recebeu: -44 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Sabotador Teste derrama ácido — Queimadura Química aplicada!
+[STATUS] Heroi foi afetado por Queimadura Química (5 de dano/turno por 3 turnos)!
+Sabotador Teste arremessa um explosivo improvisado!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Heroi recebeu: -44 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Sabotador Teste derrama ácido — Queimadura Química aplicada!
+[STATUS] Heroi foi afetado por Queimadura Química (5 de dano/turno por 3 turnos)!
+Sabotador Teste arremessa uma granada de gás — Gás Paralisante! Sua força cai por 2 turnos!
+> Heroi sofreu o Debuff 'Gás Paralisante' (-10 de forca) por 2 turnos.
+Sabotador Teste arremessa um explosivo improvisado!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Heroi recebeu: -44 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Sabotador Teste derrama ácido — Queimadura Química aplicada!
+[STATUS] Heroi foi afetado por Queimadura Química (5 de dano/turno por 3 turnos)!
+Sabotador Teste arremessa um explosivo improvisado!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Heroi recebeu: -44 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Sabotador Teste derrama ácido — Queimadura Química aplicada!
+[STATUS] Heroi foi afetado por Queimadura Química (5 de dano/turno por 3 turnos)!
+
+[PERIGO] Sabotador Teste detona tudo que tem — EXPLOSÃO TOTAL! Nenhum escudo vai te proteger disso!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Heroi recebeu: -89 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Sabotador Teste deixa o ambiente em chamas — Queimadura Química aplicada!
+[STATUS] Heroi foi afetado por Queimadura Química (5 de dano/turno por 3 turnos)!
+
+  ━━━━━━ DANO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💥 [IMPACTO] Heroi recebeu: -990 HP (Dano Real)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Texto de teste
+
+Nome: Herói
+HP: 100/100
+Defesa: 5
+Nível: 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+==============================
+1 - Atacar
+2 - Defender
+3 - Fugir
+Escolha uma opcao: 1 - Atacar
+2 - Defender
+3 - Fugir
+Escolha uma opcao: 
+[AVISO] Opcao invalida! Digite um numero entre 1 e 3.
+
+1 - Atacar
+2 - Defender
+3 - Fugir
+Escolha uma opcao: 
+[AVISO] Opcao invalida! Digite um numero entre 1 e 3.
+
+1 - Atacar
+2 - Defender
+3 - Fugir
+Escolha uma opcao: 
+[AVISO] Opcao invalida! Digite um numero entre 1 e 3.
+
+1 - Atacar
+2 - Defender
+3 - Fugir
+Escolha uma opcao: 1 - Atacar
+2 - Defender
+3 - Fugir
+Escolha uma opcao: 
+[ERRO] Entrada invalida! Por favor, digite apenas numeros.
+
+1 - Atacar
+2 - Defender
+3 - Fugir
+Escolha uma opcao: 
+[ERRO] Entrada invalida! Por favor, digite apenas numeros.
+
+1 - Atacar
+2 - Defender
+3 - Fugir
+Escolha uma opcao: 1 - Atacar
+2 - Defender
+3 - Fugir
+Escolha uma opcao: 
+[RECONFORTO] Você descansa profundamente. Seus recursos foram totalmente restaurados!
+===============================================================================
+[doctest] test cases:  88 |  88 passed | 0 failed | 0 skipped
+[doctest] assertions: 176 | 176 passed | 0 failed |
+[doctest] Status: SUCCESS!
+
+========================================================
+                GERANDO COBERTURA (GCOVR)               
+========================================================
+------------------------------------------------------------------------------
+                           GCC Code Coverage Report
+Directory: .
+------------------------------------------------------------------------------
+File                                         Lines     Exec  Cover   Missing
+------------------------------------------------------------------------------
+include/Aventureiro.hpp                          0        0    --%
+include/Cena.hpp                                 1        1   100%
+include/CombateInvalidoException.hpp             2        2   100%
+include/DesafianteDoBar.hpp                      0        0    --%
+include/EfeitoPorTempo.hpp                       1        1   100%
+include/EntradaEncerradaException.hpp            2        2   100%
+include/Escolha.hpp                              1        1   100%
+include/GuardaPatrimonial.hpp                    0        0    --%
+include/Habilidade.hpp                           1        1   100%
+include/HabilidadeInvalidaException.hpp          2        2   100%
+include/Inimigo.hpp                              1        1   100%
+include/InimigoBoss.hpp                          0        0    --%
+include/ModificadorAtributo.hpp                  1        1   100%
+include/Personagem.hpp                           1        1   100%
+include/RecrutaDoutrinado.hpp                    0        0    --%
+include/SabotadorRival.hpp                       0        0    --%
+include/SegurancaDeBalada.hpp                    0        0    --%
+include/TrabalhadorNoturno.hpp                   0        0    --%
+src/Aventureiro.cpp                            208      132    63%   62,64-66,69-71,73-81,83,85-86,90,92,94-95,98-121,123-124,127-129,131,133-137,140-145,147,150-156,158,161-162,250
+src/Cena.cpp                                    12       12   100%
+src/Combate.cpp                                 94       77    81%   82-84,88-90,92,94-96,98,110-112,114,163-164
+src/DesafianteDoBar.cpp                         30       30   100%
+src/GuardaPatrimonial.cpp                       58       58   100%
+src/Habilidade.cpp                              59       52    88%   44-46,66,68,111-112
+src/Inimigo.cpp                                  9        7    77%   22-23
+src/InimigoBoss.cpp                            115      106    92%   86,89,115,117-120,122-123
+src/InterfaceJogo.cpp                           44       44   100%
+src/MotorJogo.cpp                              279      206    73%   21-22,24,27-28,30,33-34,37-39,41,44-46,50-52,55,58-61,63,66,69-71,85-86,95,97,99,101,103,105,107,506-508,511,514-515,517,524-529,535-540,543,545,548-552,555-556,558-560,563,566-568,570
+src/Personagem.cpp                             154      153    99%   208
+src/RecrutaDoutrinado.cpp                       58       58   100%
+src/SabotadorRival.cpp                          56       56   100%
+src/SegurancaDeBalada.cpp                       36       36   100%
+src/TrabalhadorNoturno.cpp                      40       40   100%
+------------------------------------------------------------------------------
+TOTAL                                         1265     1080    85%
+------------------------------------------------------------------------------
+lines: 85.4% (1080 out of 1265)
+functions: 93.7% (118 out of 126)
+branches: 42.8% (1121 out of 2622)

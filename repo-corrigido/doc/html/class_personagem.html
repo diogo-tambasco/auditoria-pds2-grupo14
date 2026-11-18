@@ -1,0 +1,908 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RPG Fight Club - PDS2 Grupo 14: Referência da Classe Personagem</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RPG Fight Club - PDS2 Grupo 14
+   </div>
+   <div id="projectbrief">RPG textual por turnos em C++17</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Busca" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('class_personagem.html','','class_personagem-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Referência da Classe Personagem<span class="mlabels"><span class="mlabel abstract">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Classe abstrata que define os atributos, recursos de saúde e comportamentos básicos de qualquer entidade no jogo.  
+ <a href="#details">Mais...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_personagem_8hpp_source.html">Personagem.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Diagrama de hierarquia da classe Personagem:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_personagem.png" usemap="#Personagem_map" alt=""/>
+  <map id="Personagem_map" name="Personagem_map">
+<area href="class_aventureiro.html" title="Representa o personagem jogável, contendo sistemas de progressão, inventário de habilidades e recurso..." alt="Aventureiro" shape="rect" coords="0,56,129,80"/>
+<area href="class_inimigo.html" title="Classe base para todas as entidades hostis do jogo." alt="Inimigo" shape="rect" coords="417,56,546,80"/>
+<area href="class_desafiante_do_bar.html" title="Cidadão comum que frequenta os fundos do bar em busca de uma válvula de escape." alt="DesafianteDoBar" shape="rect" coords="0,112,129,136"/>
+<area href="class_guarda_patrimonial.html" title="Vigilante que protege prédios corporativos durante a noite." alt="GuardaPatrimonial" shape="rect" coords="139,112,268,136"/>
+<area href="class_recruta_doutrinado.html" title="Membro intermediário do Projeto Mayhem que já passou pela iniciação." alt="RecrutaDoutrinado" shape="rect" coords="278,112,407,136"/>
+<area href="class_sabotador_rival.html" title="Agente que usa táticas de guerrilha urbana com explosivos e químicos." alt="SabotadorRival" shape="rect" coords="417,112,546,136"/>
+<area href="class_seguranca_de_balada.html" title="Brutamontes que tenta bloquear o acesso a áreas restritas." alt="SegurancaDeBalada" shape="rect" coords="556,112,685,136"/>
+<area href="class_trabalhador_noturno.html" title="Oponente rápido e frágil, movido a pura exaustão." alt="TrabalhadorNoturno" shape="rect" coords="695,112,824,136"/>
+<area href="class_tyler_durden.html" title="O Reflexo Sombrio. Boss final do arco narrativo do Fight Club." alt="TylerDurden" shape="rect" coords="834,112,963,136"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Membros Públicos</h2></td></tr>
+<tr class="memitem:a47c16f9a7fcf6a5c4b8e9ebca3dc13ed" id="r_a47c16f9a7fcf6a5c4b8e9ebca3dc13ed"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a47c16f9a7fcf6a5c4b8e9ebca3dc13ed">Personagem</a> (std::string nome, int hp, int defesa, int forca, int nivel)</td></tr>
+<tr class="memdesc:a47c16f9a7fcf6a5c4b8e9ebca3dc13ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construtor da classe <a class="el" href="class_personagem.html" title="Classe abstrata que define os atributos, recursos de saúde e comportamentos básicos de qualquer entid...">Personagem</a>.  <br /></td></tr>
+<tr class="memitem:a84f5c498a97451963267510c79261177" id="r_a84f5c498a97451963267510c79261177"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="#a84f5c498a97451963267510c79261177">~Personagem</a> ()=default</td></tr>
+<tr class="memdesc:a84f5c498a97451963267510c79261177"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destrutor virtual puro padronizado.  <br /></td></tr>
+<tr class="memitem:a34169763c9896f9fa93f87788dc10210" id="r_a34169763c9896f9fa93f87788dc10210"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a34169763c9896f9fa93f87788dc10210">executarTurno</a> (<a class="el" href="class_personagem.html">Personagem</a> &amp;alvo)=0</td></tr>
+<tr class="memdesc:a34169763c9896f9fa93f87788dc10210"><td class="mdescLeft">&#160;</td><td class="mdescRight">Método virtual puro que define a Inteligência Artificial ou comportamento de turno da entidade.  <br /></td></tr>
+<tr class="memitem:a27c5ba0e8af0332329a81766f77baa34" id="r_a27c5ba0e8af0332329a81766f77baa34"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a27c5ba0e8af0332329a81766f77baa34">adicionarHabilidade</a> (const <a class="el" href="class_habilidade.html">Habilidade</a> &amp;habilidade)</td></tr>
+<tr class="memdesc:a27c5ba0e8af0332329a81766f77baa34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insere com segurança uma nova habilidade no repositório privado da entidade.  <br /></td></tr>
+<tr class="memitem:a6ef19aa17671dce9cf41fa992b49e6fd" id="r_a6ef19aa17671dce9cf41fa992b49e6fd"><td class="memItemLeft">const std::vector&lt; <a class="el" href="class_habilidade.html">Habilidade</a> &gt; &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a6ef19aa17671dce9cf41fa992b49e6fd">getHabilidades</a> () const</td></tr>
+<tr class="memdesc:a6ef19aa17671dce9cf41fa992b49e6fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fornece acesso controlado ao acervo de habilidades conhecidas pela entidade.  <br /></td></tr>
+<tr class="memitem:aa2ca8a887fc13efe068a5af73f858dfb" id="r_aa2ca8a887fc13efe068a5af73f858dfb"><td class="memItemLeft">virtual std::string&#160;</td><td class="memItemRight"><a class="el" href="#aa2ca8a887fc13efe068a5af73f858dfb">getDeclaracaoStatus</a> () const =0</td></tr>
+<tr class="memdesc:aa2ca8a887fc13efe068a5af73f858dfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Método virtual puro para exportar os dados de saúde e recursos formatados em texto.  <br /></td></tr>
+<tr class="memitem:a919f509fb99d7cfc7f3a187264764cb4" id="r_a919f509fb99d7cfc7f3a187264764cb4"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a919f509fb99d7cfc7f3a187264764cb4">receberDano</a> (int dano, <a class="el" href="_habilidade_8hpp.html#aa51c8184308d3e880af7237f46b87014">TipoHabilidade</a> tipoDaHabilidade)</td></tr>
+<tr class="memdesc:a919f509fb99d7cfc7f3a187264764cb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aplica a redução de pontos de vida (HP) com base na fórmula de armadura.  <br /></td></tr>
+<tr class="memitem:a9cf0387279bb86cc48ee6bcfe01c2880" id="r_a9cf0387279bb86cc48ee6bcfe01c2880"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a9cf0387279bb86cc48ee6bcfe01c2880">receberCura</a> (int valor)</td></tr>
+<tr class="memdesc:a9cf0387279bb86cc48ee6bcfe01c2880"><td class="mdescLeft">&#160;</td><td class="mdescRight">Incrementa os pontos de vida (HP) atuais da entidade.  <br /></td></tr>
+<tr class="memitem:a93db7403a8d14cc14617ac1b1e38458a" id="r_a93db7403a8d14cc14617ac1b1e38458a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a93db7403a8d14cc14617ac1b1e38458a">aplicarBuff</a> (std::string nome, std::string atributo, int valor, int duracao)</td></tr>
+<tr class="memdesc:a93db7403a8d14cc14617ac1b1e38458a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aplica um modificador positivo (Buff) em um atributo específico do personagem.  <br /></td></tr>
+<tr class="memitem:aa7d09dcb4ab4b25ea0053bd5811b8b41" id="r_aa7d09dcb4ab4b25ea0053bd5811b8b41"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aa7d09dcb4ab4b25ea0053bd5811b8b41">aplicarDebuff</a> (std::string nome, std::string atributo, int valor, int duracao)</td></tr>
+<tr class="memdesc:aa7d09dcb4ab4b25ea0053bd5811b8b41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aplica um modificador negativo (Debuff) reduzindo temporariamente um atributo.  <br /></td></tr>
+<tr class="memitem:ab79a961ff523fbfa3e03e398409bd356" id="r_ab79a961ff523fbfa3e03e398409bd356"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab79a961ff523fbfa3e03e398409bd356">aplicarDoT</a> (std::string nome, int dano, int duracao)</td></tr>
+<tr class="memdesc:ab79a961ff523fbfa3e03e398409bd356"><td class="mdescLeft">&#160;</td><td class="mdescRight">Injeta e registra um novo efeito de dano por turno (DoT) na lista do personagem.  <br /></td></tr>
+<tr class="memitem:a9331594e0e6a58b114d33a36579bc249" id="r_a9331594e0e6a58b114d33a36579bc249"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9331594e0e6a58b114d33a36579bc249">aplicarHoT</a> (std::string nome, int cura, int duracao)</td></tr>
+<tr class="memdesc:a9331594e0e6a58b114d33a36579bc249"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aplica com segurança um efeito de cura contínua (HoT - Heal over Time).  <br /></td></tr>
+<tr class="memitem:a3afd32d38bd808403db8cd53a6afb32f" id="r_a3afd32d38bd808403db8cd53a6afb32f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a3afd32d38bd808403db8cd53a6afb32f">processarEfeitosContinuos</a> ()</td></tr>
+<tr class="memdesc:a3afd32d38bd808403db8cd53a6afb32f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Varre e processa todos os efeitos de dano por turno ativos no personagem.  <br /></td></tr>
+<tr class="memitem:adde93429c2cdbe140c438984b8c11e86" id="r_adde93429c2cdbe140c438984b8c11e86"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#adde93429c2cdbe140c438984b8c11e86">limparEfeitosTemporarios</a> ()</td></tr>
+<tr class="memdesc:adde93429c2cdbe140c438984b8c11e86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove todos os DoTs, HoTs, Buffs e Debuffs ativos de um combate passado.  <br /></td></tr>
+<tr class="memitem:ae2a4d8eb392081372b27750193238516" id="r_ae2a4d8eb392081372b27750193238516"><td class="memItemLeft">virtual int&#160;</td><td class="memItemRight"><a class="el" href="#ae2a4d8eb392081372b27750193238516">getDefesa</a> () const</td></tr>
+<tr class="memdesc:ae2a4d8eb392081372b27750193238516"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna o valor de defesa ativo do personagem para cálculos de mitigação.  <br /></td></tr>
+<tr class="memitem:a84867f900dae1f6a1d5171cd08395aa4" id="r_a84867f900dae1f6a1d5171cd08395aa4"><td class="memItemLeft">virtual int&#160;</td><td class="memItemRight"><a class="el" href="#a84867f900dae1f6a1d5171cd08395aa4">getForcaTotal</a> () const</td></tr>
+<tr class="memdesc:a84867f900dae1f6a1d5171cd08395aa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna o poder de ataque total consolidado (<code>_forcaBase</code> + modificadores).  <br /></td></tr>
+<tr class="memitem:a0a536e87fcaec762d983c02b112d32b8" id="r_a0a536e87fcaec762d983c02b112d32b8"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a0a536e87fcaec762d983c02b112d32b8">getHP</a> () const</td></tr>
+<tr class="memdesc:a0a536e87fcaec762d983c02b112d32b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna os pontos de vida atuais.  <br /></td></tr>
+<tr class="memitem:aafc217a5fee9ff31b06a024cff32a98c" id="r_aafc217a5fee9ff31b06a024cff32a98c"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#aafc217a5fee9ff31b06a024cff32a98c">getHPMax</a> () const</td></tr>
+<tr class="memdesc:aafc217a5fee9ff31b06a024cff32a98c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna o limite máximo de pontos de vida.  <br /></td></tr>
+<tr class="memitem:af424ac9cfdbfb95a91f4889c67f9cf86" id="r_af424ac9cfdbfb95a91f4889c67f9cf86"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#af424ac9cfdbfb95a91f4889c67f9cf86">estaVivo</a> () const</td></tr>
+<tr class="memdesc:af424ac9cfdbfb95a91f4889c67f9cf86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica se o personagem ainda está vivo.  <br /></td></tr>
+<tr class="memitem:a655543f46b19dd076bc47c0c2c6de68a" id="r_a655543f46b19dd076bc47c0c2c6de68a"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a655543f46b19dd076bc47c0c2c6de68a">getNome</a> () const</td></tr>
+<tr class="memdesc:a655543f46b19dd076bc47c0c2c6de68a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna o nome do personagem.  <br /></td></tr>
+<tr class="memitem:ad4a55e257bcd94921da359fd421c1def" id="r_ad4a55e257bcd94921da359fd421c1def"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ad4a55e257bcd94921da359fd421c1def">getNivel</a> () const</td></tr>
+<tr class="memdesc:ad4a55e257bcd94921da359fd421c1def"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna o nível atual.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pro-attribs" class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Atributos Protegidos</h2></td></tr>
+<tr class="memitem:aa23848afb7f3235a44c841fefb6f820b" id="r_aa23848afb7f3235a44c841fefb6f820b"><td class="memItemLeft"><a id="aa23848afb7f3235a44c841fefb6f820b" name="aa23848afb7f3235a44c841fefb6f820b"></a>
+std::string&#160;</td><td class="memItemRight"><b>_nome</b></td></tr>
+<tr class="memdesc:aa23848afb7f3235a44c841fefb6f820b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nome da entidade. <br /></td></tr>
+<tr class="memitem:a092750b5171fb9a640103feb0ab9085f" id="r_a092750b5171fb9a640103feb0ab9085f"><td class="memItemLeft"><a id="a092750b5171fb9a640103feb0ab9085f" name="a092750b5171fb9a640103feb0ab9085f"></a>
+int&#160;</td><td class="memItemRight"><b>_hp</b></td></tr>
+<tr class="memdesc:a092750b5171fb9a640103feb0ab9085f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pontos de vida (HP) atuais da entidade. <br /></td></tr>
+<tr class="memitem:a6339381865c9a372fa7c168fe0c2c24f" id="r_a6339381865c9a372fa7c168fe0c2c24f"><td class="memItemLeft"><a id="a6339381865c9a372fa7c168fe0c2c24f" name="a6339381865c9a372fa7c168fe0c2c24f"></a>
+int&#160;</td><td class="memItemRight"><b>_hpMax</b></td></tr>
+<tr class="memdesc:a6339381865c9a372fa7c168fe0c2c24f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Capacidade máxima de armazenamento de saúde. <br /></td></tr>
+<tr class="memitem:a36a56febda59fb1039abb2290282c176" id="r_a36a56febda59fb1039abb2290282c176"><td class="memItemLeft"><a id="a36a56febda59fb1039abb2290282c176" name="a36a56febda59fb1039abb2290282c176"></a>
+int&#160;</td><td class="memItemRight"><b>_defesaBase</b></td></tr>
+<tr class="memdesc:a36a56febda59fb1039abb2290282c176"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atributo nativo de mitigação de dano físico. <br /></td></tr>
+<tr class="memitem:aa7ff238ed78f94cfc75bdb2065cdf45f" id="r_aa7ff238ed78f94cfc75bdb2065cdf45f"><td class="memItemLeft"><a id="aa7ff238ed78f94cfc75bdb2065cdf45f" name="aa7ff238ed78f94cfc75bdb2065cdf45f"></a>
+int&#160;</td><td class="memItemRight"><b>_nivel</b></td></tr>
+<tr class="memdesc:aa7ff238ed78f94cfc75bdb2065cdf45f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nível de poder ou escala de atributos da entidade. <br /></td></tr>
+<tr class="memitem:a489fe3312b52d46332c1948d148a261d" id="r_a489fe3312b52d46332c1948d148a261d"><td class="memItemLeft"><a id="a489fe3312b52d46332c1948d148a261d" name="a489fe3312b52d46332c1948d148a261d"></a>
+int&#160;</td><td class="memItemRight"><b>_forcaBase</b></td></tr>
+<tr class="memdesc:a489fe3312b52d46332c1948d148a261d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atributo nativo de dano físico. <br /></td></tr>
+<tr class="memitem:a719c3f4dd06f462226f5f5caa0e6a9db" id="r_a719c3f4dd06f462226f5f5caa0e6a9db"><td class="memItemLeft"><a id="a719c3f4dd06f462226f5f5caa0e6a9db" name="a719c3f4dd06f462226f5f5caa0e6a9db"></a>
+bool&#160;</td><td class="memItemRight"><b>_vivo</b></td></tr>
+<tr class="memdesc:a719c3f4dd06f462226f5f5caa0e6a9db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indica se o <a class="el" href="class_personagem.html" title="Classe abstrata que define os atributos, recursos de saúde e comportamentos básicos de qualquer entid...">Personagem</a> esta vivo. <br /></td></tr>
+<tr class="memitem:a005e889847175663da0bbf5af2e68263" id="r_a005e889847175663da0bbf5af2e68263"><td class="memItemLeft"><a id="a005e889847175663da0bbf5af2e68263" name="a005e889847175663da0bbf5af2e68263"></a>
+bool&#160;</td><td class="memItemRight"><b>_escudoAtivo</b></td></tr>
+<tr class="memdesc:a005e889847175663da0bbf5af2e68263"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estado de postura defensiva ativa que mitiga o próximo golpe sofrido. <br /></td></tr>
+<tr class="memitem:aca8cc356e53a759fc43d73b96fb3ee61" id="r_aca8cc356e53a759fc43d73b96fb3ee61"><td class="memItemLeft"><a id="aca8cc356e53a759fc43d73b96fb3ee61" name="aca8cc356e53a759fc43d73b96fb3ee61"></a>
+std::vector&lt; <a class="el" href="struct_efeito_por_tempo.html">EfeitoPorTempo</a> &gt;&#160;</td><td class="memItemRight"><b>_efeitosAtivos</b></td></tr>
+<tr class="memdesc:aca8cc356e53a759fc43d73b96fb3ee61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vetor que armazena todos os efeitos de dano contínuo ativos no personagem. <br /></td></tr>
+<tr class="memitem:abd635865e75449596938c6cc912d59b2" id="r_abd635865e75449596938c6cc912d59b2"><td class="memItemLeft"><a id="abd635865e75449596938c6cc912d59b2" name="abd635865e75449596938c6cc912d59b2"></a>
+std::vector&lt; <a class="el" href="struct_modificador_atributo.html">ModificadorAtributo</a> &gt;&#160;</td><td class="memItemRight"><b>_modificadoresAtivos</b></td></tr>
+<tr class="memdesc:abd635865e75449596938c6cc912d59b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffs e Debuffs ativos no personagem. <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Atributos Privados</h2></td></tr>
+<tr class="memitem:adef99a0e8a2bd861793ffa10d76ccb95" id="r_adef99a0e8a2bd861793ffa10d76ccb95"><td class="memItemLeft"><a id="adef99a0e8a2bd861793ffa10d76ccb95" name="adef99a0e8a2bd861793ffa10d76ccb95"></a>
+std::vector&lt; <a class="el" href="class_habilidade.html">Habilidade</a> &gt;&#160;</td><td class="memItemRight"><b>_habilidades</b></td></tr>
+<tr class="memdesc:adef99a0e8a2bd861793ffa10d76ccb95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Repositório privado e blindado contendo as técnicas da entidade. <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Classe abstrata que define os atributos, recursos de saúde e comportamentos básicos de qualquer entidade no jogo. </p>
+<ul>
+<li>A classe <a class="el" href="class_personagem.html" title="Classe abstrata que define os atributos, recursos de saúde e comportamentos básicos de qualquer entid...">Personagem</a> serve como a base conceitual para jogadores e monstros. Ela centraliza o gerenciamento de ciclo de vida (pontos de vida, dano, cura e nível) e dita o contrato de turnos que o motor de combate precisa para rodar o jogo, além de guardar de forma privada o inventário de habilidades da entidade. </li>
+</ul>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Construtores e Destrutores</h2>
+<a id="a47c16f9a7fcf6a5c4b8e9ebca3dc13ed" name="a47c16f9a7fcf6a5c4b8e9ebca3dc13ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47c16f9a7fcf6a5c4b8e9ebca3dc13ed">&#9670;&#160;</a></span>Personagem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Personagem::Personagem </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>nome</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>hp</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>defesa</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>forca</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>nivel</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construtor da classe <a class="el" href="class_personagem.html" title="Classe abstrata que define os atributos, recursos de saúde e comportamentos básicos de qualquer entid...">Personagem</a>. </p>
+<ul>
+<li>Configura os dados iniciais da entidade de combate. O parâmetro <code class="param">hp</code> define tanto a vida atual quanto o limite máximo (<code>_hpMax</code>) no início do jogo.</li>
+<li><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nome</td><td>Nome de exibição da entidade. <br  />
+ </td></tr>
+    <tr><td class="paramname">hp</td><td>Pontos de vida máximos e atuais iniciais. </td></tr>
+    <tr><td class="paramname">defesa</td><td>Pontos de defesa base para mitigação de danos. </td></tr>
+    <tr><td class="paramname">forca</td><td>Força base usada no cálculo do dano causado. </td></tr>
+    <tr><td class="paramname">nivel</td><td>Nível inicial de desafio ou progressão.</td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+<li><dl class="section pre"><dt>Pré-condição</dt><dd>Os valores de <code class="param">hp</code>, <code class="param">defesa</code> e <code class="param">nivel</code> devem ser maiores que zero. </dd></dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="a84f5c498a97451963267510c79261177" name="a84f5c498a97451963267510c79261177"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84f5c498a97451963267510c79261177">&#9670;&#160;</a></span>~Personagem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual Personagem::~Personagem </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span><span class="mlabel default">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destrutor virtual puro padronizado. </p>
+<p>** Garante que, ao deletar um ponteiro polimórfico de <a class="el" href="class_personagem.html" title="Classe abstrata que define os atributos, recursos de saúde e comportamentos básicos de qualquer entid...">Personagem</a>, o destrutor da subclasse específica (<code><a class="el" href="class_aventureiro.html" title="Representa o personagem jogável, contendo sistemas de progressão, inventário de habilidades e recurso...">Aventureiro</a></code> ou <code><a class="el" href="class_inimigo.html" title="Classe base para todas as entidades hostis do jogo.">Inimigo</a></code>) seja invocado corretamente, evitando vazamentos de memória. </p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentação das funções</h2>
+<a id="a27c5ba0e8af0332329a81766f77baa34" name="a27c5ba0e8af0332329a81766f77baa34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27c5ba0e8af0332329a81766f77baa34">&#9670;&#160;</a></span>adicionarHabilidade()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Personagem::adicionarHabilidade </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_habilidade.html">Habilidade</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>habilidade</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Insere com segurança uma nova habilidade no repositório privado da entidade. </p>
+<p>** </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">habilidade</td><td>Referência constante para o objeto <a class="el" href="class_habilidade.html" title="Objeto imutável que encapsula os metadados e parâmetros de uma ação especial.">Habilidade</a> a ser armazenado. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a93db7403a8d14cc14617ac1b1e38458a" name="a93db7403a8d14cc14617ac1b1e38458a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93db7403a8d14cc14617ac1b1e38458a">&#9670;&#160;</a></span>aplicarBuff()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Personagem::aplicarBuff </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>nome</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>atributo</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>valor</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>duracao</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Aplica um modificador positivo (Buff) em um atributo específico do personagem. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nome</td><td>Nome do efeito/habilidade. </td></tr>
+    <tr><td class="paramname">atributo</td><td>Atributo a ser inflado ("forca" ou "defesa"). </td></tr>
+    <tr><td class="paramname">valor</td><td>Quantidade de pontos a somar no atributo. </td></tr>
+    <tr><td class="paramname">duracao</td><td>Duração do efeito em turnos. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa7d09dcb4ab4b25ea0053bd5811b8b41" name="aa7d09dcb4ab4b25ea0053bd5811b8b41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7d09dcb4ab4b25ea0053bd5811b8b41">&#9670;&#160;</a></span>aplicarDebuff()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Personagem::aplicarDebuff </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>nome</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>atributo</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>valor</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>duracao</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Aplica um modificador negativo (Debuff) reduzindo temporariamente um atributo. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nome</td><td>Nome do efeito/habilidade. </td></tr>
+    <tr><td class="paramname">atributo</td><td>Atributo a ser mitigado ("forca" ou "defesa"). </td></tr>
+    <tr><td class="paramname">valor</td><td>Quantidade de pontos a subtrair do atributo. </td></tr>
+    <tr><td class="paramname">duracao</td><td>Duração do efeito em turnos. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab79a961ff523fbfa3e03e398409bd356" name="ab79a961ff523fbfa3e03e398409bd356"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab79a961ff523fbfa3e03e398409bd356">&#9670;&#160;</a></span>aplicarDoT()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Personagem::aplicarDoT </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>nome</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>dano</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>duracao</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Injeta e registra um novo efeito de dano por turno (DoT) na lista do personagem. </p>
+<ul>
+<li>Cria uma instância de EfeitoDoT com os parâmetros fornecidos e a anexa ao vetor de monitoramento de efeitos ativos. Exibe um aviso textual informando o status aplicado.</li>
+<li><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nome</td><td>Nome do efeito/habilidade que gerou o dano contínuo. </td></tr>
+    <tr><td class="paramname">dano</td><td>Quantidade de dano que será processada a cada ativação de rodada. </td></tr>
+    <tr><td class="paramname">duracao</td><td>Quantidade total de turnos que o efeito persistirá ativo. </td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="a9331594e0e6a58b114d33a36579bc249" name="a9331594e0e6a58b114d33a36579bc249"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9331594e0e6a58b114d33a36579bc249">&#9670;&#160;</a></span>aplicarHoT()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Personagem::aplicarHoT </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>nome</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>cura</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>duracao</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Aplica com segurança um efeito de cura contínua (HoT - Heal over Time). </p>
+<ul>
+<li>Cria e instancia um objeto do tipo <code><a class="el" href="struct_efeito_por_tempo.html" title="Estrutura que define as propriedades de um efeito de dano contínuo (DoT).">EfeitoPorTempo</a></code> configurado sob a categoria <code><a class="el" href="_habilidade_8hpp.html#aa51c8184308d3e880af7237f46b87014ac429fde8b1b986d42f84ba63dbfef6ac" title="Heal over Time: Cura distribuída ao longo de vários turnos.">TipoHabilidade::HOT</a></code>. O efeito é armazenado no repositório ativo e processado no início ou término de cada rodada do combate.</li>
+<li><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nome</td><td>Nome identificador do efeito benéfico (ex: "Regeneração", "Bandagem Urgente"). </td></tr>
+    <tr><td class="paramname">cura</td><td>Quantidade fixa de pontos de vida (HP) que serão restaurados a cada ciclo. </td></tr>
+    <tr><td class="paramname">duracao</td><td>Contador inicial de rodadas pelo qual o efeito permanecerá ativo. </td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="af424ac9cfdbfb95a91f4889c67f9cf86" name="af424ac9cfdbfb95a91f4889c67f9cf86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af424ac9cfdbfb95a91f4889c67f9cf86">&#9670;&#160;</a></span>estaVivo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Personagem::estaVivo </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verifica se o personagem ainda está vivo. </p>
+<dl class="section return"><dt>Retorna</dt><dd><code>true</code> se o HP for maior que 0. </dd></dl>
+
+</div>
+</div>
+<a id="a34169763c9896f9fa93f87788dc10210" name="a34169763c9896f9fa93f87788dc10210"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34169763c9896f9fa93f87788dc10210">&#9670;&#160;</a></span>executarTurno()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Personagem::executarTurno </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_personagem.html">Personagem</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>alvo</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Método virtual puro que define a Inteligência Artificial ou comportamento de turno da entidade. </p>
+<ul>
+<li>Este método deve ser obrigatoriamente implementado por todas as subclasses para ditar o que a entidade faz quando chega o seu momento de agir no ciclo de batalha.</li>
+<li><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">alvo</td><td>Referência para a entidade oponente que sofrerá as ações do turno. </td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+
+<p>Implementado por <a class="el" href="class_aventureiro.html#a59d1795fe9a78339e4d623f98c129efd">Aventureiro</a>, <a class="el" href="class_desafiante_do_bar.html#aec7d11a3d6f463ecf34744944fe706c9">DesafianteDoBar</a>, <a class="el" href="class_guarda_patrimonial.html#ac4faf424168a68ca3a11558bf277a7bc">GuardaPatrimonial</a>, <a class="el" href="class_recruta_doutrinado.html#a0dba4d4e0f6367182b323821627fc77f">RecrutaDoutrinado</a>, <a class="el" href="class_sabotador_rival.html#a46171bba017552a217f058e5925765cf">SabotadorRival</a>, <a class="el" href="class_seguranca_de_balada.html#afcd097d7c9035daa52ed01c0b5e33ed8">SegurancaDeBalada</a>, <a class="el" href="class_trabalhador_noturno.html#a3f521dde2e6d308f01c45618c0c21574">TrabalhadorNoturno</a> e <a class="el" href="class_tyler_durden.html#ad70e8af7c84c704cb4f55ac201a51b53">TylerDurden</a>.</p>
+
+</div>
+</div>
+<a id="aa2ca8a887fc13efe068a5af73f858dfb" name="aa2ca8a887fc13efe068a5af73f858dfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2ca8a887fc13efe068a5af73f858dfb">&#9670;&#160;</a></span>getDeclaracaoStatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string Personagem::getDeclaracaoStatus </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Método virtual puro para exportar os dados de saúde e recursos formatados em texto. </p>
+<ul>
+<li>Deve ser sobrescrito pelas subclasses para que cada uma monte sua própria assinatura visual de status para o console (ex: incluindo ou não barras de mana/energia).</li>
+<li><dl class="section return"><dt>Retorna</dt><dd>std::string String multi-linha formatada pronta para impressão. </dd></dl>
+</li>
+</ul>
+
+<p>Implementado por <a class="el" href="class_aventureiro.html#a1c2915b753fcd67c2af2400965e01c65">Aventureiro</a>, <a class="el" href="class_desafiante_do_bar.html#a0a42cebda38bf022c6766361907d82bf">DesafianteDoBar</a>, <a class="el" href="class_guarda_patrimonial.html#a21535a28d04c971131fef52f618b5a42">GuardaPatrimonial</a>, <a class="el" href="class_recruta_doutrinado.html#a3a6683b521abb708ff758359a5c0db78">RecrutaDoutrinado</a>, <a class="el" href="class_sabotador_rival.html#a69eb86c329c17f956b1bd2d479c0c0ff">SabotadorRival</a>, <a class="el" href="class_seguranca_de_balada.html#a595dedbd49b7fd75fe32c992e4345d0b">SegurancaDeBalada</a>, <a class="el" href="class_trabalhador_noturno.html#a6c536a16e56c6fcef3b8d70dab214b6a">TrabalhadorNoturno</a> e <a class="el" href="class_tyler_durden.html#ad8d387a9c74692b672f46c7b0acb1d88">TylerDurden</a>.</p>
+
+</div>
+</div>
+<a id="ae2a4d8eb392081372b27750193238516" name="ae2a4d8eb392081372b27750193238516"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2a4d8eb392081372b27750193238516">&#9670;&#160;</a></span>getDefesa()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Personagem::getDefesa </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retorna o valor de defesa ativo do personagem para cálculos de mitigação. </p>
+<p>** Pode ser sobrescrito em subclasses para adicionar bônus temporários de equipamentos ou buffs.</p><ul>
+<li><dl class="section return"><dt>Retorna</dt><dd>int Valor de defesa utilizado no cálculo do dano sofrido. </dd></dl>
+</li>
+</ul>
+
+<p>Reimplementado por <a class="el" href="class_aventureiro.html#a747d037142bc4771c9fe422a6c173980">Aventureiro</a>.</p>
+
+</div>
+</div>
+<a id="a84867f900dae1f6a1d5171cd08395aa4" name="a84867f900dae1f6a1d5171cd08395aa4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84867f900dae1f6a1d5171cd08395aa4">&#9670;&#160;</a></span>getForcaTotal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Personagem::getForcaTotal </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retorna o poder de ataque total consolidado (<code>_forcaBase</code> + modificadores). </p>
+<dl class="section return"><dt>Retorna</dt><dd>Força usada no cálculo de dano causado. </dd></dl>
+
+<p>Reimplementado por <a class="el" href="class_aventureiro.html#ab80b60fecbabe21bc31830a8fee9175a">Aventureiro</a>.</p>
+
+</div>
+</div>
+<a id="a6ef19aa17671dce9cf41fa992b49e6fd" name="a6ef19aa17671dce9cf41fa992b49e6fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ef19aa17671dce9cf41fa992b49e6fd">&#9670;&#160;</a></span>getHabilidades()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt; <a class="el" href="class_habilidade.html">Habilidade</a> &gt; &amp; Personagem::getHabilidades </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fornece acesso controlado ao acervo de habilidades conhecidas pela entidade. </p>
+<p>** </p><dl class="section return"><dt>Retorna</dt><dd>const std::vector&lt;Habilidade&gt;&amp; Referência de leitura do vetor de habilidades, impedindo cópias de memória. </dd></dl>
+
+</div>
+</div>
+<a id="a0a536e87fcaec762d983c02b112d32b8" name="a0a536e87fcaec762d983c02b112d32b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a536e87fcaec762d983c02b112d32b8">&#9670;&#160;</a></span>getHP()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Personagem::getHP </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retorna os pontos de vida atuais. </p>
+<dl class="section return"><dt>Retorna</dt><dd>HP atual (0 a <a class="el" href="#aafc217a5fee9ff31b06a024cff32a98c" title="Retorna o limite máximo de pontos de vida.">getHPMax()</a>). </dd></dl>
+
+</div>
+</div>
+<a id="aafc217a5fee9ff31b06a024cff32a98c" name="aafc217a5fee9ff31b06a024cff32a98c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafc217a5fee9ff31b06a024cff32a98c">&#9670;&#160;</a></span>getHPMax()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Personagem::getHPMax </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retorna o limite máximo de pontos de vida. </p>
+<dl class="section return"><dt>Retorna</dt><dd>HP máximo. </dd></dl>
+
+</div>
+</div>
+<a id="ad4a55e257bcd94921da359fd421c1def" name="ad4a55e257bcd94921da359fd421c1def"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4a55e257bcd94921da359fd421c1def">&#9670;&#160;</a></span>getNivel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Personagem::getNivel </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retorna o nível atual. </p>
+<dl class="section return"><dt>Retorna</dt><dd>Nível (&gt;= 1). </dd></dl>
+
+</div>
+</div>
+<a id="a655543f46b19dd076bc47c0c2c6de68a" name="a655543f46b19dd076bc47c0c2c6de68a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a655543f46b19dd076bc47c0c2c6de68a">&#9670;&#160;</a></span>getNome()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Personagem::getNome </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retorna o nome do personagem. </p>
+<dl class="section return"><dt>Retorna</dt><dd>Nome exibido no jogo. </dd></dl>
+
+</div>
+</div>
+<a id="adde93429c2cdbe140c438984b8c11e86" name="adde93429c2cdbe140c438984b8c11e86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adde93429c2cdbe140c438984b8c11e86">&#9670;&#160;</a></span>limparEfeitosTemporarios()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Personagem::limparEfeitosTemporarios </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove todos os DoTs, HoTs, Buffs e Debuffs ativos de um combate passado. </p>
+<dl class="section note"><dt>Observação</dt><dd>Deve ser chamado impreterivelmente ao finalizar qualquer confronto. </dd></dl>
+
+</div>
+</div>
+<a id="a3afd32d38bd808403db8cd53a6afb32f" name="a3afd32d38bd808403db8cd53a6afb32f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3afd32d38bd808403db8cd53a6afb32f">&#9670;&#160;</a></span>processarEfeitosContinuos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Personagem::processarEfeitosContinuos </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Varre e processa todos os efeitos de dano por turno ativos no personagem. </p>
+<ul>
+<li>Deve ser invocado obrigatoriamente no início da rodada do personagem (dentro de executarTurno). O método percorre o vetor de efeitos ativos, dispara a rotina receberDano para cada item, decrementa o tempo de vida de cada DoT e remove da memória os efeitos cuja duração expirou. </li>
+</ul>
+
+</div>
+</div>
+<a id="a9cf0387279bb86cc48ee6bcfe01c2880" name="a9cf0387279bb86cc48ee6bcfe01c2880"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cf0387279bb86cc48ee6bcfe01c2880">&#9670;&#160;</a></span>receberCura()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Personagem::receberCura </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>valor</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Incrementa os pontos de vida (HP) atuais da entidade. </p>
+<ul>
+<li>Adiciona o valor à barra de saúde atual, garantindo que o teto estabelecido por <code>_hpMax</code> nunca seja ultrapassado.</li>
+<li><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">valor</td><td>Quantidade de pontos de vida a serem restaurados. </td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="a919f509fb99d7cfc7f3a187264764cb4" name="a919f509fb99d7cfc7f3a187264764cb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a919f509fb99d7cfc7f3a187264764cb4">&#9670;&#160;</a></span>receberDano()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Personagem::receberDano </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>dano</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_habilidade_8hpp.html#aa51c8184308d3e880af7237f46b87014">TipoHabilidade</a></td>          <td class="paramname"><span class="paramname"><em>tipoDaHabilidade</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Aplica a redução de pontos de vida (HP) com base na fórmula de armadura. </p>
+<ul>
+<li>A implementação padrão calcula a mitigação usando o valor retornado por <code><a class="el" href="#ae2a4d8eb392081372b27750193238516" title="Retorna o valor de defesa ativo do personagem para cálculos de mitigação.">getDefesa()</a></code>. Pode ser sobrescrita caso uma subclasse possua mecânicas únicas de imunidade ou escudos temporários.</li>
+<li><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dano</td><td>Valor bruto do dano direcionado à entidade.</td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+<li><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tipoDaHabilidade</td><td>Tipo de dano que será recebido.</td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+<li><dl class="section note"><dt>Observação</dt><dd>O HP resultante nunca será reduzido abaixo de zero. </dd></dl>
+</li>
+</ul>
+
+</div>
+</div>
+<hr/>A documentação para essa classe foi gerada a partir dos seguintes arquivos:<ul>
+<li>include/<a class="el" href="_personagem_8hpp_source.html">Personagem.hpp</a></li>
+<li>src/<b>Personagem.cpp</b></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="class_personagem.html">Personagem</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

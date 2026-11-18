@@ -1,0 +1,10 @@
+doc/html/
+doc/latex/
+*.exe
+*.o
+
+# Saída de compilação e cobertura: gerada pelo make, nunca versionada
+build/
+*.gcno
+*.gcda
+*.gcov

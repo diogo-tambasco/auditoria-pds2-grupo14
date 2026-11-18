@@ -1,0 +1,280 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RPG Fight Club - PDS2 Grupo 14: PDS2-2026-PF-grupo14</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RPG Fight Club - PDS2 Grupo 14
+   </div>
+   <div id="projectbrief">RPG textual por turnos em C++17</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Busca" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('index.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">PDS2-2026-PF-grupo14 </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="md__r_e_a_d_m_e"></a></p>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md1"></a>
+Nome dos Integrantes</h1>
+<ul>
+<li>Davi Costa</li>
+<li>Gustavo Ribeiro</li>
+<li>Henrique Garcia</li>
+<li>João Pedro Guimarães Carvalho</li>
+<li>Kaio Gomes Vieira</li>
+</ul>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md2"></a>
+Descrição do Projeto</h1>
+<p>O projeto é um <b>RPG textual de narrativa linear interativa</b>, ambientado em uma releitura do universo de <em>Fight Club</em>. A progressão não depende de exploração geográfica, mas da superação de combates e, principalmente, das escolhas do jogador em uma sequência de cenas narrativas (insônia, grupos de apoio, o encontro com Tyler Durden, missões do Projeto Mayhem e o confronto final).</p>
+<p>O sistema gerencia um grafo de cenas (<span class="tt"><a class="el" href="class_cena.html" title="Representa um nó narrativo isolado dentro do grafo de história do jogo.">Cena</a></span> + <span class="tt"><a class="el" href="struct_escolha.html" title="Define uma ramificação (opção) direcionada a partir de uma cena da história.">Escolha</a></span>), onde cada decisão pode: avançar a narrativa, disparar um combate por turnos contra um inimigo específico, conceder um item/bônus permanente, ou marcar um checkpoint de salvamento. O estado do herói (vida, recursos, nível, equipamentos) é preservado entre cenas e combates, e a derrota em batalha não encerra o jogo — o herói é restaurado e devolvido ao último checkpoint visitado.</p>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md3"></a>
+🎯 Objetivos Principais</h1>
+<ul>
+<li><b>Arquitetura Baseada em Cenas e Escolhas</b> — nós narrativos (<span class="tt"><a class="el" href="class_cena.html" title="Representa um nó narrativo isolado dentro do grafo de história do jogo.">Cena</a></span>) conectados por opções (<span class="tt"><a class="el" href="struct_escolha.html" title="Define uma ramificação (opção) direcionada a partir de uma cena da história.">Escolha</a></span>) que definem o próximo estado da história, podendo carregar metadados de combate ou recompensa.</li>
+<li><b>Sistema de <a class="el" href="class_combate.html" title="Mediador do loop de batalha por turnos entre Aventureiro e Inimigo.">Combate</a> Tático por Turnos</b> — mediado pela classe <span class="tt"><a class="el" href="class_combate.html" title="Mediador do loop de batalha por turnos entre Aventureiro e Inimigo.">Combate</a></span>, que alterna turnos entre <span class="tt"><a class="el" href="class_aventureiro.html" title="Representa o personagem jogável, contendo sistemas de progressão, inventário de habilidades e recurso...">Aventureiro</a></span> e <span class="tt"><a class="el" href="class_inimigo.html" title="Classe base para todas as entidades hostis do jogo.">Inimigo</a></span>, com gerenciamento de Energia e MP, efeitos contínuos (DoT/HoT) e modificadores temporários de atributo (Buff/Debuff).</li>
+<li><b>Persistência de Checkpoints</b> — cenas marcadas como <span class="tt">checkpoint</span> atualizam o ponto de retorno do jogador; uma derrota em combate aciona <span class="tt">processarDerrota()</span>, que restaura os recursos do herói (<span class="tt">dormir()</span>) e o reposiciona no último checkpoint.</li>
+<li><b>Interface Orientada a Eventos</b> — toda a entrada/saída do jogo passa pela classe estática <span class="tt"><a class="el" href="class_interface_jogo.html" title="Classe puramente estática responsável pela entrada e saída de dados no console.">InterfaceJogo</a></span>, que isola a lógica de jogo do I/O de console (menus numerados, exibição de status, pausas).</li>
+</ul>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md4"></a>
+💡 Motivação</h1>
+<p>Escolhemos o RPG com narrativa linear para aplicar de forma prazerosa os conceitos de POO trabalhados em sala — <b>herança</b> (hierarquia <span class="tt"><a class="el" href="class_personagem.html" title="Classe abstrata que define os atributos, recursos de saúde e comportamentos básicos de qualquer entid...">Personagem</a></span> → <span class="tt"><a class="el" href="class_aventureiro.html" title="Representa o personagem jogável, contendo sistemas de progressão, inventário de habilidades e recurso...">Aventureiro</a></span>/<span class="tt"><a class="el" href="class_inimigo.html" title="Classe base para todas as entidades hostis do jogo.">Inimigo</a></span> → subtipos de inimigo), <b>encapsulamento</b> (atributos protegidos/privados acessíveis somente por getters e métodos de domínio), e <b>polimorfismo</b> (<span class="tt">executarTurno</span> e <span class="tt">getDeclaracaoStatus</span> como métodos virtuais puros, despachados dinamicamente para cada tipo de combatente). O tema de <em>Fight Club</em> foi escolhido por afinidade do grupo com RPGs e por se encaixar bem na ideia de uma jornada psicológica conduzida por escolhas.</p>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md5"></a>
+🏗️ Arquitetura de Classes</h1>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md6"></a>
+<span class="tt">Personagem</span> (abstrata)</h2>
+<p>Base de qualquer entidade de combate. Centraliza HP/HP máximo, defesa e força base, nível, estado vital (<span class="tt">_vivo</span>), postura de escudo (<span class="tt">_escudoAtivo</span>) e os repositórios de efeitos ativos (<span class="tt">_efeitosAtivos</span> para DoT/HoT, <span class="tt">_modificadoresAtivos</span> para Buff/Debuff) e habilidades conhecidas (privado).</p>
+<p>Métodos-chave: <span class="tt">receberDano</span>, <span class="tt">receberCura</span>, <span class="tt">aplicarBuff</span>, <span class="tt">aplicarDebuff</span>, <span class="tt">aplicarDoT</span>, <span class="tt">aplicarHoT</span>, <span class="tt">processarEfeitosContinuos</span>, <span class="tt">limparEfeitosTemporarios</span>, além dos métodos virtuais puros <span class="tt">executarTurno(<a class="el" href="class_personagem.html" title="Classe abstrata que define os atributos, recursos de saúde e comportamentos básicos de qualquer entid...">Personagem</a>&amp;)</span> e <span class="tt">getDeclaracaoStatus() const</span>.</p>
+<p>A mitigação de dano segue a fórmula <span class="tt">100 / (100 + defesa)</span>; ataques do tipo <span class="tt">ULTRA</span> ignoram completamente o escudo, efeitos <span class="tt">DOT</span> agem "por baixo" do escudo, e os demais tipos têm o dano cortado pela metade quando o escudo está ativo. Todo dano positivo garante no mínimo 1 ponto de dano real.</p>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md7"></a>
+<span class="tt">Aventureiro</span> (herói jogável)</h2>
+<p>Estende <span class="tt"><a class="el" href="class_personagem.html" title="Classe abstrata que define os atributos, recursos de saúde e comportamentos básicos de qualquer entid...">Personagem</a></span> com dois recursos próprios — <b>Energia</b> (regenera +8/turno) e <b>MP</b> (regenera +2/turno) — além de frascos de cura (3 cargas, cura 40% do HP máximo), bônus permanentes de equipamento (<span class="tt">_bonusArma</span>, <span class="tt">_bonusArmadura</span>) e sistema de XP/nível.</p>
+<p><span class="tt">executarTurno</span> abre um menu interativo via <span class="tt"><a class="el" href="class_interface_jogo.html" title="Classe puramente estática responsável pela entrada e saída de dados no console.">InterfaceJogo</a></span> com 4 opções: Ataque Básico (grátis), Habilidades (sub-menu dinâmico conforme MP/Energia disponíveis), Erguer Escudo (6 de Energia) e Usar Frasco de Cura.</p>
+<p>Progressão por nível (<span class="tt">subirNivel</span>, privado):</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Nível  </th><th class="markdownTableHeadNone">Habilidades desbloqueadas  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">2  </td><td class="markdownTableBodyNone">Soco Forte (FISICO), Usar Dipirona (HOT)  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">3  </td><td class="markdownTableBodyNone">Perfurar (DOT), Usar Spray de Pimenta (DEBUFF)  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">4  </td><td class="markdownTableBodyNone">Aplicar Adrenalina (CURA), Focar (SUPORTE)  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">5  </td><td class="markdownTableBodyNone">Ataque Mental (ULTRA)  </td></tr>
+</table>
+<p>XP necessário para o próximo nível: <span class="tt">nivel atual × 60</span>.</p>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md8"></a>
+<span class="tt">Inimigo</span> (abstrata) → hierarquia de adversários</h2>
+<p>Estende <span class="tt"><a class="el" href="class_personagem.html" title="Classe abstrata que define os atributos, recursos de saúde e comportamentos básicos de qualquer entid...">Personagem</a></span> adicionando contador de turnos (<span class="tt">_contadorTurnos</span>) e recompensa de XP (<span class="tt">_xpRecompensa</span>).</p>
+<p><b><span class="tt">InimigoComum</span></b> — oponentes introdutórios, sem efeitos especiais:</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Classe  </th><th class="markdownTableHeadNone">HP  </th><th class="markdownTableHeadNone">Defesa  </th><th class="markdownTableHeadNone">Força  </th><th class="markdownTableHeadNone">XP  </th><th class="markdownTableHeadNone">Particularidade  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt"><a class="el" href="class_desafiante_do_bar.html" title="Cidadão comum que frequenta os fundos do bar em busca de uma válvula de escape.">DesafianteDoBar</a></span>  </td><td class="markdownTableBodyNone">150  </td><td class="markdownTableBodyNone">15  </td><td class="markdownTableBodyNone">15  </td><td class="markdownTableBodyNone">60  </td><td class="markdownTableBodyNone">Apenas ataque físico direto  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt"><a class="el" href="class_trabalhador_noturno.html" title="Oponente rápido e frágil, movido a pura exaustão.">TrabalhadorNoturno</a></span>  </td><td class="markdownTableBodyNone">150  </td><td class="markdownTableBodyNone">15  </td><td class="markdownTableBodyNone">20  </td><td class="markdownTableBodyNone">90  </td><td class="markdownTableBodyNone">40% de chance de crítico (dano x2)  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt"><a class="el" href="class_seguranca_de_balada.html" title="Brutamontes que tenta bloquear o acesso a áreas restritas.">SegurancaDeBalada</a></span>  </td><td class="markdownTableBodyNone">140  </td><td class="markdownTableBodyNone">25  </td><td class="markdownTableBodyNone">15  </td><td class="markdownTableBodyNone">200  </td><td class="markdownTableBodyNone">A cada 3 turnos ativa escudo (mitiga metade do dano comum)  </td></tr>
+</table>
+<p><b><span class="tt">InimigoIncomum</span></b> — combatentes intermediários com rotação de habilidades baseada no contador de turnos:</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Classe  </th><th class="markdownTableHeadNone">HP  </th><th class="markdownTableHeadNone">Defesa  </th><th class="markdownTableHeadNone">Força  </th><th class="markdownTableHeadNone">XP  </th><th class="markdownTableHeadNone">Rotação  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt"><a class="el" href="class_recruta_doutrinado.html" title="Membro intermediário do Projeto Mayhem que já passou pela iniciação.">RecrutaDoutrinado</a></span>  </td><td class="markdownTableBodyNone">300  </td><td class="markdownTableBodyNone">30  </td><td class="markdownTableBodyNone">35  </td><td class="markdownTableBodyNone">400  </td><td class="markdownTableBodyNone">Soco padrão · Sangramento (a cada 2) · Grito de Doutrina/buff em si (a cada 4) · Intimidação/debuff de defesa no alvo (a cada 5)  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt"><a class="el" href="class_guarda_patrimonial.html" title="Vigilante que protege prédios corporativos durante a noite.">GuardaPatrimonial</a></span>  </td><td class="markdownTableBodyNone">300  </td><td class="markdownTableBodyNone">40  </td><td class="markdownTableBodyNone">25  </td><td class="markdownTableBodyNone">400  </td><td class="markdownTableBodyNone">Cassetete padrão · Atordoamento/debuff de força (a cada 3) · Gás Lacrimogêneo/debuff de defesa (a cada 4) · Bandagem de Campo/HoT em si (a cada 5)  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><span class="tt"><a class="el" href="class_sabotador_rival.html" title="Agente que usa táticas de guerrilha urbana com explosivos e químicos.">SabotadorRival</a></span>  </td><td class="markdownTableBodyNone">300  </td><td class="markdownTableBodyNone">20  </td><td class="markdownTableBodyNone">45  </td><td class="markdownTableBodyNone">400  </td><td class="markdownTableBodyNone">Molotov + Queimadura todo turno · Gás Paralisante (a cada 3) · Explosão Total/ULTRA que ignora escudo (a cada 5, substitui o ataque padrão)  </td></tr>
+</table>
+<p><b><span class="tt">InimigoBoss</span></b> — chefão final com máquina de estados de fase:</p>
+<p><span class="tt"><a class="el" href="class_tyler_durden.html" title="O Reflexo Sombrio. Boss final do arco narrativo do Fight Club.">TylerDurden</a></span> (HP 400, Defesa 30, Força 40, XP <span class="tt">500 × nível</span>):</p><ul>
+<li><b>Fase 1</b> (HP &gt; 50%): Soco do Caos (FISICO); a cada 3 turnos aplica Sangramento (DoT); a cada 4 turnos aplica Foco Destrutivo (buff de força em si mesmo).</li>
+<li><b>Fase 2</b> (HP entre 20% e 50%): troca para Impacto Psicológico (ESPECIAL); a cada 3 turnos aplica Humilhação (debuff de defesa no alvo) e Sangramento; a cada 4 turnos usa Resiliência Estóica (HoT em si mesmo).</li>
+<li><b>Cura Estóica</b> (HP próprio &lt; 20%, dispara uma única vez): recupera <span class="tt">30 × nível</span> de HP e ainda ataca no mesmo turno.</li>
+<li><b>Desconstrução Total</b> (HP do alvo &lt; 30%, dispara uma única vez): ataque ULTRA que ignora escudo, com dano <span class="tt">força × 3</span> (substitui o turno normal).</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md9"></a>
+<span class="tt">Habilidade</span></h2>
+<p><em>Value object</em> imutável que descreve uma ação (nome, <span class="tt"><a class="el" href="_habilidade_8hpp.html#aa51c8184308d3e880af7237f46b87014" title="Define a categoria mecânica e o comportamento do efeito da habilidade.">TipoHabilidade</a></span>, custo de Energia/MP, valor base, atributo afetado e duração). Validado defensivamente no construtor — lança <span class="tt"><a class="el" href="class_habilidade_invalida_exception.html" title="Exceção lançada quando os parâmetros de construção de uma Habilidade são inválidos.">HabilidadeInvalidaException</a></span> para nome vazio, custos/valor negativos, duração ausente em efeitos contínuos (DoT/HoT/Suporte/Debuff) ou atributo alvo ausente em Buff/Debuff.</p>
+<p><span class="tt"><a class="el" href="_habilidade_8hpp.html#aa51c8184308d3e880af7237f46b87014" title="Define a categoria mecânica e o comportamento do efeito da habilidade.">TipoHabilidade</a></span>: <span class="tt">FISICO</span>, <span class="tt">ESPECIAL</span>, <span class="tt">ULTRA</span>, <span class="tt">CURA</span>, <span class="tt">SUPORTE</span> (buff), <span class="tt">DEBUFF</span>, <span class="tt">DOT</span>, <span class="tt">HOT</span>.</p>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md10"></a>
+<span class="tt">Combate</span></h2>
+<p>Mediador do confronto por turnos entre <span class="tt"><a class="el" href="class_aventureiro.html" title="Representa o personagem jogável, contendo sistemas de progressão, inventário de habilidades e recurso...">Aventureiro</a></span> e <span class="tt"><a class="el" href="class_inimigo.html" title="Classe base para todas as entidades hostis do jogo.">Inimigo</a></span> (padrão <em>Mediator</em>). Valida no construtor que ambos os combatentes estejam vivos (lança <span class="tt"><a class="el" href="class_combate_invalido_exception.html" title="Exceção lançada quando o estado dos combatentes impede o início do combate.">CombateInvalidoException</a></span> caso contrário), alterna <span class="tt">turnoDoJogador()</span>/<span class="tt">turnoDoInimigo()</span> protegidos por <span class="tt">try/catch</span>, renderiza o estado do combate via <span class="tt"><a class="el" href="class_interface_jogo.html" title="Classe puramente estática responsável pela entrada e saída de dados no console.">InterfaceJogo</a></span> e, ao final, concede XP em caso de vitória e limpa todos os efeitos temporários de ambos os lados.</p>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md11"></a>
+<span class="tt">Cena</span> e <span class="tt">Escolha</span></h2>
+<p><span class="tt"><a class="el" href="class_cena.html" title="Representa um nó narrativo isolado dentro do grafo de história do jogo.">Cena</a></span> é um nó do grafo narrativo (ID, texto, flag de checkpoint e uma lista de <span class="tt"><a class="el" href="struct_escolha.html" title="Define uma ramificação (opção) direcionada a partir de uma cena da história.">Escolha</a></span>). <span class="tt"><a class="el" href="struct_escolha.html" title="Define uma ramificação (opção) direcionada a partir de uma cena da história.">Escolha</a></span> é a aresta: texto exibido, ID de destino, flag de combate (<span class="tt">geraCombate</span>) com o tipo de inimigo associado (<span class="tt">tipoInimigo</span>), e um ID de item de recompensa (<span class="tt">itemGanhoID</span>).</p>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md12"></a>
+<span class="tt">MotorJogo</span></h2>
+<p>Motor/engine do jogo. Mantém o roteiro completo (<span class="tt">std::map&lt;int, <a class="el" href="class_cena.html" title="Representa um nó narrativo isolado dentro do grafo de história do jogo.">Cena</a>&gt;</span>), o ID da cena atual e a referência ao jogador. Principais responsabilidades:</p><ul>
+<li><span class="tt">rodar()</span> — loop principal: exibe a cena, marca checkpoint se aplicável, apresenta as escolhas e processa a transição (incluindo combate, se a escolha exigir).</li>
+<li><span class="tt">realizarCombate(tipoInimigo)</span> — fábrica que instancia o inimigo correto via <span class="tt">unique_ptr</span> (RAII) e delega o confronto a um objeto <span class="tt"><a class="el" href="class_combate.html" title="Mediador do loop de batalha por turnos entre Aventureiro e Inimigo.">Combate</a></span>.</li>
+<li><span class="tt">processarDerrota()</span> — restaura o herói (<span class="tt">dormir()</span>) e retorna ao checkpoint salvo.</li>
+<li><span class="tt">checarEventosEspeciais(escolha)</span> — concede itens narrativos que aplicam buffs permanentes de força ou defesa (tabela interna de IDs 101–105).</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md13"></a>
+<span class="tt">InterfaceJogo</span></h2>
+<p>Classe inteiramente estática responsável por todo o I/O de console: exibição de texto, menus numerados com validação de entrada (<span class="tt">solicitarEscolha</span>), exibição de status (<span class="tt">exibirStatus</span>), limpeza de tela e pausa (<span class="tt">pausar</span>). Isola o restante do sistema de chamadas diretas a <span class="tt">std::cin</span>/<span class="tt">std::cout</span>.</p>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md14"></a>
+⚔️ Mecânicas de Combate</h1>
+<ul>
+<li><b>Decisões narrativas</b> — o fluxo da história é alterado por menus de escolha numerados, ex.: <span class="tt">1. Lutar  2. Fugir  3. Conversar</span>.</li>
+<li><b>Gestão de Energia</b> — recuperação de <b>8 pontos por turno</b>; ações custam entre 2 e 6 pontos (ex.: erguer escudo custa 6).</li>
+<li><b>Mecânica de MP</b> — recuperação de <b>2 pontos por turno</b>; consumida por habilidades especiais (ofensivas, de cura ou de suporte).</li>
+<li><b>Escudo</b> — custa 6 de Energia, mitiga pela metade ataques físicos/especiais comuns, é ignorado por ataques <span class="tt">ULTRA</span> e não impede <span class="tt">DOT</span>; expira no início do turno seguinte do herói.</li>
+<li><b>Ciclo de sobrevivência</b> — frascos de cura (3 cargas, restauram 40% do HP máximo) e o ato de "Dormir" (em pontos específicos da trama) restauram HP, MP, Energia e os frascos por completo.</li>
+<li><b>Efeitos contínuos</b> — Buffs/Debuffs alteram temporariamente Força ou Defesa; DoT/HoT aplicam dano ou cura a cada turno, ambos com duração decrescente até expirar.</li>
+</ul>
+<blockquote class="doxtable">
+<p><b>Nota técnica:</b> atualmente o parâmetro <span class="tt">nivel</span> recebido pelos construtores dos inimigos (<span class="tt"><a class="el" href="class_inimigo.html" title="Classe base para todas as entidades hostis do jogo.">Inimigo</a></span>, <span class="tt">InimigoComum</span>, <span class="tt">InimigoIncomum</span>, <span class="tt">InimigoBoss</span>) é usado apenas para repassar <span class="tt">_nivel</span> e calcular alguns valores de habilidade (ex.: <span class="tt">4 * nivel</span>), mas <b>HP, Defesa e Força base são valores fixos</b> — não escalam automaticamente com o nível do inimigo. Isso é relevante caso o grupo queira implementar escalonamento real de dificuldade por nível no futuro. </p>
+</blockquote>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md15"></a>
+🧪 Testes e Cobertura</h1>
+<p>A suíte de testes usa <b>doctest</b> (single header) com <b>gcov/gcovr</b> para análise de cobertura, organizada em um arquivo de teste por classe (<span class="tt">test_Personagem</span>/<span class="tt">test_Aventureiro</span>, <span class="tt">test_InimigoComum</span>, <span class="tt">test_InimigoIncomum</span>, <span class="tt">test_InimigoBoss</span>, <span class="tt">test_Habilidade</span>, <span class="tt">test_Combate</span>, <span class="tt">test_Cena</span>, <span class="tt">test_MotorJogo</span>, <span class="tt">test_InterfaceJogo</span>) mais um <span class="tt">main_test.cpp</span> com <span class="tt">DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN</span>. A meta do grupo é manter a cobertura de linhas acima de 80%.</p>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md16"></a>
+📁 Estrutura de Arquivos</h1>
+<div class="fragment"><div class="line">.</div>
+<div class="line">├── Personagem.hpp / .cpp        # Classe base abstrata</div>
+<div class="line">├── Aventureiro.hpp / .cpp       # Herói jogável</div>
+<div class="line">├── Inimigo.hpp / .cpp           # Base abstrata dos inimigos</div>
+<div class="line">├── InimigoComum.hpp / .cpp      # DesafianteDoBar, TrabalhadorNoturno, SegurancaDeBalada</div>
+<div class="line">├── InimigoIncomum.hpp / .cpp    # RecrutaDoutrinado, GuardaPatrimonial, SabotadorRival</div>
+<div class="line">├── InimigoBoss.hpp / .cpp       # TylerDurden</div>
+<div class="line">├── Habilidade.hpp / .cpp        # Value object de habilidades + TipoHabilidade</div>
+<div class="line">├── Combate.hpp / .cpp           # Mediador do loop de batalha</div>
+<div class="line">├── Cena.hpp / .cpp              # Nó narrativo + struct Escolha</div>
+<div class="line">├── MotorJogo.hpp / .cpp         # Engine / roteiro / fábrica de inimigos</div>
+<div class="line">├── InterfaceJogo.hpp / .cpp     # Camada de I/O de console</div>
+<div class="line">├── main.cpp                     # Ponto de entrada do jogo</div>
+<div class="line">├── doctest.h                    # Framework de testes (single header)</div>
+<div class="line">├── main_test.cpp                # Runner dos testes (doctest)</div>
+<div class="line">└── test_*.cpp                   # Testes unitários por classe</div>
+</div><!-- fragment --><h1 class="doxsection"><a class="anchor" id="autotoc_md17"></a>
+🚀 Como Compilar e Rodar</h1>
+<p><b>Jogo:</b> </p><div class="fragment"><div class="line">g++ -std=c++17 -I. main.cpp Personagem.cpp Aventureiro.cpp Inimigo.cpp \</div>
+<div class="line">    InimigoComum.cpp InimigoIncomum.cpp InimigoBoss.cpp Habilidade.cpp \</div>
+<div class="line">    Combate.cpp Cena.cpp MotorJogo.cpp InterfaceJogo.cpp -o jogo</div>
+<div class="line">./jogo</div>
+</div><!-- fragment --><p><b>Testes (com cobertura):</b> </p><div class="fragment"><div class="line">g++ -std=c++17 -I. --coverage -fprofile-arcs -ftest-coverage \</div>
+<div class="line">    Personagem.cpp Aventureiro.cpp Inimigo.cpp InimigoComum.cpp InimigoIncomum.cpp \</div>
+<div class="line">    InimigoBoss.cpp Habilidade.cpp Combate.cpp Cena.cpp MotorJogo.cpp InterfaceJogo.cpp \</div>
+<div class="line">    test_*.cpp main_test.cpp -o run_tests</div>
+<div class="line">./run_tests</div>
+<div class="line">gcovr --root . --html-details -o coverage.html</div>
+</div><!-- fragment --><p> <b>Observação:</b> Ao rodar o Maketest, favor apertar as teclas "1" e "ENTER" até que a simulação de entrada acabe, para que assim possa mostrar a cobertura.</p>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md18"></a>
+📚 Documentação Técnica</h1>
+<p>Detalhes sobre a modelagem de classes, diagramas e regras completas de combate estão disponíveis na pasta <span class="tt">/design</span>. </p>
+</div></div><!-- PageDoc -->
+<a href="doxygen_crawl.html"></a>
+</div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

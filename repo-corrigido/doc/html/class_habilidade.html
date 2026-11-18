@@ -1,0 +1,449 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RPG Fight Club - PDS2 Grupo 14: Referência da Classe Habilidade</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RPG Fight Club - PDS2 Grupo 14
+   </div>
+   <div id="projectbrief">RPG textual por turnos em C++17</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Busca" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('class_habilidade.html','','class_habilidade-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Referência da Classe Habilidade</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Objeto imutável que encapsula os metadados e parâmetros de uma ação especial.  
+ <a href="#details">Mais...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_habilidade_8hpp_source.html">Habilidade.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Membros Públicos</h2></td></tr>
+<tr class="memitem:a0b556fdf661437cd074c2a6f239070a0" id="r_a0b556fdf661437cd074c2a6f239070a0"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a0b556fdf661437cd074c2a6f239070a0">Habilidade</a> (std::string nome, <a class="el" href="_habilidade_8hpp.html#aa51c8184308d3e880af7237f46b87014">TipoHabilidade</a> tipo, int custoE, int custoM, int valorBase, std::string atributoAfetado, int duracao=0)</td></tr>
+<tr class="memdesc:a0b556fdf661437cd074c2a6f239070a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construtor completo e validado da classe <a class="el" href="class_habilidade.html" title="Objeto imutável que encapsula os metadados e parâmetros de uma ação especial.">Habilidade</a>.  <br /></td></tr>
+<tr class="memitem:aa8a44b753ae7ef3111235b0b65750cde" id="r_aa8a44b753ae7ef3111235b0b65750cde"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#aa8a44b753ae7ef3111235b0b65750cde">getNome</a> () const</td></tr>
+<tr class="memdesc:aa8a44b753ae7ef3111235b0b65750cde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna o nome da habilidade.  <br /></td></tr>
+<tr class="memitem:af9f3eacc9cd02a667337419ccf4dde47" id="r_af9f3eacc9cd02a667337419ccf4dde47"><td class="memItemLeft"><a class="el" href="_habilidade_8hpp.html#aa51c8184308d3e880af7237f46b87014">TipoHabilidade</a>&#160;</td><td class="memItemRight"><a class="el" href="#af9f3eacc9cd02a667337419ccf4dde47">getTipo</a> () const</td></tr>
+<tr class="memdesc:af9f3eacc9cd02a667337419ccf4dde47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna o tipo/categoria da habilidade.  <br /></td></tr>
+<tr class="memitem:a2c317e6789cbd559b359af150dab8a8a" id="r_a2c317e6789cbd559b359af150dab8a8a"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a2c317e6789cbd559b359af150dab8a8a">getCustoEnergia</a> () const</td></tr>
+<tr class="memdesc:a2c317e6789cbd559b359af150dab8a8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna o custo de Energia da habilidade.  <br /></td></tr>
+<tr class="memitem:ab20aac3e7a7019633f0abad212edeac3" id="r_ab20aac3e7a7019633f0abad212edeac3"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ab20aac3e7a7019633f0abad212edeac3">getCustoMP</a> () const</td></tr>
+<tr class="memdesc:ab20aac3e7a7019633f0abad212edeac3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna o custo de Pontos de Magia (MP).  <br /></td></tr>
+<tr class="memitem:ada747757aa61f07b254607c4012138f9" id="r_ada747757aa61f07b254607c4012138f9"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ada747757aa61f07b254607c4012138f9">getValorBase</a> () const</td></tr>
+<tr class="memdesc:ada747757aa61f07b254607c4012138f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna o valor numérico base da habilidade.  <br /></td></tr>
+<tr class="memitem:ad34d2c03d88e8e2629b2f3ca89d45906" id="r_ad34d2c03d88e8e2629b2f3ca89d45906"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#ad34d2c03d88e8e2629b2f3ca89d45906">getAtributoAlvo</a> () const</td></tr>
+<tr class="memdesc:ad34d2c03d88e8e2629b2f3ca89d45906"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna o atributo afetado pelo buff ou debuff.  <br /></td></tr>
+<tr class="memitem:af14c382eb2dfc1bc47725dfe7ad0bc4a" id="r_af14c382eb2dfc1bc47725dfe7ad0bc4a"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#af14c382eb2dfc1bc47725dfe7ad0bc4a">getDuracao</a> () const</td></tr>
+<tr class="memdesc:af14c382eb2dfc1bc47725dfe7ad0bc4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna a duração do efeito em turnos (0 = instantâneo).  <br /></td></tr>
+<tr class="memitem:a0df8134dda8f497005758253b24debc4" id="r_a0df8134dda8f497005758253b24debc4"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a0df8134dda8f497005758253b24debc4">getDuracaoEfeito</a> () const</td></tr>
+<tr class="memdesc:a0df8134dda8f497005758253b24debc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias para <a class="el" href="#af14c382eb2dfc1bc47725dfe7ad0bc4a" title="Retorna a duração do efeito em turnos (0 = instantâneo).">getDuracao()</a> mantido por compatibilidade.  <br /></td></tr>
+<tr class="memitem:a24674d12a82987b16361e7a529d2004b" id="r_a24674d12a82987b16361e7a529d2004b"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a24674d12a82987b16361e7a529d2004b">ehEfeitoContinuo</a> () const</td></tr>
+<tr class="memdesc:a24674d12a82987b16361e7a529d2004b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica se a habilidade aplica um efeito de múltiplos turnos.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Atributos Privados</h2></td></tr>
+<tr class="memitem:aabd0a0b151a954eb056d37153eb1b202" id="r_aabd0a0b151a954eb056d37153eb1b202"><td class="memItemLeft"><a id="aabd0a0b151a954eb056d37153eb1b202" name="aabd0a0b151a954eb056d37153eb1b202"></a>
+std::string&#160;</td><td class="memItemRight"><b>_nome</b></td></tr>
+<tr class="memdesc:aabd0a0b151a954eb056d37153eb1b202"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nome identificador da habilidade. <br /></td></tr>
+<tr class="memitem:a4de11cf8815a52ca109e8e62e12f3e16" id="r_a4de11cf8815a52ca109e8e62e12f3e16"><td class="memItemLeft"><a id="a4de11cf8815a52ca109e8e62e12f3e16" name="a4de11cf8815a52ca109e8e62e12f3e16"></a>
+<a class="el" href="_habilidade_8hpp.html#aa51c8184308d3e880af7237f46b87014">TipoHabilidade</a>&#160;</td><td class="memItemRight"><b>_tipo</b></td></tr>
+<tr class="memdesc:a4de11cf8815a52ca109e8e62e12f3e16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Natureza mecânica da ação. <br /></td></tr>
+<tr class="memitem:aaec6d56a09edcad21972d20a2862e76e" id="r_aaec6d56a09edcad21972d20a2862e76e"><td class="memItemLeft"><a id="aaec6d56a09edcad21972d20a2862e76e" name="aaec6d56a09edcad21972d20a2862e76e"></a>
+int&#160;</td><td class="memItemRight"><b>_custoEnergia</b></td></tr>
+<tr class="memdesc:aaec6d56a09edcad21972d20a2862e76e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Custo de uso focado na barra de Energia. <br /></td></tr>
+<tr class="memitem:a13905caa62a06cc30256721b6c275c85" id="r_a13905caa62a06cc30256721b6c275c85"><td class="memItemLeft"><a id="a13905caa62a06cc30256721b6c275c85" name="a13905caa62a06cc30256721b6c275c85"></a>
+int&#160;</td><td class="memItemRight"><b>_custoMP</b></td></tr>
+<tr class="memdesc:a13905caa62a06cc30256721b6c275c85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Custo de uso focado na barra de Mana. <br /></td></tr>
+<tr class="memitem:a46d302e644c6956326a4f9223033044e" id="r_a46d302e644c6956326a4f9223033044e"><td class="memItemLeft"><a id="a46d302e644c6956326a4f9223033044e" name="a46d302e644c6956326a4f9223033044e"></a>
+int&#160;</td><td class="memItemRight"><b>_valorBase</b></td></tr>
+<tr class="memdesc:a46d302e644c6956326a4f9223033044e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Potência bruta (Dano, Cura ou valor de Status). <br /></td></tr>
+<tr class="memitem:a70380773b4ff0dd5d11bd5b45259716f" id="r_a70380773b4ff0dd5d11bd5b45259716f"><td class="memItemLeft"><a id="a70380773b4ff0dd5d11bd5b45259716f" name="a70380773b4ff0dd5d11bd5b45259716f"></a>
+int&#160;</td><td class="memItemRight"><b>_duracao</b></td></tr>
+<tr class="memdesc:a70380773b4ff0dd5d11bd5b45259716f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tempo de vida do efeito em turnos (0 = imediato). <br /></td></tr>
+<tr class="memitem:a20c86de901d488c40804339f6234a43d" id="r_a20c86de901d488c40804339f6234a43d"><td class="memItemLeft"><a id="a20c86de901d488c40804339f6234a43d" name="a20c86de901d488c40804339f6234a43d"></a>
+std::string&#160;</td><td class="memItemRight"><b>_atributoAfetado</b></td></tr>
+<tr class="memdesc:a20c86de901d488c40804339f6234a43d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nome do atributo afetado (para Buffs/Debuffs). <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Objeto imutável que encapsula os metadados e parâmetros de uma ação especial. </p>
+<p>A classe <a class="el" href="class_habilidade.html" title="Objeto imutável que encapsula os metadados e parâmetros de uma ação especial.">Habilidade</a> é um value object: uma vez construída com parâmetros válidos, seus dados não mudam. Todo acesso externo é feito exclusivamente por getters, respeitando o princípio de encapsulamento.</p>
+<dl class="section note"><dt>Observação</dt><dd>Lança <a class="el" href="class_habilidade_invalida_exception.html" title="Exceção lançada quando os parâmetros de construção de uma Habilidade são inválidos.">HabilidadeInvalidaException</a> se os parâmetros violarem as pré-condições. </dd></dl>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Construtores e Destrutores</h2>
+<a id="a0b556fdf661437cd074c2a6f239070a0" name="a0b556fdf661437cd074c2a6f239070a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b556fdf661437cd074c2a6f239070a0">&#9670;&#160;</a></span>Habilidade()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Habilidade::Habilidade </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>nome</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_habilidade_8hpp.html#aa51c8184308d3e880af7237f46b87014">TipoHabilidade</a></td>          <td class="paramname"><span class="paramname"><em>tipo</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>custoE</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>custoM</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>valorBase</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>atributoAfetado</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>duracao</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construtor completo e validado da classe <a class="el" href="class_habilidade.html" title="Objeto imutável que encapsula os metadados e parâmetros de uma ação especial.">Habilidade</a>. </p>
+<p>Valida todos os parâmetros antes de inicializar os membros. Garante que nenhum objeto <a class="el" href="class_habilidade.html" title="Objeto imutável que encapsula os metadados e parâmetros de uma ação especial.">Habilidade</a> exista em estado inválido (invariante de classe).</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nome</td><td>Nome identificador (não pode ser vazio). </td></tr>
+    <tr><td class="paramname">tipo</td><td>Categoria mecânica da ação (</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="_habilidade_8hpp.html#aa51c8184308d3e880af7237f46b87014" title="Define a categoria mecânica e o comportamento do efeito da habilidade.">TipoHabilidade</a>). </dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">custoE</td><td>Custo de Energia (&gt;= 0). </td></tr>
+    <tr><td class="paramname">custoM</td><td>Custo de Mana/MP (&gt;= 0). </td></tr>
+    <tr><td class="paramname">valorBase</td><td>Intensidade numérica base (&gt;= 0). </td></tr>
+    <tr><td class="paramname">atributoAfetado</td><td>Atributo alvo para Buffs/Debuffs ("forca" ou "defesa"). </td></tr>
+    <tr><td class="paramname">duracao</td><td>Turnos de duração do efeito (&gt;= 0; obrigatório &gt; 0 para DoT/HoT/Buff/Debuff).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceções</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="class_habilidade_invalida_exception.html" title="Exceção lançada quando os parâmetros de construção de uma Habilidade são inválidos.">HabilidadeInvalidaException</a></td><td>se qualquer pré-condição for violada. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentação das funções</h2>
+<a id="a24674d12a82987b16361e7a529d2004b" name="a24674d12a82987b16361e7a529d2004b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24674d12a82987b16361e7a529d2004b">&#9670;&#160;</a></span>ehEfeitoContinuo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Habilidade::ehEfeitoContinuo </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verifica se a habilidade aplica um efeito de múltiplos turnos. </p>
+<dl class="section return"><dt>Retorna</dt><dd>true se duracao &gt; 0. </dd></dl>
+
+</div>
+</div>
+<a id="ad34d2c03d88e8e2629b2f3ca89d45906" name="ad34d2c03d88e8e2629b2f3ca89d45906"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad34d2c03d88e8e2629b2f3ca89d45906">&#9670;&#160;</a></span>getAtributoAlvo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Habilidade::getAtributoAlvo </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retorna o atributo afetado pelo buff ou debuff. </p>
+<dl class="section return"><dt>Retorna</dt><dd>"forca", "defesa" ou vazio quando não se aplica. </dd></dl>
+
+</div>
+</div>
+<a id="a2c317e6789cbd559b359af150dab8a8a" name="a2c317e6789cbd559b359af150dab8a8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c317e6789cbd559b359af150dab8a8a">&#9670;&#160;</a></span>getCustoEnergia()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Habilidade::getCustoEnergia </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retorna o custo de Energia da habilidade. </p>
+<dl class="section return"><dt>Retorna</dt><dd>Energia gasta ao usar (&gt;= 0). </dd></dl>
+
+</div>
+</div>
+<a id="ab20aac3e7a7019633f0abad212edeac3" name="ab20aac3e7a7019633f0abad212edeac3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab20aac3e7a7019633f0abad212edeac3">&#9670;&#160;</a></span>getCustoMP()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Habilidade::getCustoMP </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retorna o custo de Pontos de Magia (MP). </p>
+<dl class="section return"><dt>Retorna</dt><dd>MP gasto ao usar (&gt;= 0). </dd></dl>
+
+</div>
+</div>
+<a id="af14c382eb2dfc1bc47725dfe7ad0bc4a" name="af14c382eb2dfc1bc47725dfe7ad0bc4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af14c382eb2dfc1bc47725dfe7ad0bc4a">&#9670;&#160;</a></span>getDuracao()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Habilidade::getDuracao </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retorna a duração do efeito em turnos (0 = instantâneo). </p>
+<dl class="section return"><dt>Retorna</dt><dd>Número de turnos do efeito; 0 para habilidade instantânea. </dd></dl>
+
+</div>
+</div>
+<a id="a0df8134dda8f497005758253b24debc4" name="a0df8134dda8f497005758253b24debc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0df8134dda8f497005758253b24debc4">&#9670;&#160;</a></span>getDuracaoEfeito()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Habilidade::getDuracaoEfeito </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Alias para <a class="el" href="#af14c382eb2dfc1bc47725dfe7ad0bc4a" title="Retorna a duração do efeito em turnos (0 = instantâneo).">getDuracao()</a> mantido por compatibilidade. </p>
+<dl class="section return"><dt>Retorna</dt><dd>O mesmo valor de <a class="el" href="#af14c382eb2dfc1bc47725dfe7ad0bc4a" title="Retorna a duração do efeito em turnos (0 = instantâneo).">getDuracao()</a>. </dd></dl>
+
+</div>
+</div>
+<a id="aa8a44b753ae7ef3111235b0b65750cde" name="aa8a44b753ae7ef3111235b0b65750cde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8a44b753ae7ef3111235b0b65750cde">&#9670;&#160;</a></span>getNome()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Habilidade::getNome </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retorna o nome da habilidade. </p>
+<dl class="section return"><dt>Retorna</dt><dd>Nome exibido no menu de combate. </dd></dl>
+
+</div>
+</div>
+<a id="af9f3eacc9cd02a667337419ccf4dde47" name="af9f3eacc9cd02a667337419ccf4dde47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9f3eacc9cd02a667337419ccf4dde47">&#9670;&#160;</a></span>getTipo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_habilidade_8hpp.html#aa51c8184308d3e880af7237f46b87014">TipoHabilidade</a> Habilidade::getTipo </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retorna o tipo/categoria da habilidade. </p>
+<dl class="section return"><dt>Retorna</dt><dd>Categoria mecânica (FISICO, DOT, HOT, ...). </dd></dl>
+
+</div>
+</div>
+<a id="ada747757aa61f07b254607c4012138f9" name="ada747757aa61f07b254607c4012138f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada747757aa61f07b254607c4012138f9">&#9670;&#160;</a></span>getValorBase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Habilidade::getValorBase </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retorna o valor numérico base da habilidade. </p>
+<dl class="section return"><dt>Retorna</dt><dd>Dano, cura ou modificador base (&gt;= 0). </dd></dl>
+
+</div>
+</div>
+<hr/>A documentação para essa classe foi gerada a partir dos seguintes arquivos:<ul>
+<li>include/<a class="el" href="_habilidade_8hpp_source.html">Habilidade.hpp</a></li>
+<li>src/<b>Habilidade.cpp</b></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="class_habilidade.html">Habilidade</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>
